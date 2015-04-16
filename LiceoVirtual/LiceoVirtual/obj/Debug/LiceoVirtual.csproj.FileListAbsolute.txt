@@ -1,0 +1,17 @@
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\bin\Debug\LiceoVirtual.dll
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\bin\Debug\LiceoVirtual.pdb
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\bin\Debug\LiceoVirtual.dll.mdb
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\bin\Debug\LiceoVirtual.LiceoVirtual.apk
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\bin\Debug\LiceoVirtual.LiceoVirtual-Signed.apk
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\obj\Debug\LiceoVirtual.dll
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\obj\Debug\LiceoVirtual.pdb
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\obj\Debug\android\bin\LiceoVirtual.LiceoVirtual.apk
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\obj\Debug\res\layout\main.xml
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\obj\Debug\res\values\strings.xml
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable-hdpi\icon.png
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable-mdpi\icon.png
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable-xxxhdpi\icon.png
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\obj\Debug\R.cs.flag
+C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\obj\Debug\uploadflags.txt
