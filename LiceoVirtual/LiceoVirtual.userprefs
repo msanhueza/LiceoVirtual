@@ -1,6 +1,12 @@
 ﻿<Properties StartupItem="LiceoVirtual\LiceoVirtual.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.TA071014P8" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual\Resources\values\Styles.xml">
+    <Files>
+      <File FileName="LiceoVirtual\MainActivity.cs" Line="17" Column="44" />
+      <File FileName="LiceoVirtual\Resources\values\Strings.xml" Line="5" Column="49" />
+      <File FileName="LiceoVirtual\Resources\values\Styles.xml" Line="5" Column="66" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -20,6 +20,7 @@ namespace LiceoVirtual
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
+			SetTitle (Resource.String.app_title);
 
 			// Get our button from the layout resource,
 			// and attach an event to it
