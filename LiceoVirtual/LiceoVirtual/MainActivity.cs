@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace LiceoVirtual
 {
-	[Activity (Label = "LiceoVirtual", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity (Label = "LiceoVirtual", Icon = "@drawable/icon")]
 	public class MainActivity : Activity
 	{
 		int count = 1;

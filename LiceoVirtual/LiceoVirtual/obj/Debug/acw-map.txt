@@ -1,1 +1,2 @@
 LiceoVirtual.MainActivity;liceovirtual.MainActivity
+LiceoVirtual.SplashActivity;liceovirtual.SplashActivity

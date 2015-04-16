@@ -1,1 +1,1 @@
-C:\Users\msanhuezal\Documents\Projects\LiceoVirtual\LiceoVirtual\bin\Debug\LiceoVirtual.dll
+C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\bin\Debug\LiceoVirtual.dll
