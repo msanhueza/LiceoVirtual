@@ -34,7 +34,7 @@ namespace LiceoVirtual
 				editor.Apply ();
 
 				StartActivity(typeof(Login));
-				Finish();
+				Finish(); 
 			};
 		}
 	}

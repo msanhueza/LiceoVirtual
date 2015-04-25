@@ -83,7 +83,7 @@ namespace LiceoVirtual
 			} else {
 				var intent = new Intent (this, typeof(Menu));
 				intent.PutExtra ("nombre", "Mario Sanhueza");
-				StartActivity (intent);
+				StartActivity (intent); 
 			}
 			Finish ();
 		}
