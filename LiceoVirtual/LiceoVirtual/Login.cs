@@ -36,22 +36,56 @@ namespace LiceoVirtual
 
 			EditText edtRut = FindViewById<EditText> (Resource.Id.edtRut);
 			EditText edtContrasena = FindViewById<EditText> (Resource.Id.edtContrasena);
-			CheckBox cbxRecordarContrasena = FindViewById<CheckBox> (Resource.Id.cbxRecordarContrasena);
-
 
 			string rut = edtRut.Text;
 			string pass = edtContrasena.Text;
 
 			if (!validarRut (rut)) {
-				edtRut.RequestFocus();
+				edtRut.RequestFocus ();
 				edtRut.SetError ("Debe ingresar un rut válido", null);
-			}
-
-			if (pass.Length == 0) {
-				edtContrasena.RequestFocus();
+			} else if (pass.Length == 0) {
+				edtContrasena.RequestFocus ();
 				edtContrasena.SetError ("Debe ingresar una contraseña", null);
+			} else {
+				comprobarUsuario (rut, pass);
 			}
 
+		}
+
+		/// <summary>
+		/// Se encarga de comprobar en la bd si el usuario pertenece al liceo virtual
+		/// </summary>
+		/// <param name="rut">rut del alumno</param>
+		/// <param name="pass">contrasena del alumno</param>
+		public void comprobarUsuario(string rut, string pass){
+			
+			CheckBox cbxRecordarContrasena = FindViewById<CheckBox> (Resource.Id.cbxRecordarContrasena);
+			bool recordar = cbxRecordarContrasena.Checked;
+
+			//ACA DEBIERA VALIDAR SI EL USUARIO CORRESPONDE A UNO DEL LICEO VIRTUAL
+
+			if (recordar) {
+				
+				ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
+				ISharedPreferencesEditor editor = pref.Edit ();
+				editor.PutString ("idUsuario", "1");
+				editor.PutString ("nombre", "Mario Sanhueza");
+				editor.PutBoolean ("guardar", true);
+				editor.Apply ();
+
+				var intent = new Intent (this, typeof(Menu));
+				intent.PutExtra ("nombre", "Mario Sanhueza");
+				StartActivity (intent);
+
+				//pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
+				//string name = pref.GetString ("nombre", String.Empty);
+				//Toast.MakeText (this, name, ToastLength.Long).Show ();
+			} else {
+				var intent = new Intent (this, typeof(Menu));
+				intent.PutExtra ("nombre", "Mario Sanhueza");
+				StartActivity (intent);
+			}
+			Finish ();
 		}
 
 		/// <summary>

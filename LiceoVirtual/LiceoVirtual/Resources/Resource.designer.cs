@@ -63,8 +63,17 @@ namespace LiceoVirtual
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f06000a
+			public const int btnCerrarSesion = 2131099658;
+			
 			// aapt resource value: 0x7f060006
 			public const int btnLogin = 2131099654;
+			
+			// aapt resource value: 0x7f060009
+			public const int btnRanking = 2131099657;
+			
+			// aapt resource value: 0x7f060008
+			public const int btnTrivia = 2131099656;
 			
 			// aapt resource value: 0x7f060005
 			public const int cbxRecordarContrasena = 2131099653;
@@ -105,6 +114,9 @@ namespace LiceoVirtual
 			
 			// aapt resource value: 0x7f030001
 			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int Menu = 2130903042;
 			
 			static Layout()
 			{

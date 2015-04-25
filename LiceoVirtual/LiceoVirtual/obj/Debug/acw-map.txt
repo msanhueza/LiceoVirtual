@@ -1,3 +1,4 @@
 LiceoVirtual.MainActivity;liceovirtual.MainActivity
 LiceoVirtual.SplashActivity;liceovirtual.SplashActivity
 LiceoVirtual.Login;liceovirtual.Login
+LiceoVirtual.Menu;liceovirtual.Menu

@@ -25,7 +25,16 @@ namespace LiceoVirtual
 		{
 			base.OnCreate(bundle);
 			Thread.Sleep(3000); // Simulate a long loading process on app startup.
-			StartActivity(typeof(Login));
+
+			ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
+			bool guardarSesion = pref.GetBoolean ("guardar", false);
+
+			if (guardarSesion) {
+				StartActivity(typeof(Menu));
+			} else {
+				StartActivity(typeof(Login));
+			}
+
 		}
 	}
 }
