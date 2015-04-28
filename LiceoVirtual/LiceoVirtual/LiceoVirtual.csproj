@@ -72,6 +72,7 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\splash.png" />
     <AndroidResource Include="Resources\layout\Login.xml" />
     <AndroidResource Include="Resources\layout\Menu.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\error.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
 </Project>

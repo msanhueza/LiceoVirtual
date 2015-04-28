@@ -11,6 +11,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using System.Security.Cryptography;
+using Android.Graphics.Drawables;
 
 namespace LiceoVirtual
 {
@@ -36,16 +37,18 @@ namespace LiceoVirtual
 
 			EditText edtRut = FindViewById<EditText> (Resource.Id.edtRut);
 			EditText edtContrasena = FindViewById<EditText> (Resource.Id.edtContrasena);
+			Drawable errorIcon = Resources.GetDrawable(Resource.Drawable.error);
+			errorIcon.SetBounds(0,0,40,40);
 
 			string rut = edtRut.Text;
 			string pass = edtContrasena.Text;
 
 			if (!validarRut (rut)) {
 				edtRut.RequestFocus ();
-				edtRut.SetError ("Debe ingresar un rut válido", null);
+				edtRut.SetError ("Debe ingresar un rut válido", errorIcon);
 			} else if (pass.Length == 0) {
 				edtContrasena.RequestFocus ();
-				edtContrasena.SetError ("Debe ingresar una contraseña", null);
+				edtContrasena.SetError ("Debe ingresar una contraseña", errorIcon);
 			} else {
 				comprobarUsuario (rut, pass);
 			}
