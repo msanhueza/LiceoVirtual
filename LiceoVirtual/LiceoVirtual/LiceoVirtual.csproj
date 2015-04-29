@@ -50,6 +50,7 @@
     <Compile Include="SplashActivity.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="Menu.cs" />
+    <Compile Include="Nivel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -73,6 +74,8 @@
     <AndroidResource Include="Resources\layout\Login.xml" />
     <AndroidResource Include="Resources\layout\Menu.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\error.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\baseLogin.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\logoLogin.png" />
     <AndroidResource Include="Resources\layout\Nivel.xml" />
     <AndroidResource Include="Resources\layout\Pregunta1.xml" />
   </ItemGroup>

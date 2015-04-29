@@ -3,37 +3,68 @@
     p1:orientation="vertical"
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
-    p1:id="@+id/linearLayout1">
-    <TextView
-        p1:text="Rut"
+    p1:id="@+id/linearLayout1"
+    p1:background="@drawable/baseLogin"
+    p1:paddingTop="0dp"
+    p1:paddingLeft="30dp"
+    p1:paddingRight="30dp"
+    p1:paddingBottom="20dp"
+    p1:gravity="center">
+    <LinearLayout
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
-        p1:id="@+id/textView1" />
-    <EditText
-        p1:inputType="number"
+        p1:id="@+id/linearLayout2"
+        p1:gravity="center"
+        p1:orientation="vertical">
+        <ImageView
+            p1:id="@+id/imgLogo"
+            p1:layout_width="250px"
+            p1:layout_height="250px"
+            p1:src="@drawable/logoLogin"
+            p1:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
-        p1:id="@+id/edtRut"
-        p1:hint="Ingrese su rut" />
-    <TextView
-        p1:text="Contraseña"
-        p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
-        p1:id="@+id/textView2" />
-    <EditText
-        p1:inputType="textPassword"
-        p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
-        p1:id="@+id/edtContrasena"
-        p1:hint="Ingrese su contraseña" />
-    <CheckBox
-        p1:text="Recordar Sesión"
-        p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
-        p1:id="@+id/cbxRecordarContrasena" />
-    <Button
-        p1:text="Iniciar Sesión"
-        p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
-        p1:id="@+id/btnLogin" />
+        p1:id="@+id/linearLayout3"
+        p1:orientation="vertical">
+        <TextView
+            p1:text="Rut"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView1"
+            p1:layout_weight="1" />
+        <EditText
+            p1:inputType="number"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/edtRut"
+            p1:hint="Ingrese su rut"
+            p1:layout_weight="1" />
+        <TextView
+            p1:text="Contraseña"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView2"
+            p1:layout_weight="1" />
+        <EditText
+            p1:inputType="textPassword"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/edtContrasena"
+            p1:hint="Ingrese su contraseña"
+            p1:layout_weight="1" />
+        <CheckBox
+            p1:text="Recordar Sesión"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/cbxRecordarContrasena"
+            p1:layout_weight="1" />
+        <Button
+            p1:text="Iniciar Sesión"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/btnLogin"
+            p1:layout_weight="1" />
+    </LinearLayout>
 </LinearLayout>

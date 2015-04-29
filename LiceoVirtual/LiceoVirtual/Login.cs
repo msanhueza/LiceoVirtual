@@ -15,7 +15,7 @@ using Android.Graphics.Drawables;
 
 namespace LiceoVirtual
 {
-	[Activity (Label = "Login")]			
+	[Activity (Label = "@string/app_name", MainLauncher = false, Theme = "@android:style/Theme.Holo.Light.NoActionBar.Fullscreen")]			
 	public class Login : Activity
 	{
 		protected override void OnCreate (Bundle bundle)
