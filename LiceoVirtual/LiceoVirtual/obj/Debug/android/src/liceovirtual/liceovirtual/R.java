@@ -19,14 +19,15 @@ public final class R {
     }
     public static final class id {
         public static final int barraAvance=0x7f060013;
+        public static final int btn1=0x7f06000e;
+        public static final int btn2=0x7f060011;
+        public static final int btn3=0x7f06000f;
+        public static final int btn4=0x7f060012;
         public static final int btnCerrarSesion=0x7f06000d;
         public static final int btnLogin=0x7f060009;
         public static final int btnRanking=0x7f06000c;
         public static final int btnTrivia=0x7f06000b;
-        public static final int button1=0x7f06000e;
-        public static final int button2=0x7f06000f;
-        public static final int button3=0x7f060011;
-        public static final int button4=0x7f060012;
+        public static final int button1=0x7f060016;
         public static final int cbxRecordarContrasena=0x7f060008;
         public static final int edtContrasena=0x7f060007;
         public static final int edtRut=0x7f060005;
@@ -35,15 +36,16 @@ public final class R {
         public static final int linearLayout2=0x7f060001;
         public static final int linearLayout3=0x7f060003;
         public static final int linearLayout4=0x7f060010;
-        public static final int listViewRanking=0x7f060019;
-        public static final int lyRanking1=0x7f060016;
-        public static final int lyRanking2=0x7f060017;
+        public static final int listViewPuntuacion=0x7f060017;
+        public static final int listViewRanking=0x7f06001b;
+        public static final int lyRanking1=0x7f060018;
+        public static final int lyRanking2=0x7f060019;
         public static final int myButton=0x7f06000a;
         public static final int pregunta=0x7f060014;
         public static final int respuesta=0x7f060015;
         public static final int textView1=0x7f060004;
         public static final int textView2=0x7f060006;
-        public static final int tvTituloRanking=0x7f060018;
+        public static final int tvTituloRanking=0x7f06001a;
     }
     public static final class layout {
         public static final int login=0x7f030000;
@@ -51,7 +53,8 @@ public final class R {
         public static final int menu=0x7f030002;
         public static final int nivel=0x7f030003;
         public static final int pregunta1=0x7f030004;
-        public static final int ranking=0x7f030005;
+        public static final int puntuacion=0x7f030005;
+        public static final int ranking=0x7f030006;
     }
     public static final class string {
         public static final int app_name=0x7f040001;

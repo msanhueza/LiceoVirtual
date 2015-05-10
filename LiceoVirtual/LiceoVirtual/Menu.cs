@@ -22,9 +22,18 @@ namespace LiceoVirtual
 
 			SetContentView (Resource.Layout.Menu);
 
-			Button btnCerrarSesion = FindViewById<Button> (Resource.Id.btnCerrarSesion);
+			Button btnTrivia = FindViewById<Button> (Resource.Id.btnTrivia);
 			Button btnRanking = FindViewById<Button> (Resource.Id.btnRanking);
+			Button btnCerrarSesion = FindViewById<Button> (Resource.Id.btnCerrarSesion);
 
+
+			btnTrivia.Click += delegate {
+				StartActivity (typeof(Nivel));
+			};
+
+			btnRanking.Click += delegate {
+				StartActivity (typeof(Ranking));
+			};
 
 			btnCerrarSesion.Click += delegate {
 				
@@ -38,10 +47,7 @@ namespace LiceoVirtual
 				StartActivity(typeof(Login));
 				Finish(); 
 			};
-
-			btnRanking.Click += delegate {
-				StartActivity (typeof(Ranking));
-			};
+				
 		}
 	}
 }

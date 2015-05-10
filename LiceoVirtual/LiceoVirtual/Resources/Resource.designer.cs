@@ -75,6 +75,18 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f060013
 			public const int barraAvance = 2131099667;
 			
+			// aapt resource value: 0x7f06000e
+			public const int btn1 = 2131099662;
+			
+			// aapt resource value: 0x7f060011
+			public const int btn2 = 2131099665;
+			
+			// aapt resource value: 0x7f06000f
+			public const int btn3 = 2131099663;
+			
+			// aapt resource value: 0x7f060012
+			public const int btn4 = 2131099666;
+			
 			// aapt resource value: 0x7f06000d
 			public const int btnCerrarSesion = 2131099661;
 			
@@ -87,17 +99,8 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f06000b
 			public const int btnTrivia = 2131099659;
 			
-			// aapt resource value: 0x7f06000e
-			public const int button1 = 2131099662;
-			
-			// aapt resource value: 0x7f06000f
-			public const int button2 = 2131099663;
-			
-			// aapt resource value: 0x7f060011
-			public const int button3 = 2131099665;
-			
-			// aapt resource value: 0x7f060012
-			public const int button4 = 2131099666;
+			// aapt resource value: 0x7f060016
+			public const int button1 = 2131099670;
 			
 			// aapt resource value: 0x7f060008
 			public const int cbxRecordarContrasena = 2131099656;
@@ -123,14 +126,17 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f060010
 			public const int linearLayout4 = 2131099664;
 			
-			// aapt resource value: 0x7f060019
-			public const int listViewRanking = 2131099673;
-			
-			// aapt resource value: 0x7f060016
-			public const int lyRanking1 = 2131099670;
-			
 			// aapt resource value: 0x7f060017
-			public const int lyRanking2 = 2131099671;
+			public const int listViewPuntuacion = 2131099671;
+			
+			// aapt resource value: 0x7f06001b
+			public const int listViewRanking = 2131099675;
+			
+			// aapt resource value: 0x7f060018
+			public const int lyRanking1 = 2131099672;
+			
+			// aapt resource value: 0x7f060019
+			public const int lyRanking2 = 2131099673;
 			
 			// aapt resource value: 0x7f06000a
 			public const int myButton = 2131099658;
@@ -147,8 +153,8 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f060006
 			public const int textView2 = 2131099654;
 			
-			// aapt resource value: 0x7f060018
-			public const int tvTituloRanking = 2131099672;
+			// aapt resource value: 0x7f06001a
+			public const int tvTituloRanking = 2131099674;
 			
 			static Id()
 			{
@@ -179,7 +185,10 @@ namespace LiceoVirtual
 			public const int Pregunta1 = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int Ranking = 2130903045;
+			public const int Puntuacion = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int Ranking = 2130903046;
 			
 			static Layout()
 			{

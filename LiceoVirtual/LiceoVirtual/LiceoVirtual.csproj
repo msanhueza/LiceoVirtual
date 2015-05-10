@@ -53,6 +53,7 @@
     <Compile Include="Menu.cs" />
     <Compile Include="Nivel.cs" />
     <Compile Include="Ranking.cs" />
+    <Compile Include="Puntuacion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -81,6 +82,7 @@
     <AndroidResource Include="Resources\layout\Nivel.xml" />
     <AndroidResource Include="Resources\layout\Pregunta1.xml" />
     <AndroidResource Include="Resources\layout\Ranking.xml" />
+    <AndroidResource Include="Resources\layout\Puntuacion.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
 </Project>

@@ -4,3 +4,4 @@ LiceoVirtual.Login;liceovirtual.Login
 LiceoVirtual.Menu;liceovirtual.Menu
 LiceoVirtual.Nivel;liceovirtual.Nivel
 LiceoVirtual.Ranking;liceovirtual.Ranking
+LiceoVirtual.Puntuacion;liceovirtual.Puntuacion
