@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
     p1:orientation="vertical"
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
+    p1:layout_gravity="center_vertical|center_horizontal"
     p1:id="@+id/linearLayout1">
-    <Button
-        p1:text="Trivia"
+    <LinearLayout
+        p1:orientation="vertical"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
-        p1:id="@+id/btnTrivia" />
-    <Button
-        p1:text="Ranking"
-        p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
-        p1:id="@+id/btnRanking" />
-    <Button
-        p1:text="Cerrar Sesión"
-        p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
-        p1:id="@+id/btnCerrarSesion" />
-</LinearLayout>
+        p1:layout_centerInParent="true"
+        p1:layout_margin="20dp">
+        <Button
+            p1:text="Trivia"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:onClick="onClickTrivia"
+            p1:id="@+id/btnTrivia" />
+        <Button
+            p1:text="Ranking"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/btnRanking" />
+        <Button
+            p1:text="Cerrar Sesión"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/btnCerrarSesion" />
+    </LinearLayout>
+</RelativeLayout>

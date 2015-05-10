@@ -24,3 +24,7 @@
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/uploadflags.txt
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/LiceoVirtual.dll
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/LiceoVirtual.dll.mdb
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable-hdpi/baselogin.png
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable-hdpi/logologin.png
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/layout/nivel.xml
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/layout/pregunta1.xml
