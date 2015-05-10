@@ -54,6 +54,8 @@
     <Compile Include="Nivel.cs" />
     <Compile Include="Ranking.cs" />
     <Compile Include="Puntuacion.cs" />
+    <Compile Include="SQLite.cs" />
+    <Compile Include="PuntuacionBD.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
