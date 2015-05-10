@@ -1,10 +1,29 @@
+<<<<<<< HEAD
 ﻿<Properties StartupItem="LiceoVirtual/LiceoVirtual.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
   <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual/Menu.cs">
     <Files>
       <File FileName="LiceoVirtual/Menu.cs" Line="40" Column="4" />
       <File FileName="LiceoVirtual/Login.cs" Line="1" Column="1" />
+=======
+﻿<Properties StartupItem="LiceoVirtual\LiceoVirtual.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SSG" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual\Ranking.cs">
+    <Files>
+      <File FileName="LiceoVirtual\Nivel.cs" Line="1" Column="1" />
+      <File FileName="LiceoVirtual\Menu.cs" Line="1" Column="1" />
+      <File FileName="LiceoVirtual\Ranking.cs" Line="55" Column="25" />
+>>>>>>> d6bd6aa8c007682e91c55cf9f68efaa1046fb8e3
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="LiceoVirtual" expanded="True">
+            <Node name="Ranking.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

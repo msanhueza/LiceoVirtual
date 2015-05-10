@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
+    <Reference Include="System.Json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -51,6 +52,12 @@
     <Compile Include="Login.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Nivel.cs" />
+    <Compile Include="Ranking.cs" />
+    <Compile Include="Puntuacion.cs" />
+    <Compile Include="SQLite.cs" />
+    <Compile Include="PuntuacionBD.cs" />
+    <Compile Include="PuntuacionAdapter.cs" />
+    <Compile Include="PuntuacionItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -78,6 +85,9 @@
     <AndroidResource Include="Resources\drawable-hdpi\logoLogin.png" />
     <AndroidResource Include="Resources\layout\Nivel.xml" />
     <AndroidResource Include="Resources\layout\Pregunta1.xml" />
+    <AndroidResource Include="Resources\layout\Ranking.xml" />
+    <AndroidResource Include="Resources\layout\Puntuacion.xml" />
+    <AndroidResource Include="Resources\layout\PuntuacionPersonalizado.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
 </Project>

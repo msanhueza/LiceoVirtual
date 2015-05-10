@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/lyPuntuacion1">
+    <Button
+        p1:text="Ir a Trivia"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/btnIrTrivia" />
+    <LinearLayout
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:paddingTop="3dp"
+        p1:paddingBottom="3dp"
+        p1:paddingRight="3dp"
+        p1:paddingLeft="3dp"
+        p1:background="#848484"
+        p1:orientation="horizontal">
+        <TextView
+            p1:id="@+id/info_menu"
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:text="Historial Resultados"
+            p1:textStyle="italic"
+            p1:textColor="#FFFFFF" />
+    </LinearLayout>
+    <ListView
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/listViewPuntuacion" />
+</LinearLayout>

@@ -22,7 +22,18 @@ namespace LiceoVirtual
 
 			SetContentView (Resource.Layout.Menu);
 
+			Button btnTrivia = FindViewById<Button> (Resource.Id.btnTrivia);
+			Button btnRanking = FindViewById<Button> (Resource.Id.btnRanking);
 			Button btnCerrarSesion = FindViewById<Button> (Resource.Id.btnCerrarSesion);
+
+
+			btnTrivia.Click += delegate {
+				StartActivity (typeof(Nivel));
+			};
+
+			btnRanking.Click += delegate {
+				StartActivity (typeof(Ranking));
+			};
 
 			btnCerrarSesion.Click += delegate {
 				
@@ -36,6 +47,7 @@ namespace LiceoVirtual
 				StartActivity(typeof(Login));
 				Finish(); 
 			};
+<<<<<<< HEAD
 
 
 			Button btnTrivia = FindViewById<Button> (Resource.Id.btnTrivia);
@@ -47,6 +59,9 @@ namespace LiceoVirtual
 				StartActivity (intent); 	
 			};
 
+=======
+				
+>>>>>>> d6bd6aa8c007682e91c55cf9f68efaa1046fb8e3
 		}
 		/* con licencia se puede hacer de esta forma los listener de los botones
 		[Java.Interop.Export("onClickTrivia")] // The value found in android:onClick attribute.
