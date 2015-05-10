@@ -90,6 +90,9 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f06000d
 			public const int btnCerrarSesion = 2131099661;
 			
+			// aapt resource value: 0x7f060017
+			public const int btnIrTrivia = 2131099671;
+			
 			// aapt resource value: 0x7f060009
 			public const int btnLogin = 2131099657;
 			
@@ -98,9 +101,6 @@ namespace LiceoVirtual
 			
 			// aapt resource value: 0x7f06000b
 			public const int btnTrivia = 2131099659;
-			
-			// aapt resource value: 0x7f060016
-			public const int button1 = 2131099670;
 			
 			// aapt resource value: 0x7f060008
 			public const int cbxRecordarContrasena = 2131099656;
@@ -114,6 +114,9 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f060002
 			public const int imgLogo = 2131099650;
 			
+			// aapt resource value: 0x7f060018
+			public const int info_menu = 2131099672;
+			
 			// aapt resource value: 0x7f060000
 			public const int linearLayout1 = 2131099648;
 			
@@ -126,17 +129,20 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f060010
 			public const int linearLayout4 = 2131099664;
 			
-			// aapt resource value: 0x7f060017
-			public const int listViewPuntuacion = 2131099671;
-			
-			// aapt resource value: 0x7f06001b
-			public const int listViewRanking = 2131099675;
-			
-			// aapt resource value: 0x7f060018
-			public const int lyRanking1 = 2131099672;
-			
 			// aapt resource value: 0x7f060019
-			public const int lyRanking2 = 2131099673;
+			public const int listViewPuntuacion = 2131099673;
+			
+			// aapt resource value: 0x7f06001f
+			public const int listViewRanking = 2131099679;
+			
+			// aapt resource value: 0x7f060016
+			public const int lyPuntuacion1 = 2131099670;
+			
+			// aapt resource value: 0x7f06001c
+			public const int lyRanking1 = 2131099676;
+			
+			// aapt resource value: 0x7f06001d
+			public const int lyRanking2 = 2131099677;
 			
 			// aapt resource value: 0x7f06000a
 			public const int myButton = 2131099658;
@@ -154,7 +160,13 @@ namespace LiceoVirtual
 			public const int textView2 = 2131099654;
 			
 			// aapt resource value: 0x7f06001a
-			public const int tvTituloRanking = 2131099674;
+			public const int tvFecha = 2131099674;
+			
+			// aapt resource value: 0x7f06001b
+			public const int tvPuntaje = 2131099675;
+			
+			// aapt resource value: 0x7f06001e
+			public const int tvTituloRanking = 2131099678;
 			
 			static Id()
 			{
@@ -188,7 +200,10 @@ namespace LiceoVirtual
 			public const int Puntuacion = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int Ranking = 2130903046;
+			public const int PuntuacionPersonalizado = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int Ranking = 2130903047;
 			
 			static Layout()
 			{
