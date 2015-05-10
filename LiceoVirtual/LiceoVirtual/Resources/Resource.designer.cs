@@ -123,6 +123,15 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f060010
 			public const int linearLayout4 = 2131099664;
 			
+			// aapt resource value: 0x7f060019
+			public const int listViewRanking = 2131099673;
+			
+			// aapt resource value: 0x7f060016
+			public const int lyRanking1 = 2131099670;
+			
+			// aapt resource value: 0x7f060017
+			public const int lyRanking2 = 2131099671;
+			
 			// aapt resource value: 0x7f06000a
 			public const int myButton = 2131099658;
 			
@@ -137,6 +146,9 @@ namespace LiceoVirtual
 			
 			// aapt resource value: 0x7f060006
 			public const int textView2 = 2131099654;
+			
+			// aapt resource value: 0x7f060018
+			public const int tvTituloRanking = 2131099672;
 			
 			static Id()
 			{
@@ -165,6 +177,9 @@ namespace LiceoVirtual
 			
 			// aapt resource value: 0x7f030004
 			public const int Pregunta1 = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int Ranking = 2130903045;
 			
 			static Layout()
 			{

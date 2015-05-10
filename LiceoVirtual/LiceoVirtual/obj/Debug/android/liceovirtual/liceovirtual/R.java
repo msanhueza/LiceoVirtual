@@ -35,11 +35,15 @@ public final class R {
         public static final int linearLayout2=0x7f060001;
         public static final int linearLayout3=0x7f060003;
         public static final int linearLayout4=0x7f060010;
+        public static final int listViewRanking=0x7f060019;
+        public static final int lyRanking1=0x7f060016;
+        public static final int lyRanking2=0x7f060017;
         public static final int myButton=0x7f06000a;
         public static final int pregunta=0x7f060014;
         public static final int respuesta=0x7f060015;
         public static final int textView1=0x7f060004;
         public static final int textView2=0x7f060006;
+        public static final int tvTituloRanking=0x7f060018;
     }
     public static final class layout {
         public static final int login=0x7f030000;
@@ -47,6 +51,7 @@ public final class R {
         public static final int menu=0x7f030002;
         public static final int nivel=0x7f030003;
         public static final int pregunta1=0x7f030004;
+        public static final int ranking=0x7f030005;
     }
     public static final class string {
         public static final int app_name=0x7f040001;
