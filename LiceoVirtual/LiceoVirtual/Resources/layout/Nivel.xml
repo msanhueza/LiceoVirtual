@@ -6,18 +6,24 @@
     p1:id="@+id/linearLayout1"
     p1:background="@drawable/LVBackground">
     <LinearLayout
-        p1:orientation="horizontal"
+        p1:orientation="vertical"
         p1:layout_width="match_parent"
         p1:layout_height="0dp"
         p1:id="@+id/linearLayout2"
         p1:fitsSystemWindows="false"
         p1:layout_weight="1"
         p1:minWidth="25px"
-        p1:minHeight="25px">
+        p1:minHeight="25px"
+        p1:gravity="center">
+        <ImageView
+            p1:id="@+id/imgLogo"
+            p1:layout_width="250px"
+            p1:layout_height="250px"
+            p1:src="@drawable/logoLogin" />
         <TextView
             p1:text="www.liceovirtual.utalca.cl"
             p1:textAppearance="?android:attr/textAppearanceMedium"
-            p1:layout_width="0dp"
+            p1:layout_width="match_parent"
             p1:layout_height="match_parent"
             p1:id="@+id/textView1"
             p1:textColor="#ffffffff"

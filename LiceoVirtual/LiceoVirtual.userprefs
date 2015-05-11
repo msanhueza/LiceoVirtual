@@ -1,9 +1,9 @@
-﻿<Properties StartupItem="LiceoVirtual/LiceoVirtual.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupItem="LiceoVirtual\LiceoVirtual.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.TA071014P8" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual\Puntuacion.cs">
     <Files>
-      <File FileName="LiceoVirtual/Menu.cs" Line="6" Column="1" />
-      <File FileName="LiceoVirtual/Resources/drawable/LVMenuBtn.xml" Line="21" Column="20" />
+      <File FileName="LiceoVirtual\Puntuacion.cs" Line="20" Column="3" />
+      <File FileName="..\..\..\..\..\..\Program Files (x86)\MSBuild\Xamarin\Android\Xamarin.Android.Common.targets" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

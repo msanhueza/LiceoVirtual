@@ -4,21 +4,6 @@
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
     p1:id="@+id/lyRanking1">
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
-        p1:id="@+id/lyRanking2"
-        p1:gravity="center"
-        p1:background="#ff927d6b">
-        <TextView
-            p1:text="Ranking Estudiantes"
-            p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/tvTituloRanking"
-            p1:gravity="center"
-            p1:textSize="30sp" />
-    </LinearLayout>
     <ListView
         p1:layout_width="match_parent"
         p1:layout_height="match_parent"

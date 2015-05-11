@@ -51,7 +51,6 @@
     <Compile Include="SplashActivity.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="Nivel.cs" />
-    <Compile Include="Ranking.cs" />
     <Compile Include="Puntuacion.cs" />
     <Compile Include="SQLite.cs" />
     <Compile Include="Menu.cs">
@@ -59,6 +58,9 @@
     <Compile Include="PuntuacionBD.cs" />
     <Compile Include="PuntuacionAdapter.cs" />
     <Compile Include="PuntuacionItem.cs" />
+    <Compile Include="RankingAdapter.cs" />
+    <Compile Include="RankingItem.cs" />
+    <Compile Include="Ranking.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -94,6 +96,7 @@
     <AndroidResource Include="Resources\drawable-hdpi\candado.png" />
     <AndroidResource Include="Resources\drawable\LVBlockedButton.xml" />
     <AndroidResource Include="Resources\drawable\LVMenuBtn.xml" />
+    <AndroidResource Include="Resources\layout\RankingPersonalizado.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
