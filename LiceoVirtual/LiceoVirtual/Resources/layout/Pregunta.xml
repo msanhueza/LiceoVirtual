@@ -3,7 +3,8 @@
     p1:orientation="vertical"
     p1:layout_width="match_parent"
     p1:layout_height="wrap_content"
-    p1:id="@+id/linearLayout1">
+    p1:id="@+id/linearLayout1"
+    p1:padding="20dp">
     <LinearLayout
         p1:orientation="horizontal"
         p1:layout_width="match_parent"
@@ -16,7 +17,8 @@
             p1:layout_width="match_parent"
             p1:layout_height="match_parent"
             p1:id="@+id/progressBar1"
-            p1:progress="25" />
+            p1:progress="25"
+            p1:layout_weight="2" />
     </LinearLayout>
     <LinearLayout
         p1:orientation="horizontal"
@@ -24,7 +26,9 @@
         p1:layout_height="match_parent"
         p1:id="@+id/pregunta"
         p1:minWidth="25px"
-        p1:minHeight="25px">
+        p1:minHeight="25px"
+        p1:paddingTop="10dp"
+        p1:paddingBottom="10dp">
         <TextView
             p1:text="¿Desde dónde hasta dónde va la savia elaborada(en las plantas)?"
             p1:layout_width="wrap_content"
@@ -32,7 +36,8 @@
             p1:id="@+id/textView1"
             p1:layout_marginRight="2dp"
             p1:layout_marginLeft="2dp"
-            p1:layout_marginTop="2dp" />
+            p1:layout_marginTop="10dp"
+            p1:layout_weight="2" />
     </LinearLayout>
     <LinearLayout
         p1:orientation="horizontal"
@@ -41,7 +46,9 @@
         p1:id="@+id/respuesta"
         p1:layout_weight="4"
         p1:minWidth="25px"
-        p1:minHeight="25px">
+        p1:minHeight="25px"
+        p1:paddingTop="10dp"
+        p1:paddingBottom="10dp">
         <RadioGroup
             p1:minWidth="25px"
             p1:minHeight="25px"
@@ -53,17 +60,20 @@
                 p1:layout_height="wrap_content"
                 p1:checked="true"
                 p1:text="Desde las hojas hasta toda la planta."
-                p1:id="@+id/radioButton1" />
+                p1:id="@+id/radioButton1"
+                p1:layout_weight="2" />
             <RadioButton
                 p1:layout_width="wrap_content"
                 p1:layout_height="wrap_content"
                 p1:text="Desde la raíz hasta las hojas."
-                p1:id="@+id/radioButton2" />
+                p1:id="@+id/radioButton2"
+                p1:layout_weight="2" />
             <RadioButton
                 p1:layout_width="wrap_content"
                 p1:layout_height="wrap_content"
                 p1:text="Desde la boca hasta el estómago."
-                p1:id="@+id/radioButton3" />
+                p1:id="@+id/radioButton3"
+                p1:layout_weight="2" />
         </RadioGroup>
     </LinearLayout>
     <LinearLayout
@@ -72,11 +82,14 @@
         p1:layout_height="match_parent"
         p1:id="@+id/botonSiguiente"
         p1:minWidth="25px"
-        p1:minHeight="25px">
+        p1:minHeight="25px"
+        p1:paddingTop="10dp"
+        p1:paddingBottom="10dp">
         <Button
             p1:text="Siguiente"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/button1" />
+            p1:id="@+id/button1"
+            p1:layout_weight="1" />
     </LinearLayout>
 </LinearLayout>
