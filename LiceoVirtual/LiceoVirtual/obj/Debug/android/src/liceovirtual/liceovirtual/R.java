@@ -15,12 +15,13 @@ public final class R {
         public static final int candado=0x7f020001;
         public static final int error=0x7f020002;
         public static final int icon=0x7f020003;
-        public static final int logologin=0x7f020004;
-        public static final int lvbackground=0x7f020005;
-        public static final int lvblockedbutton=0x7f020006;
-        public static final int lvbutton=0x7f020007;
-        public static final int lvmenubtn=0x7f020008;
-        public static final int splash=0x7f020009;
+        public static final int logoblanco=0x7f020004;
+        public static final int logologin=0x7f020005;
+        public static final int lvbackground=0x7f020006;
+        public static final int lvblockedbutton=0x7f020007;
+        public static final int lvbutton=0x7f020008;
+        public static final int lvmenubtn=0x7f020009;
+        public static final int splash=0x7f02000a;
     }
     public static final class id {
         public static final int barraAvance=0x7f060013;
@@ -79,6 +80,16 @@ public final class R {
         public static final int app_name=0x7f040001;
         public static final int app_title=0x7f040002;
         public static final int hello=0x7f040000;
+        public static final int nivel_1=0x7f040004;
+        public static final int nivel_2=0x7f040005;
+        public static final int nivel_3=0x7f040006;
+        public static final int nivel_4=0x7f040007;
+        public static final int niveles=0x7f040003;
+        public static final int preguntas_n1=0x7f040008;
+        public static final int preguntas_n2=0x7f040009;
+        public static final int preguntas_n3=0x7f04000a;
+        public static final int preguntas_n4=0x7f04000b;
+        public static final int ranking_estudiantes=0x7f04000c;
     }
     public static final class style {
         public static final int Theme_Splash=0x7f050000;

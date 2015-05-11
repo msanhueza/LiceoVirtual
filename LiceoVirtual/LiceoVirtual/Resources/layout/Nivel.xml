@@ -14,12 +14,13 @@
         p1:layout_weight="1"
         p1:minWidth="25px"
         p1:minHeight="25px"
-        p1:gravity="center">
+        p1:gravity="center"
+        p1:padding="10dp">
         <ImageView
             p1:id="@+id/imgLogo"
             p1:layout_width="250px"
             p1:layout_height="250px"
-            p1:src="@drawable/logoLogin" />
+            p1:src="@drawable/logoBlanco" />
         <TextView
             p1:text="www.liceovirtual.utalca.cl"
             p1:textAppearance="?android:attr/textAppearanceMedium"

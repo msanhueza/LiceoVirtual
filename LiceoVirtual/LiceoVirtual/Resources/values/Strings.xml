@@ -3,4 +3,14 @@
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">LiceoVirtual</string>
 	<string name="app_title">Liceo Virtual</string>
+	<string name="niveles">Niveles</string>
+	<string name="nivel_1">Nivel 1</string>
+	<string name="nivel_2">Nivel 2</string>
+	<string name="nivel_3">Nivel 3</string>
+	<string name="nivel_4">Nivel 4</string>
+	<string name="preguntas_n1">N1 - Preguntas</string>
+	<string name="preguntas_n2">N2 - Preguntas</string>
+	<string name="preguntas_n3">N3 - Preguntas</string>
+	<string name="preguntas_n4">N4 - Preguntas</string>
+	<string name="ranking_estudiantes">Ranking estudiantes</string>
 </resources>

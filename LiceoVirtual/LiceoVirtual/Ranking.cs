@@ -31,6 +31,7 @@ namespace LiceoVirtual
 		{
 			base.OnCreate (bundle);
 			SetContentView (Resource.Layout.Ranking);
+			SetTitle (Resource.String.ranking_estudiantes);
 
 			string ruta = "http://tenis6ta.url.ph/modelo/listar_postre.php";
 			//FetchWeatherAsync (ruta);

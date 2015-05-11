@@ -30,6 +30,16 @@ namespace LiceoVirtual
 
 			string nivel = Intent.GetStringExtra ("nivel") ?? "0";
 
+			if (nivel.Equals ("1")) {
+				SetTitle (Resource.String.nivel_1);
+			} else if (nivel.Equals ("2")) {
+				SetTitle (Resource.String.nivel_2);
+			} else if (nivel.Equals ("3")) {
+				SetTitle (Resource.String.nivel_3);
+			} else {
+				SetTitle (Resource.String.nivel_4);
+			}
+
 			var docsFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
 			var pathToDatabase = System.IO.Path.Combine(docsFolder, "liceo_virtual.db");
 
