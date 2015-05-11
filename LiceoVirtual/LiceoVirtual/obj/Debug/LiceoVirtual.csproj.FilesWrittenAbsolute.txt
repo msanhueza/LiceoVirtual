@@ -28,3 +28,6 @@
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable-hdpi/logologin.png
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/layout/nivel.xml
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/layout/pregunta1.xml
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/layout/ranking.xml
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/layout/puntuacion.xml
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/layout/puntuacionpersonalizado.xml

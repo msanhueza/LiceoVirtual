@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -50,11 +50,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplashActivity.cs" />
     <Compile Include="Login.cs" />
-    <Compile Include="Menu.cs" />
     <Compile Include="Nivel.cs" />
     <Compile Include="Ranking.cs" />
     <Compile Include="Puntuacion.cs" />
     <Compile Include="SQLite.cs" />
+    <Compile Include="Menu.cs">
+    </Compile>
     <Compile Include="PuntuacionBD.cs" />
     <Compile Include="PuntuacionAdapter.cs" />
     <Compile Include="PuntuacionItem.cs" />
@@ -88,6 +89,14 @@
     <AndroidResource Include="Resources\layout\Ranking.xml" />
     <AndroidResource Include="Resources\layout\Puntuacion.xml" />
     <AndroidResource Include="Resources\layout\PuntuacionPersonalizado.xml" />
+    <AndroidResource Include="Resources\drawable\LVBackground.xml" />
+    <AndroidResource Include="Resources\drawable\LVButton.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\candado.png" />
+    <AndroidResource Include="Resources\drawable\LVBlockedButton.xml" />
+    <AndroidResource Include="Resources\drawable\LVMenuBtn.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+  </ItemGroup>
 </Project>

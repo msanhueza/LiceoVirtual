@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Mono.Android.Export;
+
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -47,21 +47,6 @@ namespace LiceoVirtual
 				StartActivity(typeof(Login));
 				Finish(); 
 			};
-<<<<<<< HEAD
-
-
-			Button btnTrivia = FindViewById<Button> (Resource.Id.btnTrivia);
-
-			btnTrivia.Click += delegate {
-
-				var intent = new Intent (this, typeof(Nivel));
-				//intent.PutExtra ("nombre", "Mario Sanhueza");
-				StartActivity (intent); 	
-			};
-
-=======
-				
->>>>>>> d6bd6aa8c007682e91c55cf9f68efaa1046fb8e3
 		}
 		/* con licencia se puede hacer de esta forma los listener de los botones
 		[Java.Interop.Export("onClickTrivia")] // The value found in android:onClick attribute.
