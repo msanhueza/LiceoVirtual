@@ -5,12 +5,20 @@
     p1:layout_height="match_parent"
     p1:id="@+id/lyPuntuacion1"
     p1:background="@drawable/LVBackground">
-    <Button
-        p1:text="Ir a Trivia"
+    <LinearLayout
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
-        p1:id="@+id/btnIrTrivia"
-        p1:background="@drawable/LVButton" />
+        p1:background="@drawable/LVBackground"
+        p1:orientation="vertical"
+        p1:padding="20dp">
+        <Button
+            p1:text="Ir a Trivia"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/btnIrTrivia"
+            p1:background="@drawable/LVButton"
+            p1:textColor="#FFFFFF" />
+    </LinearLayout>
     <LinearLayout
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
@@ -33,5 +41,6 @@
         p1:minHeight="25px"
         p1:layout_width="match_parent"
         p1:layout_height="match_parent"
-        p1:id="@+id/listViewPuntuacion" />
+        p1:id="@+id/listViewPuntuacion"
+        p1:padding="10dp" />
 </LinearLayout>

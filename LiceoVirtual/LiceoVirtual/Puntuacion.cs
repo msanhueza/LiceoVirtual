@@ -19,7 +19,7 @@ namespace LiceoVirtual
 	{
 
 		ListView listView;
-		List<PuntuacionItem> listaPuntuaciones;
+		List<PuntuacionItem> listaPuntuaciones = new List<PuntuacionItem>();
 
 
 		protected override void OnCreate (Bundle bundle)
@@ -41,7 +41,15 @@ namespace LiceoVirtual
 			//Toast.MakeText (this, getPuntuacionesBD(pathToDatabase).Count.ToString(), ToastLength.Short).Show();
 
 			listView = FindViewById<ListView>(Resource.Id.listViewPuntuacion);
-			listaPuntuaciones = getPuntuacionesBD (pathToDatabase, nivel);
+			//listaPuntuaciones = getPuntuacionesBD (pathToDatabase, nivel);
+			PuntuacionItem p1 = new PuntuacionItem("11/05/2015", "7.0");
+			PuntuacionItem p2 = new PuntuacionItem("10/05/2015", "7.0");
+			PuntuacionItem p3 = new PuntuacionItem("08/05/2015", "6.0");
+			PuntuacionItem p4 = new PuntuacionItem("05/05/2015", "5.4");
+			listaPuntuaciones.Add (p1);
+			listaPuntuaciones.Add (p2);
+			listaPuntuaciones.Add (p3);
+			listaPuntuaciones.Add (p4);
 			listView.Adapter = new PuntuacionAdapter(this, listaPuntuaciones);
 
 			Button btnIrTrivia = FindViewById<Button> (Resource.Id.btnIrTrivia);
