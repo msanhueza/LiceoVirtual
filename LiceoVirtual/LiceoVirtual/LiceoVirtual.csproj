@@ -61,6 +61,7 @@
     <Compile Include="RankingAdapter.cs" />
     <Compile Include="RankingItem.cs" />
     <Compile Include="Ranking.cs" />
+    <Compile Include="Pregunta.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -87,7 +88,6 @@
     <AndroidResource Include="Resources\drawable-hdpi\baseLogin.png" />
     <AndroidResource Include="Resources\drawable-hdpi\logoLogin.png" />
     <AndroidResource Include="Resources\layout\Nivel.xml" />
-    <AndroidResource Include="Resources\layout\Pregunta1.xml" />
     <AndroidResource Include="Resources\layout\Ranking.xml" />
     <AndroidResource Include="Resources\layout\Puntuacion.xml" />
     <AndroidResource Include="Resources\layout\PuntuacionPersonalizado.xml" />
@@ -97,6 +97,7 @@
     <AndroidResource Include="Resources\drawable\LVBlockedButton.xml" />
     <AndroidResource Include="Resources\drawable\LVMenuBtn.xml" />
     <AndroidResource Include="Resources\layout\RankingPersonalizado.xml" />
+    <AndroidResource Include="Resources\layout\Pregunta.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

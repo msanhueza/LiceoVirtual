@@ -7,3 +7,4 @@ LiceoVirtual.Menu;liceovirtual.Menu
 PuntuacionAdapter;PuntuacionAdapter
 RankingAdapter;RankingAdapter
 LiceoVirtual.Ranking;liceovirtual.Ranking
+LiceoVirtual.Pregunta;liceovirtual.Pregunta

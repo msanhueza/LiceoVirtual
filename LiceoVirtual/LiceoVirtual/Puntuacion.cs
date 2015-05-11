@@ -48,7 +48,9 @@ namespace LiceoVirtual
 
 
 			btnIrTrivia.Click += delegate {
-				Toast.MakeText (this, "IR A TRIVIA", ToastLength.Short).Show();
+				var intent = new Intent (this, typeof(Pregunta));
+				intent.PutExtra ("nivel", nivel);
+				StartActivity (intent);				
 			};
 
 
