@@ -10,7 +10,8 @@
         p1:layout_height="wrap_content"
         p1:id="@+id/tvFecha"
         p1:layout_marginLeft="20dp"
-        p1:textSize="20sp" />
+        p1:textSize="20sp"
+        p1:textColor="#FFFFFF" />
     <TextView
         p1:text="PUNTAJE   "
         p1:layout_width="wrap_content"
@@ -18,5 +19,6 @@
         p1:id="@+id/tvPuntaje"
         p1:layout_alignParentRight="true"
         p1:layout_marginRight="20dp"
-        p1:textSize="20sp" />
+        p1:textSize="20sp"
+        p1:textColor="#FFFFFF" />
 </RelativeLayout>

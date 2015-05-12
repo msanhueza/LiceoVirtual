@@ -20,6 +20,7 @@ namespace LiceoVirtual
 		{
 			base.OnCreate (bundle);
 			SetContentView (Resource.Layout.Nivel);
+			SetTitle (Resource.String.niveles);
 
 			Button btn1 = FindViewById<Button> (Resource.Id.btn1);
 			Button btn2 = FindViewById<Button> (Resource.Id.btn2);
