@@ -99,9 +99,11 @@
     <AndroidResource Include="Resources\layout\RankingPersonalizado.xml" />
     <AndroidResource Include="Resources\layout\Pregunta.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\LogoBlanco.png" />
+    <AndroidResource Include="Resources\anim\animabtn.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\anim\" />
   </ItemGroup>
 </Project>
