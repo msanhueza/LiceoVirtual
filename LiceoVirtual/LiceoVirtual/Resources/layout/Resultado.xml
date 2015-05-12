@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:layout_gravity="center"
+    p1:id="@+id/linearLayout1"
+    p1:background="@drawable/LVBackground">
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="0dp"
+        p1:id="@+id/linearLayout2"
+        p1:layout_weight="1"
+        p1:layout_gravity="center"
+        p1:gravity="center">
+        <TextView
+            p1:text="Haz Terminado La Trivia"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView1"
+            p1:layout_gravity="center"
+            p1:gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="0dp"
+        p1:id="@+id/linearLayout3"
+        p1:layout_weight="1"
+        p1:layout_gravity="center"
+        p1:gravity="center">
+        <TextView
+            p1:text="Tu puntaje es: 345678900"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView2"
+            p1:layout_gravity="center"
+            p1:gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="0dp"
+        p1:id="@+id/linearLayout4"
+        p1:layout_weight="1"
+        p1:layout_gravity="center"
+        p1:gravity="center">
+        <TextView
+            p1:text="Felicitaciones"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView3"
+            p1:layout_gravity="center"
+            p1:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

@@ -16,7 +16,7 @@
         p1:minHeight="25px"
         p1:layout_gravity="center">
         <ImageView
-            p1:src="@drawable/LVWhiteIcon"
+            p1:src="@drawable/LogoBlanco"
             p1:layout_width="match_parent"
             p1:layout_height="0dp"
             p1:id="@+id/imageView1"
