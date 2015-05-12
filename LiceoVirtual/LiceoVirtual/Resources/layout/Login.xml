@@ -9,17 +9,19 @@
     p1:paddingLeft="30dp"
     p1:paddingRight="30dp"
     p1:paddingBottom="20dp"
-    p1:gravity="center">
+    p1:gravity="center"
+    p1:weightSum="4">
     <LinearLayout
         p1:layout_width="match_parent"
         p1:id="@+id/linearLayout2"
         p1:gravity="center"
         p1:orientation="vertical"
-        p1:layout_weight="1">
+        p1:layout_weight="1"
+        p1:layout_height="0dp">
         <ImageView
             p1:id="@+id/imgLogo"
-            p1:layout_width="250px"
-            p1:layout_height="250px"
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
             p1:src="@drawable/logoLogin"
             p1:layout_weight="1" />
     </LinearLayout>
@@ -27,12 +29,14 @@
         p1:layout_width="match_parent"
         p1:id="@+id/linearLayout3"
         p1:orientation="vertical"
-        p1:layout_weight="2">
+        p1:layout_weight="2"
+        p1:layout_height="0dp">
         <LinearLayout
             p1:orientation="vertical"
             p1:minWidth="25px"
             p1:minHeight="25px"
             p1:layout_width="match_parent"
+            p1:layout_height="0dp"
             p1:id="@+id/linearLayout4"
             p1:layout_weight="3">
             <TextView
@@ -75,13 +79,5 @@
                 p1:layout_weight="1"
                 p1:layout_margin="20dp" />
         </LinearLayout>
-        <LinearLayout
-            p1:orientation="vertical"
-            p1:minWidth="25px"
-            p1:minHeight="25px"
-            p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/linearLayout5"
-            p1:layout_weight="1" />
     </LinearLayout>
 </LinearLayout>

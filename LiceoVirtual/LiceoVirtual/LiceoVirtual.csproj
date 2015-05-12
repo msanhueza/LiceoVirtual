@@ -94,6 +94,7 @@
     <AndroidResource Include="Resources\drawable-hdpi\candado.png" />
     <AndroidResource Include="Resources\drawable\LVBlockedButton.xml" />
     <AndroidResource Include="Resources\drawable\LVMenuBtn.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\LVWhiteIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

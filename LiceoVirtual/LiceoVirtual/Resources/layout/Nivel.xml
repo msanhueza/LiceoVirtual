@@ -6,27 +6,35 @@
     p1:id="@+id/linearLayout1"
     p1:background="@drawable/LVBackground">
     <LinearLayout
-        p1:orientation="horizontal"
+        p1:orientation="vertical"
         p1:layout_width="match_parent"
         p1:layout_height="0dp"
         p1:id="@+id/linearLayout2"
         p1:fitsSystemWindows="false"
         p1:layout_weight="1"
         p1:minWidth="25px"
-        p1:minHeight="25px">
+        p1:minHeight="25px"
+        p1:layout_gravity="center">
+        <ImageView
+            p1:src="@drawable/LVWhiteIcon"
+            p1:layout_width="match_parent"
+            p1:layout_height="0dp"
+            p1:id="@+id/imageView1"
+            p1:layout_weight="4" />
         <TextView
             p1:text="www.liceovirtual.utalca.cl"
             p1:textAppearance="?android:attr/textAppearanceMedium"
-            p1:layout_width="0dp"
-            p1:layout_height="match_parent"
+            p1:layout_width="wrap_content"
+            p1:layout_height="0dp"
             p1:id="@+id/textView1"
             p1:textColor="#ffffffff"
             p1:shadowColor="#abbae1e5"
             p1:shadowRadius="3"
             p1:shadowDx="1"
             p1:shadowDy="1"
-            p1:layout_weight="1"
-            p1:gravity="center" />
+            p1:gravity="center"
+            p1:layout_gravity="center"
+            p1:layout_weight="1" />
     </LinearLayout>
     <LinearLayout
         p1:orientation="horizontal"
@@ -53,7 +61,8 @@
                 p1:layout_weight="1"
                 p1:textSize="35sp"
                 p1:background="@drawable/LVButton"
-                p1:layout_margin="1dp" />
+                p1:layout_margin="1dp"
+                p1:textColor="#ffffffff" />
             <Button
                 p1:text="3º"
                 p1:id="@+id/btn3"
@@ -62,7 +71,8 @@
                 p1:layout_weight="1"
                 p1:textSize="35sp"
                 p1:background="@drawable/LVBlockedButton"
-                p1:layout_margin="1dp" />
+                p1:layout_margin="1dp"
+                p1:textColor="#80ffffff" />
         </LinearLayout>
         <LinearLayout
             p1:orientation="vertical"
@@ -80,7 +90,8 @@
                 p1:layout_weight="1"
                 p1:textSize="35sp"
                 p1:background="@drawable/LVButton"
-                p1:layout_margin="1dp" />
+                p1:layout_margin="1dp"
+                p1:textColor="#ffffffff" />
             <Button
                 p1:text="4º"
                 p1:id="@+id/btn4"
@@ -89,7 +100,8 @@
                 p1:layout_weight="1"
                 p1:textSize="35sp"
                 p1:background="@drawable/LVBlockedButton"
-                p1:layout_margin="1dp" />
+                p1:layout_margin="1dp"
+                p1:textColor="#80ffffff" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

@@ -1,9 +1,8 @@
 ﻿<Properties StartupItem="LiceoVirtual/LiceoVirtual.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
   <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="LiceoVirtual/Menu.cs" Line="6" Column="1" />
-      <File FileName="LiceoVirtual/Resources/drawable/LVMenuBtn.xml" Line="21" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -19,11 +19,6 @@
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/layout/login.xml
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/layout/menu.xml
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable-hdpi/error.png
-/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/R.cs.flag
-/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/bin/Debug/LiceoVirtual.LiceoVirtual-Signed.apk
-/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/uploadflags.txt
-/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/LiceoVirtual.dll
-/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/LiceoVirtual.dll.mdb
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable-hdpi/baselogin.png
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable-hdpi/logologin.png
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/layout/nivel.xml
@@ -31,3 +26,14 @@
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/layout/ranking.xml
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/layout/puntuacion.xml
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/layout/puntuacionpersonalizado.xml
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable/lvbackground.xml
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable/lvbutton.xml
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable-hdpi/candado.png
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable/lvblockedbutton.xml
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable/lvmenubtn.xml
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable-hdpi/lvwhiteicon.png
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/R.cs.flag
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/bin/Debug/LiceoVirtual.LiceoVirtual-Signed.apk
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/uploadflags.txt
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/LiceoVirtual.dll
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/LiceoVirtual.dll.mdb

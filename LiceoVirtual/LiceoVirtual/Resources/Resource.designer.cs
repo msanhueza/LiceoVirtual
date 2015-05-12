@@ -72,7 +72,10 @@ namespace LiceoVirtual
 			public const int LVMenuBtn = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int splash = 2130837513;
+			public const int LVWhiteIcon = 2130837513;
+			
+			// aapt resource value: 0x7f02000a
+			public const int splash = 2130837514;
 			
 			static Drawable()
 			{
@@ -102,8 +105,8 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f060013
 			public const int btn4 = 2131099667;
 			
-			// aapt resource value: 0x7f06000f
-			public const int btnCerrarSesion = 2131099663;
+			// aapt resource value: 0x7f06000e
+			public const int btnCerrarSesion = 2131099662;
 			
 			// aapt resource value: 0x7f06001d
 			public const int btnIrTrivia = 2131099677;
@@ -111,11 +114,11 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f06000a
 			public const int btnLogin = 2131099658;
 			
-			// aapt resource value: 0x7f06000e
-			public const int btnRanking = 2131099662;
-			
 			// aapt resource value: 0x7f06000d
-			public const int btnTrivia = 2131099661;
+			public const int btnRanking = 2131099661;
+			
+			// aapt resource value: 0x7f06000c
+			public const int btnTrivia = 2131099660;
 			
 			// aapt resource value: 0x7f060009
 			public const int cbxRecordarContrasena = 2131099657;
@@ -125,6 +128,9 @@ namespace LiceoVirtual
 			
 			// aapt resource value: 0x7f060006
 			public const int edtRut = 2131099654;
+			
+			// aapt resource value: 0x7f06000f
+			public const int imageView1 = 2131099663;
 			
 			// aapt resource value: 0x7f060002
 			public const int imgLogo = 2131099650;
@@ -144,9 +150,6 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f060004
 			public const int linearLayout4 = 2131099652;
 			
-			// aapt resource value: 0x7f06000b
-			public const int linearLayout5 = 2131099659;
-			
 			// aapt resource value: 0x7f06001f
 			public const int listViewPuntuacion = 2131099679;
 			
@@ -162,8 +165,8 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f060023
 			public const int lyRanking2 = 2131099683;
 			
-			// aapt resource value: 0x7f06000c
-			public const int myButton = 2131099660;
+			// aapt resource value: 0x7f06000b
+			public const int myButton = 2131099659;
 			
 			// aapt resource value: 0x7f060016
 			public const int pregunta = 2131099670;
