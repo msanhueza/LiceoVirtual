@@ -64,6 +64,7 @@ public final class R {
         public static final int respuesta=0x7f070017;
         public static final int textView1=0x7f070004;
         public static final int textView2=0x7f070006;
+        public static final int textView3=0x7f070029;
         public static final int tvFecha=0x7f070022;
         public static final int tvNombreRanking=0x7f070027;
         public static final int tvPuntaje=0x7f070023;
@@ -79,6 +80,7 @@ public final class R {
         public static final int puntuacionpersonalizado=0x7f030006;
         public static final int ranking=0x7f030007;
         public static final int rankingpersonalizado=0x7f030008;
+        public static final int resultado=0x7f030009;
     }
     public static final class string {
         public static final int app_name=0x7f050001;
