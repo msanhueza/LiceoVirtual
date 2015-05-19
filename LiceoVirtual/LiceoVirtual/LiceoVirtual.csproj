@@ -101,7 +101,6 @@
     <AndroidResource Include="Resources\drawable-hdpi\LogoBlanco.png" />
     <AndroidResource Include="Resources\anim\animabtn.xml" />
     <AndroidResource Include="Resources\layout\Resultado.xml" />
-    <AndroidResource Include="Resources\layout\ResultadoTrivia.xml" />
     <AndroidResource Include="Resources\layout\MensajeResultado.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\estudiante.png" />
     <AndroidResource Include="Resources\drawable-hdpi\nota.png" />
