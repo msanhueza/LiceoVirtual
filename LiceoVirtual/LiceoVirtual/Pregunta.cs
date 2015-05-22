@@ -41,6 +41,22 @@ namespace LiceoVirtual
 
 			// Create your application here
 		}
+
+		public List<int> getDiezPreguntasAleatorias(int n){
+			List<int> listaTotalPreguntas = new List<int>();
+			int total = n;
+			for(int i=1; i<=total; i++){
+				listaTotalPreguntas.Add (i);
+			}
+			Random r = new Random(DateTime.Now.Millisecond);
+			List<int> listaNumeros = new List<int>();
+			for (int j = 0; j < 10; j++) {
+				int numero = r.Next(0, listaTotalPreguntas.Count());
+				listaNumeros.Add (listaTotalPreguntas[numero]);
+				listaTotalPreguntas.RemoveAt (numero);
+			}
+			return listaNumeros;
+		}
 	}
 }
 

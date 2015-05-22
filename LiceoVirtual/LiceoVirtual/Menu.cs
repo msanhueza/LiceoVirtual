@@ -28,6 +28,7 @@ namespace LiceoVirtual
 			Button btnRanking = FindViewById<Button> (Resource.Id.btnRanking);
 			Button btnCerrarSesion = FindViewById<Button> (Resource.Id.btnCerrarSesion);
 
+			getPreguntasAleatorias (20);
 
 			btnTrivia.Click += delegate {
 				StartActivity (typeof(Nivel));
@@ -52,6 +53,28 @@ namespace LiceoVirtual
 				StartActivity(typeof(Login));
 				Finish(); 
 			};
+		}
+
+		public List<int> getPreguntasAleatorias(int n){
+			List<int> listaTotalPreguntas = new List<int>();
+			int total = n;
+			for(int i=1; i<=total; i++){
+				listaTotalPreguntas.Add (i);
+			}
+			Random r = new Random(DateTime.Now.Millisecond);
+			List<int> listaNumeros = new List<int>();
+			for (int j = 0; j < 10; j++) {
+				int numero = r.Next(0, listaTotalPreguntas.Count());
+				listaNumeros.Add (listaTotalPreguntas[numero]);
+				listaTotalPreguntas.RemoveAt (numero);
+			}
+			for (int x = 0; x < listaNumeros.Count; x++) {
+				Console.WriteLine(listaNumeros[x].ToString());
+			}
+			return listaNumeros;
+
+
+
 		}
 
 		public async Task cargarBD(){
