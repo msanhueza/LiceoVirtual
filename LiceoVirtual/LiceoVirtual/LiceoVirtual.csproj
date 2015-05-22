@@ -68,6 +68,8 @@
     <Compile Include="CargarBaseDeDatos.cs" />
     <Compile Include="TablasAcciones\PuntuacionAccion.cs" />
     <Compile Include="TablasAcciones\NivelDesbloqueadoAccion.cs" />
+    <Compile Include="TablasBD\PreguntaBD.cs" />
+    <Compile Include="TablasBD\PreguntaSolucionBD.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
