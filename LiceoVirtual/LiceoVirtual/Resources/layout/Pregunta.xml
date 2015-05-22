@@ -89,7 +89,7 @@
             p1:text="Siguiente"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/button1"
+            p1:id="@+id/btnPreguntaSiguiente"
             p1:layout_weight="1" />
     </LinearLayout>
 </LinearLayout>

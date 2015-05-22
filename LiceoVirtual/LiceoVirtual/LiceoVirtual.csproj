@@ -55,13 +55,19 @@
     <Compile Include="SQLite.cs" />
     <Compile Include="Menu.cs">
     </Compile>
-    <Compile Include="PuntuacionBD.cs" />
     <Compile Include="PuntuacionAdapter.cs" />
-    <Compile Include="PuntuacionItem.cs" />
     <Compile Include="RankingAdapter.cs" />
-    <Compile Include="RankingItem.cs" />
     <Compile Include="Ranking.cs" />
     <Compile Include="Pregunta.cs" />
+    <Compile Include="MensajeResultado.cs" />
+    <Compile Include="TablasBD\NivelDesbloqueadoBD.cs" />
+    <Compile Include="TablasBD\PuntuacionBD.cs" />
+    <Compile Include="TablasItem\RankingItem.cs" />
+    <Compile Include="TablasItem\PuntuacionItem.cs" />
+    <Compile Include="TablasItem\NivelDesbloqueadoItem.cs" />
+    <Compile Include="CargarBaseDeDatos.cs" />
+    <Compile Include="TablasAcciones\PuntuacionAccion.cs" />
+    <Compile Include="TablasAcciones\NivelDesbloqueadoAccion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -109,5 +115,8 @@
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
     <Folder Include="Resources\anim\" />
+    <Folder Include="TablasBD\" />
+    <Folder Include="TablasItem\" />
+    <Folder Include="TablasAcciones\" />
   </ItemGroup>
 </Project>

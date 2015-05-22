@@ -10,6 +10,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Telephony.Gsm;
+using System.Threading.Tasks;
 
 namespace LiceoVirtual
 {
@@ -35,6 +37,8 @@ namespace LiceoVirtual
 				StartActivity (typeof(Ranking));
 			};
 
+			cargarBD();
+
 			btnCerrarSesion.Click += delegate {
 				
 				ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
@@ -42,11 +46,27 @@ namespace LiceoVirtual
 				editor.PutString ("idUsuario", String.Empty);
 				editor.PutString ("nombre", String.Empty);
 				editor.PutBoolean ("guardar", false);
+				//editor.PutBoolean ("estaCargadaBD", false);
 				editor.Apply ();
 
 				StartActivity(typeof(Login));
 				Finish(); 
 			};
+		}
+
+		public async Task cargarBD(){
+
+			ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
+			bool estaCargadaBD = pref.GetBoolean ("estaCargadaBD", false);
+
+			if (!estaCargadaBD) {
+				CargarBaseDeDatos c = new CargarBaseDeDatos ();
+
+				ISharedPreferencesEditor editor = pref.Edit ();
+				editor.PutBoolean ("estaCargadaBD", true);
+				editor.Apply ();
+			}
+
 		}
 		/* con licencia se puede hacer de esta forma los listener de los botones
 		[Java.Interop.Export("onClickTrivia")] // The value found in android:onClick attribute.

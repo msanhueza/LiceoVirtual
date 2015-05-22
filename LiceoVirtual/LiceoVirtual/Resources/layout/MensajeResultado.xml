@@ -59,7 +59,7 @@
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
         p1:id="@+id/linearLayout6"
-        p1:padding="20dp">
+        p1:padding="10dp">
         <Button
             p1:text="Aceptar"
             p1:layout_width="match_parent"

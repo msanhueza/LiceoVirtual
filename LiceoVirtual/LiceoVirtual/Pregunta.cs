@@ -33,6 +33,12 @@ namespace LiceoVirtual
 				SetTitle (Resource.String.preguntas_n4);
 			}
 
+			Button btnPreguntaSiguiente = FindViewById<Button> (Resource.Id.btnPreguntaSiguiente);
+
+			btnPreguntaSiguiente.Click += delegate {
+				StartActivity (typeof(MensajeResultado));
+			};
+
 			// Create your application here
 		}
 	}

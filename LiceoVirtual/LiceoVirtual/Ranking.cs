@@ -26,7 +26,6 @@ namespace LiceoVirtual
 
 		ListView listView;
 		List<RankingItem> listaRanking = new List<RankingItem>();
-		ProgressDialog progressDialog;
 
 
 		protected override void OnCreate (Bundle bundle)
@@ -36,7 +35,6 @@ namespace LiceoVirtual
 			SetTitle (Resource.String.ranking_estudiantes);
 
 			string ruta = "http://tenis6ta.url.ph/modelo/listar_ranking.php";
-			//FetchWeatherAsync (ruta);
 
 			listView = FindViewById<ListView>(Resource.Id.listViewRanking);
 			GetRanking (ruta);

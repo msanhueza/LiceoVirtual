@@ -1,16 +1,11 @@
 ﻿<Properties StartupItem="LiceoVirtual\LiceoVirtual.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SSG" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual\Puntuacion.cs">
-    <Files>
-      <File FileName="LiceoVirtual\Resources\drawable\LVMenuBtn.xml" Line="1" Column="1" />
-      <File FileName="LiceoVirtual\Login.cs" Line="1" Column="1" />
-      <File FileName="LiceoVirtual\Menu.cs" Line="43" Column="47" />
-      <File FileName="LiceoVirtual\Puntuacion.cs" Line="46" Column="15" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\Ranking.cs" line="40" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.LiceoVirtual AndroidDesignerPreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.ItemProperties.LiceoVirtual AndroidDesignerPreferredDevice="Nexus 4" AndroidDesignerPreferredTheme="Theme.Holo.Light" />
 </Properties>
