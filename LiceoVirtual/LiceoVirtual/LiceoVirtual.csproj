@@ -73,7 +73,7 @@
     <Compile Include="TablasAcciones\PreguntaSolucionAccion.cs" />
     <Compile Include="TablasItem\PreguntaItem.cs" />
     <Compile Include="TablasItem\PreguntaSolucionItem.cs" />
-    <Compile Include="TablasAcciones\PreguntasAccion.cs" />
+    <Compile Include="TablasAcciones\PreguntaAccion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

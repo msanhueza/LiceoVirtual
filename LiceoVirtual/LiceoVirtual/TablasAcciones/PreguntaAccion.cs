@@ -4,13 +4,13 @@ using System.Threading.Tasks;
 using System;
 using System.Collections.Generic;
 
-public class PreguntasAccion
+public class PreguntaAccion
 {
 
 	string docsFolder;
 	string pathToDatabase;
 
-	public PreguntasAccion(){
+	public PreguntaAccion(){
 		docsFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
 		pathToDatabase = System.IO.Path.Combine(docsFolder, "liceo_virtual.db");
 	}
