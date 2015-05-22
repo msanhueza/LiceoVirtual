@@ -4,18 +4,18 @@ using System.Threading.Tasks;
 using System;
 using System.Collections.Generic;
 
-public class PreguntaAccion
+public class PreguntasAccion
 {
 
 	string docsFolder;
 	string pathToDatabase;
 
-	public PreguntaAccion(){
+	public PreguntasAccion(){
 		docsFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
 		pathToDatabase = System.IO.Path.Combine(docsFolder, "liceo_virtual.db");
 	}
 
-	public string insertUpdateData(PreguntaSolucionBD data)
+	public string insertUpdateData(PreguntaBD data)
 	{
 		try
 		{
@@ -30,24 +30,22 @@ public class PreguntaAccion
 		}
 	}
 
-	public List<PreguntaSolucionItem> getPreguntasSolucionBD(int idPregunta)
+	public List<PreguntaItem> getPreguntasBD(string nivel)
 	{
 		try
 		{
 			var db = new SQLiteConnection(pathToDatabase);
-			var lista = db.Query<PreguntaSolucionBD>("SELECT * FROM PreguntaSolucionBD " +
-				"WHERE idPregunta=" + idPregunta);
-			List<PreguntaSolucionItem> listaPreguntasSolucion = new List<PreguntaSolucionItem>();
+			var lista = db.Query<PreguntaBD>("SELECT * FROM PreguntaBD " +
+				"WHERE nivel=" + nivel);
+			List<PreguntaItem> listaPreguntas = new List<PreguntaItem>();
 			for(int i=0; i<lista.Count; i++){
 				var ID = lista[i].ID;
-				var iDPregunta = lista[i].idPregunta;
-				var solucion = lista[i].solucion;
-				var imagen = lista[i].imagen;
-				var esSolucion = lista[i].esSolucion;
-				PreguntaSolucionItem p = new PreguntaSolucionItem(ID, iDPregunta, solucion, imagen, esSolucion);
-				listaPreguntasSolucion.Add(p);
+				var pregunta = lista[i].pregunta;
+				var nivelPregunta = lista[i].nivel;
+				PreguntaItem p = new PreguntaItem(ID, pregunta, nivelPregunta);
+				listaPreguntas.Add(p);
 			}
-			return listaPreguntasSolucion;
+			return listaPreguntas;
 		}
 		catch (SQLiteException)
 		{
@@ -61,7 +59,7 @@ public class PreguntaAccion
 		{
 			var db = new SQLiteConnection(pathToDatabase);
 			// this counts all records in the database, it can be slow depending on the size of the database
-			var count = db.ExecuteScalar<int>("SELECT Count(*) FROM PreguntaSolucionBD");
+			var count = db.ExecuteScalar<int>("SELECT Count(*) FROM PreguntaBD");
 
 			// for a non-parameterless query
 			// var count = db.ExecuteScalar<int>("SELECT Count(*) FROM Person WHERE FirstName="Amy");
