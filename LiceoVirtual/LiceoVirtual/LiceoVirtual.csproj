@@ -70,6 +70,9 @@
     <Compile Include="TablasAcciones\NivelDesbloqueadoAccion.cs" />
     <Compile Include="TablasBD\PreguntaBD.cs" />
     <Compile Include="TablasBD\PreguntaSolucionBD.cs" />
+    <Compile Include="TablasAcciones\PreguntaSolucionAccion.cs" />
+    <Compile Include="TablasItem\PreguntaItem.cs" />
+    <Compile Include="TablasItem\PreguntaSolucionItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

@@ -9,3 +9,4 @@ RankingAdapter;RankingAdapter
 LiceoVirtual.Ranking;liceovirtual.Ranking
 LiceoVirtual.Pregunta;liceovirtual.Pregunta
 LiceoVirtual.MensajeResultado;liceovirtual.MensajeResultado
+LiceoVirtual.PreguntaSolucionAccion;liceovirtual.PreguntaSolucionAccion
