@@ -39,7 +39,7 @@ namespace LiceoVirtual
 				StartActivity (typeof(MensajeResultado));
 			};
 
-			/*List<ListadoPreguntaSolucionItem> aux = getListadoPreguntaSolucion (1);
+			List<ListadoPreguntaSolucionItem> aux = getListadoPreguntaSolucion (1);
 			for (int i = 0; i < aux.Count; i++) {
 				Console.WriteLine ("");
 				Console.WriteLine (aux[i].objPregunta.pregunta);
@@ -48,7 +48,7 @@ namespace LiceoVirtual
 					Console.WriteLine (lista[j].solucion + " " + lista[j].esSolucion);
 				}
 				Console.WriteLine ("");
-			}*/
+			}
 
 		}
 
@@ -79,12 +79,27 @@ namespace LiceoVirtual
 			for (int i = 0; i < totalNumeros; i++) {
 				int idBD = numeros [i]-1; // -1 porque los idBD comienzan del 1 en adelante
 				PreguntaItem pregunta = listaPreguntas [idBD];
-				List<PreguntaSolucionItem> listaPreguntaSolucion = ps.getPreguntasSolucionBD (pregunta.ID);
+				List<PreguntaSolucionItem> listaPreguntaSolucion = Shuffle(ps.getPreguntasSolucionBD (pregunta.ID));
 				ListadoPreguntaSolucionItem item = new ListadoPreguntaSolucionItem (pregunta, listaPreguntaSolucion);
 				resultado.Add (item);
 			}
 			return resultado;
 		}
+
+		public List<T> Shuffle<T>(List<T> list)
+		{
+			List<T> randomizedList = new List<T>();
+			Random rnd = new Random(DateTime.Now.Millisecond);
+			while (list.Count > 0)
+			{
+				int index = rnd.Next(0, list.Count);
+				randomizedList.Add(list[index]);
+				list.RemoveAt(index);
+			}
+			return randomizedList;
+		}
+
+
 	}
 }
 
