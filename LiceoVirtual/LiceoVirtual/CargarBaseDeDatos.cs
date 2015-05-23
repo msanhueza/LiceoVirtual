@@ -21,6 +21,8 @@ public class CargarBaseDeDatos
 		crearBaseDatos ();
 		cargarNivelDesbloqueadoBD ();
 		cargarPuntuacionBD ();
+		cargarPreguntaBD ();
+		cargarPreguntaSolucionBD ();
 	}
 
 	private string crearBaseDatos()
@@ -84,7 +86,7 @@ public class CargarBaseDeDatos
 	private void cargarPreguntaSolucionBD(){	
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="Solucion a", imagen="imagen", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="Solucion b", imagen="imagen", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="Solucion v", imagen="imagen", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="Solucion c", imagen="imagen", esSolucion=false});
 
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=2, solucion="Solucion a", imagen="imagen", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=2, solucion="Solucion b", imagen="imagen", esSolucion=true});

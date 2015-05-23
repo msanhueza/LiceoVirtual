@@ -30,7 +30,7 @@ public class PreguntaAccion
 		}
 	}
 
-	public List<PreguntaItem> getPreguntasBD(string nivel)
+	public List<PreguntaItem> getPreguntasBD(int nivel)
 	{
 		try
 		{

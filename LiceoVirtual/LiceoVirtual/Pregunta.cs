@@ -39,7 +39,17 @@ namespace LiceoVirtual
 				StartActivity (typeof(MensajeResultado));
 			};
 
-			// Create your application here
+			/*List<ListadoPreguntaSolucionItem> aux = getListadoPreguntaSolucion (1);
+			for (int i = 0; i < aux.Count; i++) {
+				Console.WriteLine ("");
+				Console.WriteLine (aux[i].objPregunta.pregunta);
+				List<PreguntaSolucionItem> lista = aux[i].objListaRespuestas;
+				for (int j = 0; j < lista.Count; j++) {
+					Console.WriteLine (lista[j].solucion + " " + lista[j].esSolucion);
+				}
+				Console.WriteLine ("");
+			}*/
+
 		}
 
 		public List<int> getDiezPreguntasAleatorias(int n){
@@ -56,6 +66,24 @@ namespace LiceoVirtual
 				listaTotalPreguntas.RemoveAt (numero);
 			}
 			return listaNumeros;
+		}
+
+		public List<ListadoPreguntaSolucionItem> getListadoPreguntaSolucion(int nivel){
+			PreguntaAccion p = new PreguntaAccion ();
+			PreguntaSolucionAccion ps = new PreguntaSolucionAccion ();
+			List<PreguntaItem> listaPreguntas = p.getPreguntasBD (nivel);
+			int totalPreguntas = listaPreguntas.Count;
+			List<int> numeros = getDiezPreguntasAleatorias (totalPreguntas);
+			int totalNumeros = numeros.Count;
+			List<ListadoPreguntaSolucionItem> resultado = new List<ListadoPreguntaSolucionItem> ();
+			for (int i = 0; i < totalNumeros; i++) {
+				int idBD = numeros [i]-1; // -1 porque los idBD comienzan del 1 en adelante
+				PreguntaItem pregunta = listaPreguntas [idBD];
+				List<PreguntaSolucionItem> listaPreguntaSolucion = ps.getPreguntasSolucionBD (pregunta.ID);
+				ListadoPreguntaSolucionItem item = new ListadoPreguntaSolucionItem (pregunta, listaPreguntaSolucion);
+				resultado.Add (item);
+			}
+			return resultado;
 		}
 	}
 }
