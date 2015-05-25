@@ -16,6 +16,9 @@ namespace LiceoVirtual
 	[Activity (Label = "Pregunta")]			
 	public class Pregunta : Activity
 	{
+
+		public static int numPregunta;
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -34,12 +37,60 @@ namespace LiceoVirtual
 			}
 
 			Button btnPreguntaSiguiente = FindViewById<Button> (Resource.Id.btnPreguntaSiguiente);
+			ProgressBar pbPregunta = FindViewById<ProgressBar> (Resource.Id.pbPregunta);
+			TextView tvPregunta = FindViewById<TextView> (Resource.Id.tvPregunta);
+			TextView tvProgreso = FindViewById<TextView> (Resource.Id.tvProgreso);
+			RadioButton radioOp1 = FindViewById<RadioButton> (Resource.Id.rbOp1);
+			RadioButton radioOp2 = FindViewById<RadioButton> (Resource.Id.rbOp2);
+			RadioButton radioOp3 = FindViewById<RadioButton> (Resource.Id.rbOp3);
 
-			btnPreguntaSiguiente.Click += delegate {
-				StartActivity (typeof(MensajeResultado));
-			};
+			int progreso = 10;
+			pbPregunta.Progress = progreso;
+			numPregunta = 0;
+			tvProgreso.Text = (numPregunta + 1) + " / 10";
 
 			List<ListadoPreguntaSolucionItem> aux = getListadoPreguntaSolucion (1);
+
+			ListadoPreguntaSolucionItem p = aux[numPregunta];
+			string textPregunta = p.objPregunta.pregunta;
+			string opcion1 = p.objListaRespuestas[0].solucion;
+			string opcion2 = p.objListaRespuestas[1].solucion;
+			string opcion3 = p.objListaRespuestas[2].solucion;
+			tvPregunta.Text = textPregunta;
+			radioOp1.Text = opcion1;
+			radioOp2.Text = opcion2;
+			radioOp3.Text = opcion3;
+
+			btnPreguntaSiguiente.Click += delegate {
+
+				if(numPregunta == 9){
+					StartActivity (typeof(MensajeResultado));
+				}
+				else{
+					numPregunta++;
+					progreso = progreso + 10;
+					pbPregunta.Progress = progreso;
+					tvProgreso.Text = (numPregunta + 1) + " / 10";
+					p = aux[numPregunta];
+					textPregunta = p.objPregunta.pregunta;
+					opcion1 = p.objListaRespuestas[0].solucion;
+					opcion2 = p.objListaRespuestas[1].solucion;
+					opcion3 = p.objListaRespuestas[2].solucion;
+					tvPregunta.Text = textPregunta;
+					radioOp1.Text = opcion1;
+					radioOp2.Text = opcion2;
+					radioOp3.Text = opcion3;
+					if(numPregunta == 9){
+						btnPreguntaSiguiente.Text = "Terminar";
+					}
+
+
+
+
+				}
+			};
+				
+			/*List<ListadoPreguntaSolucionItem> aux = getListadoPreguntaSolucion (1);
 			for (int i = 0; i < aux.Count; i++) {
 				Console.WriteLine ("");
 				Console.WriteLine (aux[i].objPregunta.pregunta);
@@ -48,7 +99,7 @@ namespace LiceoVirtual
 					Console.WriteLine (lista[j].solucion + " " + lista[j].esSolucion);
 				}
 				Console.WriteLine ("");
-			}
+			}*/
 
 		}
 
