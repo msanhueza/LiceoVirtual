@@ -150,6 +150,27 @@ namespace LiceoVirtual
 			return randomizedList;
 		}
 
+		public override void OnBackPressed ()
+		{
+			AlertDialog.Builder alert = new AlertDialog.Builder (this);
+			alert.SetCancelable(false);
+
+			alert.SetTitle ("Advertencia");
+			alert.SetMessage ("Si desea salir de la trivia no quedará registrado su progreso, debe terminarla para guardar su puntaje. ¿Desea salir de todas formas?");
+
+			alert.SetPositiveButton ("Si", (senderAlert, args) => {
+				base.OnBackPressed ();
+			} );
+
+			alert.SetNegativeButton ("No", (senderAlert, args) => {
+				
+			} );
+			//run the alert in UI thread to display in the screen
+			RunOnUiThread (() => {
+				alert.Show();
+			} );
+		}
+
 
 	}
 }
