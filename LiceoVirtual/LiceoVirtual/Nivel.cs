@@ -49,7 +49,7 @@ namespace LiceoVirtual
 						if(item.desbloqueado == true){
 							var intent = new Intent (this, typeof(Puntuacion));
 							intent.PutExtra ("nivel", "2");
-							StartActivity (intent);							
+							StartActivity (intent);
 						}
 						else{
 							Toast.MakeText (this, "Debes desbloquear el NIVEL 1", ToastLength.Short).Show();

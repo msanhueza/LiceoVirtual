@@ -49,15 +49,16 @@ namespace LiceoVirtual
 
 			Button btnIrTrivia = FindViewById<Button> (Resource.Id.btnIrTrivia);
 
-
 			btnIrTrivia.Click += delegate {
 				var intent = new Intent (this, typeof(Pregunta));
 				intent.PutExtra ("nivel", nivel);
-				StartActivity (intent);				
+				StartActivity (intent);		
+				Finish ();
 			};
 
 
 		}
+			
 
 	}
 

@@ -18,13 +18,14 @@ namespace LiceoVirtual
 	{
 
 		public static int numPregunta;
+		public static string nivel;
 
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 			SetContentView (Resource.Layout.Pregunta);
 
-			string nivel = Intent.GetStringExtra ("nivel") ?? "0";
+			nivel = Intent.GetStringExtra ("nivel") ?? "0";
 
 			if (nivel.Equals ("1")) {
 				SetTitle (Resource.String.preguntas_n1);
@@ -64,7 +65,10 @@ namespace LiceoVirtual
 			btnPreguntaSiguiente.Click += delegate {
 
 				if(numPregunta == 9){
-					StartActivity (typeof(MensajeResultado));
+					var intent = new Intent (this, typeof(MensajeResultado));
+					intent.PutExtra ("nivel", nivel);
+					StartActivity (intent);
+					Finish ();
 				}
 				else{
 					numPregunta++;
@@ -159,7 +163,11 @@ namespace LiceoVirtual
 			alert.SetMessage ("Si desea salir de la trivia no quedará registrado su progreso, debe terminarla para guardar su puntaje. ¿Desea salir de todas formas?");
 
 			alert.SetPositiveButton ("Si", (senderAlert, args) => {
-				base.OnBackPressed ();
+				//base.OnBackPressed ();
+				var intent = new Intent (this, typeof(Puntuacion));
+				intent.PutExtra ("nivel", nivel);
+				StartActivity (intent);
+				Finish ();
 			} );
 
 			alert.SetNegativeButton ("No", (senderAlert, args) => {
