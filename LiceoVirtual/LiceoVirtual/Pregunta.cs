@@ -147,7 +147,10 @@ namespace LiceoVirtual
 			Random rnd = new Random(DateTime.Now.Millisecond);
 			while (list.Count > 0)
 			{
-				int index = rnd.Next(0, list.Count);
+				int index = 1;
+				for (int i = 0; i < 2; i++) {
+					index = rnd.Next(0, list.Count);
+				}
 				randomizedList.Add(list[index]);
 				list.RemoveAt(index);
 			}

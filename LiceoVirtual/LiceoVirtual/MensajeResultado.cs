@@ -49,14 +49,23 @@ namespace LiceoVirtual
 			Button btnAceptarTerminoTrivia = FindViewById<Button> (Resource.Id.btnAceptarTerminoTrivia);
 
 			btnAceptarTerminoTrivia.Click += delegate {
-				var intent = new Intent (this, typeof(Puntuacion));
-				intent.PutExtra ("nivel", nivel);
-				StartActivity (intent);
-				//base.OnBackPressed();
-				Finish ();
+				terminarActivity();
 			};
 
 			// Create your application here
+		}
+
+		public override void OnBackPressed ()
+		{
+			terminarActivity ();
+		}
+
+		public void terminarActivity(){
+			var intent = new Intent (this, typeof(Puntuacion));
+			intent.PutExtra ("nivel", nivel);
+			StartActivity (intent);
+			//base.OnBackPressed();
+			Finish ();
 		}
 	}
 }
