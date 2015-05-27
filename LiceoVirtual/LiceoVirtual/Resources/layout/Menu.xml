@@ -49,7 +49,7 @@
                 p1:layout_marginTop="50sp"
                 p1:layout_marginBottom="50sp" />
             <Button
-                p1:text="Ranking"
+                p1:text="Historial de Resultados"
                 p1:id="@+id/btnRanking"
                 p1:background="@drawable/LVMenuBtn"
                 p1:layout_width="0dp"

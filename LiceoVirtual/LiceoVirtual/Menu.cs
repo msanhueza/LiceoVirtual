@@ -28,15 +28,17 @@ namespace LiceoVirtual
 			Button btnTrivia = FindViewById<Button> (Resource.Id.btnTrivia);
 			Button btnRanking = FindViewById<Button> (Resource.Id.btnRanking);
 
-			ActionBar.SetHomeButtonEnabled(true);
-			ActionBar.SetDisplayHomeAsUpEnabled(true);
+			//ActionBar.SetHomeButtonEnabled(true);
+			//ActionBar.SetDisplayHomeAsUpEnabled(true);
 
 			btnTrivia.Click += delegate {
 				StartActivity (typeof(Nivel));
 			};
 
 			btnRanking.Click += delegate {
-				StartActivity (typeof(Ranking));
+				var intent = new Intent (this, typeof(Puntuacion));
+				intent.PutExtra ("nivel", "1");
+				StartActivity (intent);
 			};				
 
 			cargarBD ();
@@ -87,9 +89,9 @@ namespace LiceoVirtual
 				Finish(); 
 				return true;
 
-			case Android.Resource.Id.Home:
+			/*case Android.Resource.Id.Home:
 				Finish();
-				return true;
+				return true;*/
 				
 			}
 			return base.OnOptionsItemSelected(item);

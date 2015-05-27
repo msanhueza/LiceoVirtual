@@ -27,7 +27,7 @@ namespace LiceoVirtual
 
 			nivel = Intent.GetStringExtra ("nivel") ?? "0";
 
-			string baseTexto = "¡FELICITACIONES!, HAZ COMPLETADO LA TRIVIA DE ";
+			string baseTexto = "¡FELICITACIONES!, HAS COMPLETADO LA TRIVIA DE ";
 			string primero = "PRIMERO MEDIO";
 			string segundo = "SEGUNDO MEDIO";
 			string tercero = "TERCERO MEDIO";
@@ -61,10 +61,8 @@ namespace LiceoVirtual
 		}
 
 		public void terminarActivity(){
-			var intent = new Intent (this, typeof(Puntuacion));
-			intent.PutExtra ("nivel", nivel);
-			StartActivity (intent);
-			//base.OnBackPressed();
+			//StartActivity (typeof(Nivel));
+			base.OnBackPressed();
 			Finish ();
 		}
 	}

@@ -37,7 +37,7 @@ namespace LiceoVirtual
 				if (item.nivel == 1) {
 					btn1.SetBackgroundResource (Resource.Drawable.LVButton);
 					btn1.Click += delegate {
-						var intent = new Intent (this, typeof(Puntuacion));
+						var intent = new Intent (this, typeof(Pregunta));
 						intent.PutExtra ("nivel", "1");
 						StartActivity (intent);
 					};
@@ -50,7 +50,7 @@ namespace LiceoVirtual
 					}
 					btn2.Click += delegate {
 						if(item.desbloqueado == true){
-							var intent = new Intent (this, typeof(Puntuacion));
+							var intent = new Intent (this, typeof(Pregunta));
 							intent.PutExtra ("nivel", "2");
 							StartActivity (intent);
 						}
@@ -67,7 +67,7 @@ namespace LiceoVirtual
 					}
 					btn3.Click += delegate {
 						if(item.desbloqueado == true){
-							var intent = new Intent (this, typeof(Puntuacion));
+							var intent = new Intent (this, typeof(Pregunta));
 							intent.PutExtra ("nivel", "3");
 							StartActivity (intent);							
 						}
@@ -84,7 +84,7 @@ namespace LiceoVirtual
 					}
 					btn4.Click += delegate {
 						if(item.desbloqueado == true){
-							var intent = new Intent (this, typeof(Puntuacion));
+							var intent = new Intent (this, typeof(Pregunta));
 							intent.PutExtra ("nivel", "4");
 							StartActivity (intent);							
 						}

@@ -168,10 +168,10 @@ namespace LiceoVirtual
 			alert.SetMessage ("Si desea salir de la trivia no quedará registrado su progreso, debe terminarla para guardar su puntaje. ¿Desea salir de todas formas?");
 
 			alert.SetPositiveButton ("Si", (senderAlert, args) => {
-				//base.OnBackPressed ();
-				var intent = new Intent (this, typeof(Puntuacion));
-				intent.PutExtra ("nivel", nivel);
-				StartActivity (intent);
+				base.OnBackPressed ();
+				//var intent = new Intent (this, typeof(Puntuacion));
+				//intent.PutExtra ("nivel", nivel);
+				//StartActivity (typeof(Nivel));
 				Finish ();
 			} );
 
