@@ -42,14 +42,14 @@ public class CargarBaseDeDatos
 		}
 	}
 
-	private async void cargarNivelDesbloqueadoBD(){	
+	private void cargarNivelDesbloqueadoBD(){	
 		nivelDesbloqueadoAccion.insertUpdateData(new NivelDesbloqueadoBD{ nivel= 1, desbloqueado=false });
 		nivelDesbloqueadoAccion.insertUpdateData(new NivelDesbloqueadoBD{ nivel= 2, desbloqueado=false });
 		nivelDesbloqueadoAccion.insertUpdateData(new NivelDesbloqueadoBD{ nivel= 3, desbloqueado=false });
 		nivelDesbloqueadoAccion.insertUpdateData(new NivelDesbloqueadoBD{ nivel= 4, desbloqueado=false });
 	}
 
-	private async void cargarPuntuacionBD(){
+	private void cargarPuntuacionBD(){
 		DateTime date = DateTime.Now;
 		string auxDate = String.Format("{0:dd/MM/yyyy}", date);		
 		puntuacionAccion.insertUpdateData(new PuntuacionBD{ IdUsuario= 1, nivel= 1, fecha= auxDate, puntaje=40 });
@@ -59,7 +59,7 @@ public class CargarBaseDeDatos
 		puntuacionAccion.insertUpdateData(new PuntuacionBD{ IdUsuario= 1, nivel= 1, fecha= auxDate, puntaje=90 });
 	}
 
-	private async void cargarPreguntaBD(){	
+	private void cargarPreguntaBD(){	
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", nivel=1});
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", nivel=1});
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", nivel=1});
@@ -109,7 +109,7 @@ public class CargarBaseDeDatos
 
 	}
 
-	private async void cargarPreguntaSolucionBD(){	
+	private void cargarPreguntaSolucionBD(){	
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="un centríolo.", imagen="imagen", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="una mitocondria.", imagen="imagen", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="un retículo endoplasmico rugoso.", imagen="imagen", esSolucion=true});

@@ -27,7 +27,6 @@ namespace LiceoVirtual
 
 			Button btnTrivia = FindViewById<Button> (Resource.Id.btnTrivia);
 			Button btnRanking = FindViewById<Button> (Resource.Id.btnRanking);
-			Button btnCerrarSesion = FindViewById<Button> (Resource.Id.btnCerrarSesion);
 
 			btnTrivia.Click += delegate {
 				StartActivity (typeof(Nivel));
@@ -35,22 +34,7 @@ namespace LiceoVirtual
 
 			btnRanking.Click += delegate {
 				StartActivity (typeof(Ranking));
-			};
-
-			btnCerrarSesion.Click += delegate {
-				
-				ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
-				ISharedPreferencesEditor editor = pref.Edit ();
-				editor.PutString ("idUsuario", String.Empty);
-				editor.PutString ("nombre", String.Empty);
-				editor.PutBoolean ("guardar", false);
-				//editor.PutBoolean ("estaCargadaBD", false);
-				editor.Apply ();
-
-				StartActivity(typeof(Login));
-				Finish(); 
-			};
-				
+			};				
 
 			cargarBD ();
 
@@ -76,6 +60,33 @@ namespace LiceoVirtual
 			intent.PutExtra ("nombre", "Mario Sanhueza");
 			StartActivity (intent); 	
 		}*/
+
+		public override bool OnCreateOptionsMenu(IMenu menu)
+		{
+			MenuInflater.Inflate(Resource.Menu.actionbar_main, menu);
+			return base.OnCreateOptionsMenu(menu);
+		}
+
+		public override bool OnOptionsItemSelected(IMenuItem item)
+		{
+			switch (item.ItemId)
+			{
+			case Resource.Id.cerrarSesion:
+				ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
+				ISharedPreferencesEditor editor = pref.Edit ();
+				editor.PutString ("idUsuario", String.Empty);
+				editor.PutString ("nombre", String.Empty);
+				editor.PutBoolean ("guardar", false);
+				//editor.PutBoolean ("estaCargadaBD", false);
+				editor.Apply ();
+
+				StartActivity(typeof(Login));
+				Finish(); 
+				return true;
+			}
+			return base.OnOptionsItemSelected(item);
+		}
+
 	}
 }
 

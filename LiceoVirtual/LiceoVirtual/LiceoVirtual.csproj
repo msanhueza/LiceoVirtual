@@ -117,6 +117,11 @@
     <AndroidResource Include="Resources\layout\MensajeResultado.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\estudiante.png" />
     <AndroidResource Include="Resources\drawable-hdpi\nota.png" />
+    <AndroidResource Include="Resources\Menu\actionbar_main.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_overflow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -125,5 +130,6 @@
     <Folder Include="TablasBD\" />
     <Folder Include="TablasItem\" />
     <Folder Include="TablasAcciones\" />
+    <Folder Include="Resources\Menu\" />
   </ItemGroup>
 </Project>
