@@ -23,6 +23,9 @@ namespace LiceoVirtual
 			SetContentView (Resource.Layout.Nivel);
 			SetTitle (Resource.String.niveles);
 
+			ActionBar.SetHomeButtonEnabled(true);
+			ActionBar.SetDisplayHomeAsUpEnabled(true);
+
 			Button btn1 = FindViewById<Button> (Resource.Id.btn1);
 			Button btn2 = FindViewById<Button> (Resource.Id.btn2);
 			Button btn3 = FindViewById<Button> (Resource.Id.btn3);
@@ -93,6 +96,31 @@ namespace LiceoVirtual
 			}
 
 			// Create your application here
+		}
+
+		public override bool OnOptionsItemSelected(IMenuItem item)
+		{
+			switch (item.ItemId)
+			{
+			case Resource.Id.cerrarSesion:
+				ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
+				ISharedPreferencesEditor editor = pref.Edit ();
+				editor.PutString ("idUsuario", String.Empty);
+				editor.PutString ("nombre", String.Empty);
+				editor.PutBoolean ("guardar", false);
+				//editor.PutBoolean ("estaCargadaBD", false);
+				editor.Apply ();
+
+				StartActivity(typeof(Login));
+				Finish(); 
+				return true;
+
+			case Android.Resource.Id.Home:
+				Finish();
+				return true;
+
+			}
+			return base.OnOptionsItemSelected(item);
 		}
 
 

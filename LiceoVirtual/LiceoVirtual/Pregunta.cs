@@ -25,6 +25,9 @@ namespace LiceoVirtual
 			base.OnCreate (bundle);
 			SetContentView (Resource.Layout.Pregunta);
 
+			ActionBar.SetHomeButtonEnabled(true);
+			ActionBar.SetDisplayHomeAsUpEnabled(true);
+
 			nivel = Intent.GetStringExtra ("nivel") ?? "0";
 
 			if (nivel.Equals ("1")) {
@@ -157,8 +160,7 @@ namespace LiceoVirtual
 			return randomizedList;
 		}
 
-		public override void OnBackPressed ()
-		{
+		public void mostrarMensajeAlerta(){
 			AlertDialog.Builder alert = new AlertDialog.Builder (this);
 			alert.SetCancelable(false);
 
@@ -174,12 +176,43 @@ namespace LiceoVirtual
 			} );
 
 			alert.SetNegativeButton ("No", (senderAlert, args) => {
-				
+
 			} );
 			//run the alert in UI thread to display in the screen
 			RunOnUiThread (() => {
 				alert.Show();
 			} );
+		}
+
+		public override void OnBackPressed ()
+		{
+			mostrarMensajeAlerta ();
+		}
+
+		public override bool OnOptionsItemSelected(IMenuItem item)
+		{
+			switch (item.ItemId)
+			{
+			case Resource.Id.cerrarSesion:
+				ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
+				ISharedPreferencesEditor editor = pref.Edit ();
+				editor.PutString ("idUsuario", String.Empty);
+				editor.PutString ("nombre", String.Empty);
+				editor.PutBoolean ("guardar", false);
+				//editor.PutBoolean ("estaCargadaBD", false);
+				editor.Apply ();
+
+				StartActivity(typeof(Login));
+				Finish(); 
+				return true;
+
+			case Android.Resource.Id.Home:
+				
+				mostrarMensajeAlerta ();
+				return true;
+
+			}
+			return base.OnOptionsItemSelected(item);
 		}
 
 
