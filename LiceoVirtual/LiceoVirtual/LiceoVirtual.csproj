@@ -122,6 +122,7 @@
     <AndroidResource Include="Resources\drawable-mdpi\ic_action_overflow.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_action_overflow.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

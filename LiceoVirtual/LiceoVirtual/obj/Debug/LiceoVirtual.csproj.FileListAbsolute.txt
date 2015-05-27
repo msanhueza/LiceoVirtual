@@ -65,3 +65,4 @@ C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable-mdpi\ic_action_overflow.png
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable-xhdpi\ic_action_overflow.png
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable-xxhdpi\ic_action_overflow.png
+C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable-hdpi\ic_launcher.png
