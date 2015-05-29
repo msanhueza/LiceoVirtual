@@ -55,13 +55,26 @@
     <Compile Include="SQLite.cs" />
     <Compile Include="Menu.cs">
     </Compile>
-    <Compile Include="PuntuacionBD.cs" />
     <Compile Include="PuntuacionAdapter.cs" />
-    <Compile Include="PuntuacionItem.cs" />
     <Compile Include="RankingAdapter.cs" />
-    <Compile Include="RankingItem.cs" />
     <Compile Include="Ranking.cs" />
     <Compile Include="Pregunta.cs" />
+    <Compile Include="MensajeResultado.cs" />
+    <Compile Include="TablasBD\NivelDesbloqueadoBD.cs" />
+    <Compile Include="TablasBD\PuntuacionBD.cs" />
+    <Compile Include="TablasItem\RankingItem.cs" />
+    <Compile Include="TablasItem\PuntuacionItem.cs" />
+    <Compile Include="TablasItem\NivelDesbloqueadoItem.cs" />
+    <Compile Include="CargarBaseDeDatos.cs" />
+    <Compile Include="TablasAcciones\PuntuacionAccion.cs" />
+    <Compile Include="TablasAcciones\NivelDesbloqueadoAccion.cs" />
+    <Compile Include="TablasBD\PreguntaBD.cs" />
+    <Compile Include="TablasBD\PreguntaSolucionBD.cs" />
+    <Compile Include="TablasAcciones\PreguntaSolucionAccion.cs" />
+    <Compile Include="TablasItem\PreguntaItem.cs" />
+    <Compile Include="TablasItem\PreguntaSolucionItem.cs" />
+    <Compile Include="TablasAcciones\PreguntaAccion.cs" />
+    <Compile Include="TablasItem\ListadoPreguntaSolucionItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -101,10 +114,23 @@
     <AndroidResource Include="Resources\drawable-hdpi\LogoBlanco.png" />
     <AndroidResource Include="Resources\anim\animabtn.xml" />
     <AndroidResource Include="Resources\layout\Resultado.xml" />
+    <AndroidResource Include="Resources\layout\MensajeResultado.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\estudiante.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\nota.png" />
+    <AndroidResource Include="Resources\Menu\actionbar_main.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
     <Folder Include="Resources\anim\" />
+    <Folder Include="TablasBD\" />
+    <Folder Include="TablasItem\" />
+    <Folder Include="TablasAcciones\" />
+    <Folder Include="Resources\Menu\" />
   </ItemGroup>
 </Project>

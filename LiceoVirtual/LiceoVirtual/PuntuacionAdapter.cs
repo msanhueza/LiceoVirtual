@@ -32,7 +32,7 @@ public class PuntuacionAdapter : BaseAdapter<PuntuacionItem> {
 		if (view == null) // no view to re-use, create new
 			view = context.LayoutInflater.Inflate(Resource.Layout.PuntuacionPersonalizado, null);
 		view.FindViewById<TextView>(Resource.Id.tvFecha).Text = item.fecha;
-		view.FindViewById<TextView>(Resource.Id.tvPuntaje).Text = item.puntaje;
+		view.FindViewById<TextView>(Resource.Id.tvPuntaje).Text = item.puntaje.ToString()+"%";
 		return view;
 	}
 }

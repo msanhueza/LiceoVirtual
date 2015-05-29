@@ -25,6 +25,7 @@ namespace LiceoVirtual
 
 			Button btnLogin = FindViewById<Button> (Resource.Id.btnLogin);
 
+
 			btnLogin.Click += delegate {
 				validarLogin();
 			};

@@ -10,6 +10,9 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Telephony.Gsm;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace LiceoVirtual
 {
@@ -24,29 +27,35 @@ namespace LiceoVirtual
 
 			Button btnTrivia = FindViewById<Button> (Resource.Id.btnTrivia);
 			Button btnRanking = FindViewById<Button> (Resource.Id.btnRanking);
-			Button btnCerrarSesion = FindViewById<Button> (Resource.Id.btnCerrarSesion);
 
+			//ActionBar.SetHomeButtonEnabled(true);
+			//ActionBar.SetDisplayHomeAsUpEnabled(true);
 
 			btnTrivia.Click += delegate {
 				StartActivity (typeof(Nivel));
 			};
 
 			btnRanking.Click += delegate {
-				StartActivity (typeof(Ranking));
-			};
+				var intent = new Intent (this, typeof(Puntuacion));
+				intent.PutExtra ("nivel", "1");
+				StartActivity (intent);
+			};				
 
-			btnCerrarSesion.Click += delegate {
-				
-				ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
+			cargarBD ();
+
+		}
+
+		public void cargarBD(){
+			ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
+			bool estaCargadaBD = pref.GetBoolean ("estaCargadaBD", false);
+
+			if (!estaCargadaBD) {
+				CargarBaseDeDatos c = new CargarBaseDeDatos ();
+
 				ISharedPreferencesEditor editor = pref.Edit ();
-				editor.PutString ("idUsuario", String.Empty);
-				editor.PutString ("nombre", String.Empty);
-				editor.PutBoolean ("guardar", false);
+				editor.PutBoolean ("estaCargadaBD", true);
 				editor.Apply ();
-
-				StartActivity(typeof(Login));
-				Finish(); 
-			};
+			}
 		}
 		/* con licencia se puede hacer de esta forma los listener de los botones
 		[Java.Interop.Export("onClickTrivia")] // The value found in android:onClick attribute.
@@ -56,6 +65,38 @@ namespace LiceoVirtual
 			intent.PutExtra ("nombre", "Mario Sanhueza");
 			StartActivity (intent); 	
 		}*/
+
+		public override bool OnCreateOptionsMenu(IMenu menu)
+		{
+			MenuInflater.Inflate(Resource.Menu.actionbar_main, menu);
+			return base.OnCreateOptionsMenu(menu);
+		}
+
+		public override bool OnOptionsItemSelected(IMenuItem item)
+		{
+			switch (item.ItemId)
+			{
+			case Resource.Id.cerrarSesion:
+				ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
+				ISharedPreferencesEditor editor = pref.Edit ();
+				editor.PutString ("idUsuario", String.Empty);
+				editor.PutString ("nombre", String.Empty);
+				editor.PutBoolean ("guardar", false);
+				//editor.PutBoolean ("estaCargadaBD", false);
+				editor.Apply ();
+
+				StartActivity(typeof(Login));
+				Finish(); 
+				return true;
+
+			/*case Android.Resource.Id.Home:
+				Finish();
+				return true;*/
+				
+			}
+			return base.OnOptionsItemSelected(item);
+		}
+
 	}
 }
 
