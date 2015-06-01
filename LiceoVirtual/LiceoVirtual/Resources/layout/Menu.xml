@@ -1,64 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
-    p1:orientation="vertical"
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:background="#fffcfcfc"
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
-    p1:layout_gravity="center_vertical|center_horizontal"
-    p1:id="@+id/linearLayout1"
-    p1:background="@drawable/LVBackground">
-    <LinearLayout
-        p1:orientation="vertical"
+    p1:gravity="center_horizontal"
+    p1:orientation="vertical">
+    <RelativeLayout
+        p1:layout_weight="2"
         p1:layout_width="match_parent"
-        p1:layout_height="match_parent"
-        p1:layout_centerInParent="true"
-        p1:layout_margin="20dp"
-        p1:gravity="center_horizontal">
+        p1:layout_height="0dp"
+        p1:id="@+id/relativeLayout2"
+        p1:gravity="center">
         <LinearLayout
-            p1:orientation="horizontal"
+            p1:orientation="vertical"
             p1:minWidth="25px"
             p1:minHeight="25px"
             p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/linearLayout3"
-            p1:layout_weight="2"
-            p1:gravity="center">
-            <ImageView
-                p1:id="@+id/imgLogo"
-                p1:layout_width="300px"
-                p1:layout_height="300px"
-                p1:src="@drawable/logoBlanco" />
-        </LinearLayout>
-        <LinearLayout
-            p1:orientation="horizontal"
-            p1:minWidth="25px"
-            p1:minHeight="25px"
-            p1:layout_width="match_parent"
-            p1:layout_height="0dp"
-            p1:id="@+id/linearLayout2"
+            p1:layout_height="match_parent"
+            p1:id="@+id/linearLayout1"
             p1:gravity="center_horizontal"
-            p1:layout_weight="3">
-            <Button
-                p1:text="Trivia"
-                p1:onClick="onClickTrivia"
-                p1:id="@+id/btnTrivia"
-                p1:background="@drawable/LVMenuBtn"
-                p1:layout_width="0dp"
-                p1:textColor="#000000"
-                p1:layout_height="match_parent"
-                p1:layout_weight="1"
-                p1:layout_marginTop="50sp"
-                p1:layout_marginBottom="50sp" />
-            <Button
-                p1:text="Historial de Resultados"
-                p1:id="@+id/btnRanking"
-                p1:background="@drawable/LVMenuBtn"
-                p1:layout_width="0dp"
-                p1:textColor="#000000"
-                p1:layout_height="match_parent"
-                p1:layout_weight="1"
-                p1:layout_marginTop="50sp"
-                p1:layout_marginBottom="50sp"
-                p1:layout_marginLeft="20dp" />
+            p1:weightSum="2"
+            p1:layout_alignParentTop="true">
+            <ImageView
+                p1:id="@+id/backmenu"
+                p1:layout_width="match_parent"
+                p1:layout_height="0dp"
+                p1:layout_weight="1.1"
+                p1:src="@drawable/adn"
+                p1:scaleType="fitXY" />
         </LinearLayout>
-    </LinearLayout>
-</RelativeLayout>
+        <ImageButton
+            p1:adjustViewBounds="true"
+            p1:id="@+id/btnJugar"
+            style="@style/btn_menu"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:layout_centerHorizontal="true"
+            p1:layout_centerVertical="true"
+            p1:scaleType="centerInside"
+            p1:src="@drawable/jugar"
+            p1:paddingLeft="@dimen/pad_15dp"
+            p1:paddingRight="@dimen/pad_15dp"
+            p1:paddingTop="@dimen/pad_20dp"
+            p1:paddingBottom="@dimen/pad_20dp" />
+    </RelativeLayout>
+    <View
+        p1:layout_width="wrap_content"
+        p1:id="@+id/space1"
+        p1:layout_height="1dp"
+        p1:background="@color/main_color_gray_dk"
+        p1:paddingLeft="@dimen/pad_15dp"
+        p1:paddingRight="@dimen/pad_15dp"
+        p1:layout_marginLeft="@dimen/pad_15dp"
+        p1:layout_marginRight="@dimen/pad_15dp" />
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:id="@+id/relativeLayout1"
+        p1:layout_width="match_parent"
+        p1:layout_height="0dp"
+        p1:layout_weight="1"
+        p1:gravity="center">
+        <ImageButton
+            p1:adjustViewBounds="true"
+            p1:id="@+id/btnRanking"
+            style="@style/btn_menu"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:cropToPadding="false"
+            p1:scaleType="centerInside"
+            p1:src="@drawable/puntos"
+            p1:paddingTop="@dimen/pad_20dp"
+            p1:paddingBottom="@dimen/pad_20dp" />
+    </RelativeLayout>
+    <View
+        p1:layout_width="match_parent"
+        p1:id="@+id/space1"
+        p1:layout_height="@dimen/pad_20dp"
+        p1:background="#ff3a91d9" />
+</LinearLayout>

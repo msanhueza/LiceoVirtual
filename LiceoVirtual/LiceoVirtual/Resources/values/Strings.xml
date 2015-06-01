@@ -13,4 +13,8 @@
 	<string name="preguntas_n3">Preguntas Nivel 3</string>
 	<string name="preguntas_n4">Preguntas Nivel 4</string>
 	<string name="ranking_estudiantes">Ranking estudiantes</string>
+	<string name="rut">Ingrese su RUT</string>
+	<string name="password">Ingrese su contraseña</string>
+	<string name="log_in">Acceder</string>
 </resources>
+

@@ -2,39 +2,46 @@
 <LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
     p1:orientation="vertical"
     p1:layout_width="match_parent"
-    p1:layout_height="wrap_content"
+    p1:layout_height="match_parent"
     p1:id="@+id/linearLayout1"
-    p1:padding="20dp">
+    p1:padding="20dp"
+    p1:background="@color/white">
     <LinearLayout
         p1:orientation="vertical"
         p1:layout_width="match_parent"
-        p1:layout_height="match_parent"
+        p1:layout_height="0dp"
         p1:id="@+id/barraAvance"
         p1:minWidth="25px"
         p1:minHeight="25px"
-        p1:gravity="center">
+        p1:gravity="center"
+        p1:layout_weight="2">
         <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             p1:layout_width="match_parent"
-            p1:layout_height="match_parent"
+            p1:layout_height="0dp"
             p1:id="@+id/pbPregunta"
-            p1:layout_weight="2" />
-        <TextView
+            p1:layout_weight="2"
+            p1:progressDrawable="@drawable/LVProgress" />
+        <TextView xmlns:tools="http://schemas.android.com/tools"
             p1:id="@+id/tvProgreso"
             p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_width="wrap_content"
-            p1:layout_height="match_parent" />
+            p1:layout_height="0dp"
+            p1:layout_weight="1"
+            tools:text="10%" />
     </LinearLayout>
     <LinearLayout
         p1:orientation="horizontal"
         p1:layout_width="match_parent"
-        p1:layout_height="match_parent"
+        p1:layout_height="0dp"
         p1:id="@+id/pregunta"
         p1:minWidth="25px"
         p1:minHeight="25px"
         p1:paddingTop="10dp"
-        p1:paddingBottom="10dp">
+        p1:paddingBottom="10dp"
+        p1:layout_weight="3">
         <TextView
+            style="@style/editext_white"
             p1:text="¿Desde dónde hasta dónde va la savia elaborada(en las plantas)?"
             p1:layout_width="wrap_content"
             p1:layout_height="match_parent"
@@ -47,9 +54,9 @@
     <LinearLayout
         p1:orientation="horizontal"
         p1:layout_width="match_parent"
-        p1:layout_height="match_parent"
+        p1:layout_height="0dp"
         p1:id="@+id/respuesta"
-        p1:layout_weight="4"
+        p1:layout_weight="3"
         p1:minWidth="25px"
         p1:minHeight="25px"
         p1:paddingTop="10dp"
@@ -84,14 +91,16 @@
     <LinearLayout
         p1:orientation="vertical"
         p1:layout_width="match_parent"
-        p1:layout_height="match_parent"
+        p1:layout_height="0dp"
         p1:id="@+id/botonSiguiente"
         p1:minWidth="25px"
         p1:minHeight="25px"
         p1:paddingTop="10dp"
-        p1:paddingBottom="10dp">
+        p1:paddingBottom="10dp"
+        p1:layout_weight="1">
         <Button
             p1:text="Siguiente"
+            style="@style/btn_white_large"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
             p1:id="@+id/btnPreguntaSiguiente"

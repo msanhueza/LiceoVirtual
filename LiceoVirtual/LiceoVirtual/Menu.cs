@@ -25,8 +25,8 @@ namespace LiceoVirtual
 
 			SetContentView (Resource.Layout.Menu);
 
-			Button btnTrivia = FindViewById<Button> (Resource.Id.btnTrivia);
-			Button btnRanking = FindViewById<Button> (Resource.Id.btnRanking);
+			ImageButton btnTrivia = FindViewById<ImageButton> (Resource.Id.btnJugar);
+			ImageButton btnRanking = FindViewById<ImageButton> (Resource.Id.btnRanking);
 
 			//ActionBar.SetHomeButtonEnabled(true);
 			//ActionBar.SetDisplayHomeAsUpEnabled(true);

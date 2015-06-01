@@ -1,9 +1,9 @@
-﻿<Properties StartupItem="LiceoVirtual\LiceoVirtual.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.TA071014P8" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual\Properties\AssemblyInfo.cs">
+﻿<Properties StartupItem="LiceoVirtual/LiceoVirtual.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="LiceoVirtual\Properties\AndroidManifest.xml" Line="5" Column="12" />
-      <File FileName="LiceoVirtual\Properties\AssemblyInfo.cs" Line="16" Column="42" />
+      <File FileName="LiceoVirtual/SplashActivity.cs" Line="29" Column="5" />
+      <File FileName="LiceoVirtual/Resources/values/Strings.xml" Line="20" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

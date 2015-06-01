@@ -53,8 +53,6 @@
     <Compile Include="Nivel.cs" />
     <Compile Include="Puntuacion.cs" />
     <Compile Include="SQLite.cs" />
-    <Compile Include="Menu.cs">
-    </Compile>
     <Compile Include="PuntuacionAdapter.cs" />
     <Compile Include="RankingAdapter.cs" />
     <Compile Include="Ranking.cs" />
@@ -65,6 +63,8 @@
     <Compile Include="TablasItem\RankingItem.cs" />
     <Compile Include="TablasItem\PuntuacionItem.cs" />
     <Compile Include="TablasItem\NivelDesbloqueadoItem.cs" />
+    <Compile Include="Menu.cs">
+    </Compile>
     <Compile Include="CargarBaseDeDatos.cs" />
     <Compile Include="TablasAcciones\PuntuacionAccion.cs" />
     <Compile Include="TablasAcciones\NivelDesbloqueadoAccion.cs" />
@@ -113,9 +113,7 @@
     <AndroidResource Include="Resources\layout\Pregunta.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\LogoBlanco.png" />
     <AndroidResource Include="Resources\anim\animabtn.xml" />
-    <AndroidResource Include="Resources\layout\Resultado.xml" />
     <AndroidResource Include="Resources\layout\MensajeResultado.xml" />
-    <AndroidResource Include="Resources\drawable-hdpi\estudiante.png" />
     <AndroidResource Include="Resources\drawable-hdpi\nota.png" />
     <AndroidResource Include="Resources\Menu\actionbar_main.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_action_overflow.png" />
@@ -123,6 +121,31 @@
     <AndroidResource Include="Resources\drawable-xhdpi\ic_action_overflow.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_overflow.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\values\values.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\actionbar_bg.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\arrow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\back_arrow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\chat_bubble_gray.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\chat_bubble_green.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\editext_bg_gray.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\edittext_bg.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\green_btn.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_compose.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_offline.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_online.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_pwd.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_send.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_username.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\user_chat1.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\user_chat2.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\biology.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\jugar.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\puntos.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\adn.jpg" />
+    <AndroidResource Include="Resources\drawable\LVProgress.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\student.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
