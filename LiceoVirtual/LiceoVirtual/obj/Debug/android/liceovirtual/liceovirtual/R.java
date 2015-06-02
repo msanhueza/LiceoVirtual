@@ -98,9 +98,9 @@ public final class R {
         public static final int edtContrasena=0x7f0a0004;
         public static final int edtRut=0x7f0a0002;
         public static final int imageView1=0x7f0a000f;
-        public static final int imgLogo=0x7f0a0000;
+        public static final int imgLogo=0x7f0a0001;
         public static final int info_menu=0x7f0a002c;
-        public static final int linearLayout1=0x7f0a0001;
+        public static final int linearLayout1=0x7f0a0000;
         public static final int linearLayout1Ranking=0x7f0a0032;
         public static final int linearLayout2=0x7f0a0016;
         public static final int linearLayout3=0x7f0a0018;

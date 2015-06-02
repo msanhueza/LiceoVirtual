@@ -333,14 +333,14 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f0a000f
 			public const int imageView1 = 2131361807;
 			
-			// aapt resource value: 0x7f0a0000
-			public const int imgLogo = 2131361792;
+			// aapt resource value: 0x7f0a0001
+			public const int imgLogo = 2131361793;
 			
 			// aapt resource value: 0x7f0a002c
 			public const int info_menu = 2131361836;
 			
-			// aapt resource value: 0x7f0a0001
-			public const int linearLayout1 = 2131361793;
+			// aapt resource value: 0x7f0a0000
+			public const int linearLayout1 = 2131361792;
 			
 			// aapt resource value: 0x7f0a0032
 			public const int linearLayout1Ranking = 2131361842;

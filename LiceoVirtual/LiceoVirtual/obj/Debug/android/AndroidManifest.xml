@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="LiceoVirtual.LiceoVirtual">
-  <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="19" />
+  <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="19" />
   <application android:label="LiceoVirtual" android:theme="@android:style/Theme.Holo.Light" android:icon="@drawable/ic_launcher" android:name="mono.android.app.Application" android:debuggable="true">
     <activity android:icon="@drawable/icon" android:label="LiceoVirtual" android:name="md51ea9131a53b3b395682ae7fefd3cea1b.MainActivity" />
     <activity android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md51ea9131a53b3b395682ae7fefd3cea1b.SplashActivity">

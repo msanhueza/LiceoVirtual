@@ -73,3 +73,4 @@
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/uploadflags.txt
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/LiceoVirtual.dll
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/LiceoVirtual.dll.mdb
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable-hdpi/student.png
