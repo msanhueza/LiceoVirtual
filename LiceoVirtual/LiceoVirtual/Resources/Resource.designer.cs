@@ -237,34 +237,37 @@ namespace LiceoVirtual
 			public const int LVBackground = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int LVBlockedButton = 2130837530;
+			public const int LVBackgroundMenu = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int LVButton = 2130837531;
+			public const int LVBlockedButton = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int LVMenuBtn = 2130837532;
+			public const int LVButton = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int LVProgress = 2130837533;
+			public const int LVMenuBtn = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public const int nota = 2130837534;
+			public const int LVProgress = 2130837534;
 			
 			// aapt resource value: 0x7f02001f
-			public const int puntos = 2130837535;
+			public const int nota = 2130837535;
 			
 			// aapt resource value: 0x7f020020
-			public const int splash = 2130837536;
+			public const int puntos = 2130837536;
 			
 			// aapt resource value: 0x7f020021
-			public const int student = 2130837537;
+			public const int splash = 2130837537;
 			
 			// aapt resource value: 0x7f020022
-			public const int user_chat1 = 2130837538;
+			public const int student = 2130837538;
 			
 			// aapt resource value: 0x7f020023
-			public const int user_chat2 = 2130837539;
+			public const int user_chat1 = 2130837539;
+			
+			// aapt resource value: 0x7f020024
+			public const int user_chat2 = 2130837540;
 			
 			static Drawable()
 			{

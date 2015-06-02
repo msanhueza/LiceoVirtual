@@ -146,6 +146,7 @@
     <AndroidResource Include="Resources\drawable-xhdpi\adn.jpg" />
     <AndroidResource Include="Resources\drawable\LVProgress.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\student.png" />
+    <AndroidResource Include="Resources\drawable\LVBackgroundMenu.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

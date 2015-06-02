@@ -68,16 +68,17 @@ public final class R {
         public static final int logoblanco=0x7f020017;
         public static final int logologin=0x7f020018;
         public static final int lvbackground=0x7f020019;
-        public static final int lvblockedbutton=0x7f02001a;
-        public static final int lvbutton=0x7f02001b;
-        public static final int lvmenubtn=0x7f02001c;
-        public static final int lvprogress=0x7f02001d;
-        public static final int nota=0x7f02001e;
-        public static final int puntos=0x7f02001f;
-        public static final int splash=0x7f020020;
-        public static final int student=0x7f020021;
-        public static final int user_chat1=0x7f020022;
-        public static final int user_chat2=0x7f020023;
+        public static final int lvbackgroundmenu=0x7f02001a;
+        public static final int lvblockedbutton=0x7f02001b;
+        public static final int lvbutton=0x7f02001c;
+        public static final int lvmenubtn=0x7f02001d;
+        public static final int lvprogress=0x7f02001e;
+        public static final int nota=0x7f02001f;
+        public static final int puntos=0x7f020020;
+        public static final int splash=0x7f020021;
+        public static final int student=0x7f020022;
+        public static final int user_chat1=0x7f020023;
+        public static final int user_chat2=0x7f020024;
     }
     public static final class id {
         public static final int backmenu=0x7f0a0011;

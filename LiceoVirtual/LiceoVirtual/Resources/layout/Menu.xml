@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
-    p1:background="#fffcfcfc"
+    p1:background="@drawable/lvbackgroundmenu"
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
     p1:gravity="center_horizontal"
@@ -48,7 +48,7 @@
         p1:layout_width="wrap_content"
         p1:id="@+id/space1"
         p1:layout_height="1dp"
-        p1:background="@color/main_color_gray_dk"
+        p1:background="#ffc1d5e2"
         p1:paddingLeft="@dimen/pad_15dp"
         p1:paddingRight="@dimen/pad_15dp"
         p1:layout_marginLeft="@dimen/pad_15dp"
