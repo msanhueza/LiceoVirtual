@@ -2,20 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="LiceoVirtual.LiceoVirtual">
   <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="19" />
   <application android:label="LiceoVirtual" android:theme="@android:style/Theme.Holo.Light" android:icon="@drawable/ic_launcher" android:name="mono.android.app.Application" android:debuggable="true">
-    <activity android:icon="@drawable/icon" android:label="LiceoVirtual" android:name="liceovirtual.MainActivity" />
-    <activity android:noHistory="true" android:theme="@style/Theme.Splash" android:name="liceovirtual.SplashActivity">
+    <activity android:icon="@drawable/icon" android:label="LiceoVirtual" android:name="md51ea9131a53b3b395682ae7fefd3cea1b.MainActivity" />
+    <activity android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md51ea9131a53b3b395682ae7fefd3cea1b.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="@string/app_name" android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" android:name="liceovirtual.Login" />
-    <activity android:label="Nivel" android:name="liceovirtual.Nivel" />
-    <activity android:label="Puntuacion" android:name="liceovirtual.Puntuacion" />
-    <activity android:label="Ranking" android:name="liceovirtual.Ranking" />
-    <activity android:label="Pregunta" android:name="liceovirtual.Pregunta" />
-    <activity android:label="Trivia" android:name="liceovirtual.MensajeResultado" />
-    <activity android:label="Menu" android:name="liceovirtual.Menu" />
+    <activity android:label="@string/app_name" android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" android:name="md51ea9131a53b3b395682ae7fefd3cea1b.Login" />
+    <activity android:label="Nivel" android:name="md51ea9131a53b3b395682ae7fefd3cea1b.Nivel" />
+    <activity android:label="Puntuacion" android:name="md51ea9131a53b3b395682ae7fefd3cea1b.Puntuacion" />
+    <activity android:label="Ranking" android:name="md51ea9131a53b3b395682ae7fefd3cea1b.Ranking" />
+    <activity android:label="Pregunta" android:name="md51ea9131a53b3b395682ae7fefd3cea1b.Pregunta" />
+    <activity android:label="Trivia" android:name="md51ea9131a53b3b395682ae7fefd3cea1b.MensajeResultado" />
+    <activity android:label="Menu" android:name="md51ea9131a53b3b395682ae7fefd3cea1b.Menu" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="LiceoVirtual.LiceoVirtual.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>

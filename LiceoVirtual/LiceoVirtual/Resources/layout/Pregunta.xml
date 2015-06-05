@@ -14,13 +14,13 @@
         p1:minWidth="25px"
         p1:minHeight="25px"
         p1:gravity="center"
-        p1:layout_weight="2">
+        p1:layout_weight="1.5">
         <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             p1:layout_width="match_parent"
             p1:layout_height="0dp"
             p1:id="@+id/pbPregunta"
-            p1:layout_weight="2"
+            p1:layout_weight="1"
             p1:progressDrawable="@drawable/LVProgress" />
         <TextView xmlns:tools="http://schemas.android.com/tools"
             p1:id="@+id/tvProgreso"
@@ -28,7 +28,8 @@
             p1:layout_width="wrap_content"
             p1:layout_height="0dp"
             p1:layout_weight="1"
-            tools:text="10%" />
+            tools:text="10%"
+            p1:gravity="center" />
     </LinearLayout>
     <LinearLayout
         p1:orientation="horizontal"
@@ -41,7 +42,6 @@
         p1:paddingBottom="10dp"
         p1:layout_weight="3">
         <TextView
-            style="@style/editext_white"
             p1:text="¿Desde dónde hasta dónde va la savia elaborada(en las plantas)?"
             p1:layout_width="wrap_content"
             p1:layout_height="match_parent"
@@ -49,7 +49,8 @@
             p1:layout_marginRight="2dp"
             p1:layout_marginLeft="2dp"
             p1:layout_marginTop="10dp"
-            p1:layout_weight="2" />
+            p1:layout_weight="2"
+            p1:textSize="@dimen/txt_18sp" />
     </LinearLayout>
     <LinearLayout
         p1:orientation="horizontal"
@@ -73,19 +74,22 @@
                 p1:checked="true"
                 p1:text="Desde las hojas hasta toda la planta."
                 p1:id="@+id/rbOp1"
-                p1:layout_weight="2" />
+                p1:layout_weight="2"
+                p1:textSize="@dimen/txt_18sp" />
             <RadioButton
                 p1:layout_width="wrap_content"
                 p1:layout_height="wrap_content"
                 p1:text="Desde la raíz hasta las hojas."
                 p1:id="@+id/rbOp2"
-                p1:layout_weight="2" />
+                p1:layout_weight="2"
+                p1:textSize="@dimen/txt_18sp" />
             <RadioButton
                 p1:layout_width="wrap_content"
                 p1:layout_height="wrap_content"
                 p1:text="Desde la boca hasta el estómago."
                 p1:id="@+id/rbOp3"
-                p1:layout_weight="2" />
+                p1:layout_weight="2"
+                p1:textSize="@dimen/txt_18sp" />
         </RadioGroup>
     </LinearLayout>
     <LinearLayout
