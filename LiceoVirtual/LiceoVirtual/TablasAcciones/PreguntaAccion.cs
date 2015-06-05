@@ -14,6 +14,7 @@ public class PreguntaAccion
 		docsFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
 		pathToDatabase = System.IO.Path.Combine(docsFolder, "liceo_virtual.db");
 	}
+		
 
 	public string insertUpdateData(PreguntaBD data)
 	{

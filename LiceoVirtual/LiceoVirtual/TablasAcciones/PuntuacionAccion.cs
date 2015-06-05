@@ -72,6 +72,38 @@ public class PuntuacionAccion
 		}
 	}
 
+	public int getPuntuacionLess80(string nivel){
+		try
+		{
+			var db = new SQLiteConnection(pathToDatabase);
+			// this counts all records in the database, it can be slow depending on the size of the database
+			var count = db.ExecuteScalar<int>("SELECT Count(*) FROM PuntuacionBD " +
+				"WHERE nivel=" + nivel+" AND puntaje < 80");
+
+			return count;
+		}
+		catch (SQLiteException)
+		{
+			return -1;
+		}
+	}
+
+	public int getPuntuacionMore80(string nivel){
+		try
+		{
+			var db = new SQLiteConnection(pathToDatabase);
+			// this counts all records in the database, it can be slow depending on the size of the database
+			var count = db.ExecuteScalar<int>("SELECT Count(*) FROM PuntuacionBD " +
+				"WHERE nivel=" + nivel+" AND puntaje >= 80");
+
+			return count;
+		}
+		catch (SQLiteException)
+		{
+			return -1;
+		}
+	}
+
 
 }
 
