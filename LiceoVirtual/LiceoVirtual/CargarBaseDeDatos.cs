@@ -86,7 +86,7 @@ public class CargarBaseDeDatos
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En una célula del epitelio respiratorio que tiene como función la secreción de mucosidad para mantener húmeda la vía respiratoria debiera observarse una gran cantidad de", idImagen = -1, nivel=1});
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En una célula de la corteza suprarenal que secreta glucocorticoides (hormona lipofílica) debiera observarse una gran cantidad de", idImagen = -1, nivel=1});
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La figura a continuación muestra 2 compartimentos separados por una membrana permeable solo al solvente, donde inicialmente el compartimento A contiene 10 mM de NaCl y el compartimento B contiene 100 mM de NaCl. El estado final de esta condición será", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cual de las siguientes figuras muestra una solución hipertónica en el compartimento A?", idImagen = -1, nivel=1});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La secuencia de las siguientes imágenes vistas al microscopio de menor a mayor aumento es:", idImagen = -1, nivel=1});
 
 
 		//PREGUNTAS DE SEGUNDO MEDIO
@@ -243,9 +243,9 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=24, solucion="membrana plasmática.", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=24, solucion="retículo endoplásmico rugoso.", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=25, solucion="1", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=25, solucion="2", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=25, solucion="3", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=25, solucion="1-2-4-3", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=25, solucion="4-3-2-1", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=25, solucion="2-4-3-1", esSolucion=true});
 
 		//soluciones segundo medio
 

@@ -147,6 +147,26 @@
     <AndroidResource Include="Resources\drawable\LVProgress.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\student.png" />
     <AndroidResource Include="Resources\drawable\LVBackgroundMenu.xml" />
+    <AndroidResource Include="Resources\drawable\n1_1.png" />
+    <AndroidResource Include="Resources\drawable\n1_2.png" />
+    <AndroidResource Include="Resources\drawable\n1_3.png" />
+    <AndroidResource Include="Resources\drawable\n1_4.png" />
+    <AndroidResource Include="Resources\drawable\n1_5.png" />
+    <AndroidResource Include="Resources\drawable\n1_6.png" />
+    <AndroidResource Include="Resources\drawable\n1_7.png" />
+    <AndroidResource Include="Resources\drawable\n1_8.png" />
+    <AndroidResource Include="Resources\drawable\n1_9.png" />
+    <AndroidResource Include="Resources\drawable\n1_10.png" />
+    <AndroidResource Include="Resources\drawable\n1_11.png" />
+    <AndroidResource Include="Resources\drawable\n1_14.png" />
+    <AndroidResource Include="Resources\drawable\n1_15.png" />
+    <AndroidResource Include="Resources\drawable\n1_16.png" />
+    <AndroidResource Include="Resources\drawable\n1_17.png" />
+    <AndroidResource Include="Resources\drawable\n1_19.png" />
+    <AndroidResource Include="Resources\drawable\n1_20.png" />
+    <AndroidResource Include="Resources\drawable\n1_21.png" />
+    <AndroidResource Include="Resources\drawable\n1_22.png" />
+    <AndroidResource Include="Resources\drawable\n1_25.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
