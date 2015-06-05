@@ -66,7 +66,9 @@ namespace LiceoVirtual
 			radioOp3.Text = opcion3;
 
 			btnPreguntaSiguiente.Click += delegate {
-
+				radioOp1.Checked = true; // para dejar siempre el primer radio button seleccionado
+				bool resp = comprobarRespuesta(p.objListaRespuestas);
+				Toast.MakeText (this, resp.ToString(), ToastLength.Short).Show();
 				if(numPregunta == 9){
 					var intent = new Intent (this, typeof(MensajeResultado));
 					intent.PutExtra ("nivel", nivel);
@@ -108,6 +110,22 @@ namespace LiceoVirtual
 				Console.WriteLine ("");
 			}*/
 
+		}
+
+		public bool comprobarRespuesta(List<PreguntaSolucionItem> listaRespuestas){
+			RadioGroup radioGroup = FindViewById<RadioGroup> (Resource.Id.radioGroup1);
+			int idRadioButtonSeleccionado = radioGroup.CheckedRadioButtonId;
+			RadioButton radioButtonSeleccionado = FindViewById<RadioButton> (idRadioButtonSeleccionado);
+			String respuesta = radioButtonSeleccionado.Text;
+			for (int i = 0; i<listaRespuestas.Count; i++) {
+				if(listaRespuestas[i].esSolucion){
+					string auxSol = listaRespuestas [i].solucion;
+					if (( auxSol ).Equals (respuesta)) {
+						return true;
+					}
+				}
+			}
+			return false;
 		}
 
 		public List<int> getDiezPreguntasAleatorias(int n){
