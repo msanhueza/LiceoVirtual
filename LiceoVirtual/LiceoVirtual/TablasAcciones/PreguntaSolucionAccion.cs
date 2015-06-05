@@ -42,9 +42,8 @@ public class PreguntaSolucionAccion
 				var ID = lista[i].ID;
 				var iDPregunta = lista[i].idPregunta;
 				var solucion = lista[i].solucion;
-				var imagen = lista[i].imagen;
 				var esSolucion = lista[i].esSolucion;
-				PreguntaSolucionItem p = new PreguntaSolucionItem(ID, iDPregunta, solucion, imagen, esSolucion);
+				PreguntaSolucionItem p = new PreguntaSolucionItem(ID, iDPregunta, solucion, esSolucion);
 				listaPreguntasSolucion.Add(p);
 			}
 			return listaPreguntasSolucion;

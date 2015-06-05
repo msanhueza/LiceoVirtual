@@ -41,8 +41,9 @@ public class PreguntaAccion
 			for(int i=0; i<lista.Count; i++){
 				var ID = lista[i].ID;
 				var pregunta = lista[i].pregunta;
+				var idImagen = lista[i].idImagen;
 				var nivelPregunta = lista[i].nivel;
-				PreguntaItem p = new PreguntaItem(ID, pregunta, nivelPregunta);
+				PreguntaItem p = new PreguntaItem(ID, pregunta, idImagen, nivelPregunta);
 				listaPreguntas.Add(p);
 			}
 			return listaPreguntas;

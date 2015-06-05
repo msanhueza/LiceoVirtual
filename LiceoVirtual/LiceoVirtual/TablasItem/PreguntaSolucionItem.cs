@@ -2,11 +2,10 @@
 {
 
 
-	public PreguntaSolucionItem(int ID, int idPregunta, string solucion, string imagen, bool esSolucion){
+	public PreguntaSolucionItem(int ID, int idPregunta, string solucion, bool esSolucion){
 		this.ID= ID;
 		this.idPregunta = idPregunta;
 		this.solucion = solucion;
-		this.imagen = imagen;
 		this.esSolucion = esSolucion;
 	}
 
@@ -15,8 +14,6 @@
 	public int idPregunta { get; set; }
 
 	public string solucion { get; set; }
-
-	public string imagen { get; set; }
 
 	public bool esSolucion { get; set; }
 
