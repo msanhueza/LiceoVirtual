@@ -43,10 +43,10 @@ public class CargarBaseDeDatos
 	}
 
 	private void cargarNivelDesbloqueadoBD(){	
-		nivelDesbloqueadoAccion.insertUpdateData(new NivelDesbloqueadoBD{ nivel= 1, desbloqueado=false });
+		nivelDesbloqueadoAccion.insertUpdateData(new NivelDesbloqueadoBD{ nivel= 1, desbloqueado=true });
 		nivelDesbloqueadoAccion.insertUpdateData(new NivelDesbloqueadoBD{ nivel= 2, desbloqueado=false });
-		nivelDesbloqueadoAccion.insertUpdateData(new NivelDesbloqueadoBD{ nivel= 3, desbloqueado=false });
-		nivelDesbloqueadoAccion.insertUpdateData(new NivelDesbloqueadoBD{ nivel= 4, desbloqueado=false });
+		nivelDesbloqueadoAccion.insertUpdateData(new NivelDesbloqueadoBD{ nivel= 3, desbloqueado=true });
+		nivelDesbloqueadoAccion.insertUpdateData(new NivelDesbloqueadoBD{ nivel= 4, desbloqueado=true });
 	}
 
 	private void cargarPuntuacionBD(){
@@ -60,6 +60,8 @@ public class CargarBaseDeDatos
 	}
 
 	private void cargarPreguntaBD(){	
+
+		//PREGUNTAS DE PRIMERO MEDIO
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = -1, nivel=1});
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = -1, nivel=1});
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = -1, nivel=1});
@@ -85,31 +87,65 @@ public class CargarBaseDeDatos
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En una célula de la corteza suprarenal que secreta glucocorticoides (hormona lipofílica) debiera observarse una gran cantidad de", idImagen = -1, nivel=1});
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La figura a continuación muestra 2 compartimentos separados por una membrana permeable solo al solvente, donde inicialmente el compartimento A contiene 10 mM de NaCl y el compartimento B contiene 100 mM de NaCl. El estado final de esta condición será", idImagen = -1, nivel=1});
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cual de las siguientes figuras muestra una solución hipertónica en el compartimento A?", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La secuencia de las siguientes imágenes vistas al microscopio de menor a mayor aumento es:", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La secuencia correcta de imágenes de menor a mayor aumento es:", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de las siguientes imágenes corresponde a un tejido visto en aumento 40X?", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de las siguientes imágenes corresponde a un tejido visto en aumento 10X?", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de las siguientes imágenes corresponde a un tejido visto en aumento 40X?", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El órgano indicado con la flecha corresponde a", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El órgano de la imagen corresponde a:", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La imagen corresponde a", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La imagen del tejido y su órgano corresponde respectivamente a:", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En el tejido cerebral la célula que se encuentra en mayor proporción es", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Los glóbulos blancos son parte del tejido", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El tejido que se muestra en la imagen se encuentra en:", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La célula de la imagen corresponde a", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La célula de la imagen es", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La siguiente imagen corresponde a", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo de la célula que se indica en la imagen es:", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El órganelo de la célula vegetal que se indica con la flecha es:", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Cuando en un vaso de agua se echa jugo concentrado ocurre", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La imagen corresponde a:", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En la siguiente imagen se muestran:", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La siguiente imagen corresponde a:", idImagen = -1, nivel=1});
+
+
+		//PREGUNTAS DE SEGUNDO MEDIO
+
+
+		//PREGUNTAS DE TERCERO MEDIO
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Las células en cuanto a alguna de sus moléculas proteicas de membrana con función adhesiva:\n I.- Permiten la unión de las células\nII.- Interacción con proteínas de la matriz extracelular\nIII.- Sólo permiten conexiones sin permitir el pasaje de iones\nSeleccione la aseveración(es), concordante(s) con el enunciado:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La activación ejercida por la adenilato ciclasa conduce a la reacción:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La proteína G que induce adenilato ciclasa que está formada por subunidades:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La proteína G, se activa por adición de:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En la adhesión mediante cadherinas ocurre:\nI.- Dimerización en superficie\nII.- Interacción con cateninas\nIII.- Unión a fibras de actina\nSon correctas:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La acetilcolina es una molécula neurotransmisora, y:\nI.- Un neurotransmisor de sistema nervioso simpático\nII.- Participa en la unión neuromuscular\nIII.- Una molécula que participa en los procesos de comunicación que conducen al aprendizaje.\nSon correctas:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El gradiente electroquímico producido en la membrana se debe a:\nI.- La concentración de iones a ambos lados de la membrana\nII.- La igualdad de concentraciones de iones en ambos lados de la membrana\nIII.- El voltaje como consecuencia de la concentración de iones\nSon correctas:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Bomba de sodio y potasio se caracteriza por:\nI. Mantener alta la concentración de ión sodio Intracelular\nII. Mantener alta la concentración de Potasio extracelular\nIII. Mantener alta la concentración de cloruro en LEC\nSon correctas:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La actividad quinasa se define como actividad:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Si el neurotransmisor producido por una  neuronas se une a un receptor metabotrópico ocurre que:\nI.- Se separa una de las subunidades de la proteína G\nII.- La proteína G puede unirse a un canal iónico\nIII.- La unión de proteína G puede llevar a que se produzca un potencial postsináptico\nSon Correctas:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La diferencia más radical entre señales hormonales y neuronales es:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Las señales químicas dadas en el proceso de comunicación celular puede  involucrar:\nI.-Primeros y segundos mensajeros moleculares\nII.- Moléculas receptoras integrantes de membrana\nIII.- Iones como el de calcio", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Se sabe que las proteínas G están compuestas de tres subunidades,  entre ellas ocurre:\nI.- La subunidad alfa se activa con GTP\nII.- La subunidades gama se activan con GTP\nIII.-La subunidad beta se activa con GTP\nSon ciertas:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Por acción de la bomba de sodio y potasio se genera el potencial de reposo de una célula. Ello significa que:\nI.- El exterior de la membrana es negativo con respecto al interior de la membrana.\nII.- En el exterior de la célula se encuentra gran concentración de iones sodio\nIII.- En el interior de la célula se acumulan grandes concentraciones de iones sodio\nSon ciertas:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Un neurotrasmisor puede ser liberado hacia:\nI.- La sangre\nII.- Glándulas\nIII.-Músculos\nSon correctas:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En el experimento de Gortel y Grendel con glóbulos rojos son ciertas las siguientes aseveraciones:\nI.- La película que quedó sobre la superficie solvente corresponde a lípidos\nII. La mancha que se formaba a nivel intermedio era parte del mosaico de proteínas\nIII.- Con este experimento se descubrió que la membrana era un mosaico fluido\nEs, o son correctas:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="A bajas temperaturas las fuerzas de van der Waals en la membrana celular, específicamente en las cadenas de carbono de los lípidos debiera llevarnos a suponer que:\nI.- Convierten las bicapas de fosfolípidos en gel sólido\nII.- Dan mayor fluidez a la membrana, sobre todo si las cadenas de ácido graso son cortas\nIII.- No se expresan si hay mucha saturación\nSon correcta(s)", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La proteína anhidrasa carbónica (enzima):\nI.- Transporta bicarbonato (HCO3-)\nII.- Se encuentra en glóbulos rojos y células alveolares\nIII.- Es la proteína de la banda 3, espectrina\nSon correcta(s)", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Las uniones comunicantes en una membrana van a permitir la función:", idImagen = -1, nivel=3});	
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El AMPc entre sus propiedades en las vías de conducción que se inician en la membrana celular, se cuenta:\nI.- Puede ser reciclado por una fosfodiesterasa\nII.- Puede actuar como promotor de genes para que estos se expresen\nIII.- Puede modular la actividad de proteínas quinasas\nSon correcta(s)", idImagen = -1, nivel=3});
+
+		//PREGUNTAS DE CUARTO MEDIO
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El azúcar  que forma parte de los ácidos nucleicos, entre ellos el ADN es", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Las bases nitrogenadas que encontramos en el  ADN son:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Un nucleótido está formado por:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="De acuerdo a lo que usted ha podido investigar sobre la estructura del ADN, ¿Cuál de las siguientes aseveraciones sería incorrecta?", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En el ADN, las bases nitrogenadas se aparean mediante enlaces de hidrógeno en el siguiente orden (seleccione la correcta):", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Una de las siguientes afirmaciones es falsa:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En la actividad de reconstrucción de una molécula de ADN usted puede decir que el ADN consta de dos hebras antiparalelas porque:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En su diseño y construcción de la molécula de ADN suponga que la secuencia está escrita en sentido 5¨-3¨ y se denomina hebra directa: 5¨TGCGATAC3¨. En consecuencia la hebra inversa sería:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El par de  nucleótidos que no  sirven de base para la información en ADN, sería:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El filamento de ADN tiene importancia porque:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El genotipo se refiere a:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Con respecto a la poliploidia tenemos algunos descriptores para el fenómeno y estos son:\nI.- Las células contienen múltiplos del número diploide de cromosomas.\nII.- Se modifica el  número conjuntos haploides, pero el cariotipo se encuentra en equilibrio.\nIII.- En las poliploidias se encuentra suprimida la anafase y citocinesis.\nSon correctas:{\n", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En la aneuploidia ocurre que:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La meiosis se caracteriza fundamentalmente por:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La cromatina conocida como eucromatina tiene como características, excepto:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Con respecto al nucleosoma podemos anunciar las siguientes características, excepto:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Los genes tienen como características excepto:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La insulina  tiene como  características, excepto:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En la expresión genética del gen de la insulina tenemos como principales conocimientos:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El gen de la insulina se caracteriza por:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El gen de la insulina una vez transcrito es reconocible por:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Suponga que la hebra codificante que da origen al ARNm es A.A T A A, entonces el ARNm sería de secuencia", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La actividad de un enzima es sensible a factores com", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Una enzima es un compuesto químico que se caracteriza por poseer:", idImagen = -1, nivel=4});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La energía de activación:", idImagen = -1, nivel=4});
 
 	}
 
 	private void cargarPreguntaSolucionBD(){	
+
+		//soluciones primero medio 1-25
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="un centríolo.", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="una mitocondria.", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="un retículo endoplasmico rugoso.", esSolucion=true});
@@ -127,8 +163,8 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=4, solucion="una mitocondria.", esSolucion=false});
 
 		// HAY QUE CORROBORAR ESTA RESPUESTA, YA QUE NO VIENE EN EL DOC DE PREGUNTAS
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=5, solucion="una lisosoma.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=5, solucion="un cloroplasto.", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=5, solucion="una lisosoma.", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=5, solucion="un cloroplasto.", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=5, solucion="la membrana nuclear.", esSolucion=false});
 
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=6, solucion="transporte de sustancias.", esSolucion=false});
@@ -211,94 +247,190 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=25, solucion="2", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=25, solucion="3", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=26, solucion="solo III", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=26, solucion="solo I y III.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=26, solucion="solo II y IV.", esSolucion=false});
+		//soluciones segundo medio
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=27, solucion="1-2-4-3", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=27, solucion="4-3-2-1", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=27, solucion="2-4-3-1", esSolucion=true});
+		//soluciones tercero medio 26-45
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=26, solucion="I", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=26, solucion="II", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=26, solucion="I y II", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=28, solucion="3-2-4-1", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=28, solucion="3-4-1-2", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=28, solucion="2-3-4-1", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=27, solucion="AMP   →   ADP", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=27, solucion="GTP   →   GDP", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=27, solucion="ATP   →   AMPc", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=29, solucion="5", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=29, solucion="2", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=29, solucion="1", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=28, solucion="alfa, gama, beta", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=28, solucion="beta, epsilón, delta", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=28, solucion="beta, epsilón, alfa", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=30, solucion="2", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=30, solucion="5", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=30, solucion="1", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=29, solucion="ATP", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=29, solucion="GDP", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=29, solucion="GTP", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=31, solucion="1", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=31, solucion="4", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=31, solucion="3", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=30, solucion="I y II", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=30, solucion="I y III", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=30, solucion="I, II y III", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=32, solucion="pulmón.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=32, solucion="cerebro.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=32, solucion="intestino.", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=31, solucion="I", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=31, solucion="I, II, III", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=31, solucion="I y III", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=33, solucion="corazón.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=33, solucion="cerebro.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=33, solucion="intestino", esSolucion=true});
-	
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=34, solucion="tejido estriado.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=34, solucion="tejido nervioso.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=34, solucion="tejido epitelial.", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=32, solucion="I", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=32, solucion="II", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=32, solucion="I y III", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=35, solucion="tejido óseo y hueso.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=35, solucion="tejido muscular y corazón.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=35, solucion="tejido hepático e hígado.", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=33, solucion="I y II", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=33, solucion="II y III", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=33, solucion="Ninguna", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=36, solucion="el nefrón.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=36, solucion="el glóbulo rojo.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=36, solucion="la neurona.", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=34, solucion="Fosforilante", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=34, solucion="De las proteínas llamadas ligandos", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=34, solucion="De las proteínas que defosforilan", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=37, solucion="sanguíneo.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=37, solucion="nervioso.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=37, solucion="renal.", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=35, solucion="Sólo I", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=35, solucion="I y II", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=35, solucion="I, II y III", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=38, solucion="el estómago.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=38, solucion="la piel.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=38, solucion="el hueso.", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=36, solucion="La velocidad de transmisión", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=36, solucion="La  naturaleza química de los mensajeros moleculares", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=36, solucion="Las características de los receptores", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=39, solucion="un adiposito.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=39, solucion="un melanocito.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=39, solucion="un hepatocito.", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=37, solucion="I", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=37, solucion="II", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=37, solucion="I, II, III", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=40, solucion="una neurona.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=40, solucion="un hepatocito.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=40, solucion="un nefrón.", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=38, solucion="I", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=38, solucion="II", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=38, solucion="III", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=41, solucion="pulmones.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=41, solucion="estómago.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=41, solucion="vasos sanguíneos.", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=39, solucion="I", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=39, solucion="II", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=39, solucion="III", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=42, solucion="mitocondria.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=42, solucion="núcleo.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=42, solucion="complejo de Golgi.", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=40, solucion="I", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=40, solucion="II", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=40, solucion="I, II, III", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=43, solucion="pared celular.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=43, solucion="cloroplasto.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=43, solucion="membrana plasmática.", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=41, solucion="I", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=41, solucion="I y II", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=41, solucion="I y III", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=44, solucion="difusión.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=44, solucion="difusión facilitada.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=44, solucion="Transporte activo", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=42, solucion="I", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=42, solucion="II", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=42, solucion="I y II", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=45, solucion="eritrocitos en un medio hipertónico", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=45, solucion="leucocitos en un medio hipotónico", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=45, solucion="eritrocitos en un medio isotónico", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=43, solucion="I", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=43, solucion="II", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=43, solucion="I y II", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=46, solucion="eritrocitos en un medio hipotónico", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=46, solucion="eritrocitos en un medio isotónico", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=46, solucion="eritrocitos en un medio hipotónico", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=44, solucion="Que los canales permitan el viaje de moléculas de tamaño mayor a 5900 kDa", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=44, solucion="Acoplamiento eléctrico entre células", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=44, solucion="De intercambio de información entre leucocitos y tejidos invadidos", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=47, solucion="células vegetales en un medio hipotónico.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=47, solucion="células animales en un medio hipertónico.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=47, solucion="células vegetales en un medio hipertónico.", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=45, solucion="I", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=45, solucion="II", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=45, solucion="I y III", esSolucion=true});
 
+		//soluciones cuarto medio 46-70
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=46, solucion="Ribosa", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=46, solucion="Glucosa", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=46, solucion="Derribosa", esSolucion=false});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=47, solucion="Uracilo, guanina, citosina", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=47, solucion="Uracilo, citosina timina", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=47, solucion="Citosina, timina, guanina", esSolucion=true});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=48, solucion="Pentosa, base nitrogenada y ácido fosfórico ( Fosfato)", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=48, solucion="Ribosa, base nitrogenada y fosfato", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=48, solucion="Desoxirribosa, ribosa y bases nitrogenada más fosfato", esSolucion=false});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=49, solucion="Los nucleótidos contienen fosfato, compuesto muy energético", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=49, solucion="Los nucleótidos poseen grupos fosfatos con tres grupos fosfato de baja energía", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=49, solucion="El GTP es una guanina y tres fosfatos", esSolucion=false});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=50, solucion="A-T y C-G con dos y tres enlaces de hidrógeno respectivamente.", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=50, solucion="A-C y T-G Con dos enlaces de hidrógeno y uno entre T y G ", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=50, solucion="A-G y T-C Con dos y tres enlaces de hidrógeno respectivamente", esSolucion=false});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=51, solucion="El ARN a veces consta de una cadena", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=51, solucion="El ARN contiene uracilo, El ADN contiene timina", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=51, solucion="El ARN nunca se encuentra en el núcleo, el ADN nunca se encuentra en el citoplasma", esSolucion=true});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=52, solucion="Las dos hebras siguen en igual sentido y las dos van en sentido 5¨-3¨", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=52, solucion="Las dos hebras siguen un sentido contrario 5¨ ", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=52, solucion="Cada hebra sigue un sentido 5¨- 3¨", esSolucion=true});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=53, solucion="5¨AGCGATAC3¨", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=53, solucion="3¨CATAGCGT5¨", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=53, solucion="3¨ACGCTATG5¨", esSolucion=false});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=54, solucion="Adenina y timina", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=54, solucion="Guanina y citosina", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=54, solucion="Guanina y Uracilo", esSolucion=true});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=55, solucion="Posee la información que permite la construcción y desarrollo de un organismo, Es Código genético", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=55, solucion="En su estructura se encuentra las instrucciones para fabricar proteínas, Su estructura puede ser traspasada de generación en generación", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=55, solucion="Todas las anteriores son correctas", esSolucion=true});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=56, solucion="Las características morfológicas (Forma) e internas de los seres vivos", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=56, solucion="Es el genotipo en relación con el medio ambiente, su acción puede ser modificada por las condiciones ambientales", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=56, solucion="Todas las anteriores son correctas", esSolucion=true});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=57, solucion="I", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=57, solucion="II", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=57, solucion="I y II", esSolucion=false});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=58, solucion="Puede haber ganancia o pérdida de cromosomas, desequilibrio en el número de cromosomas", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=58, solucion="Puede producirse por la disyunción de los cromosomas en la anafase y puede ocurrer en los gametos", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=58, solucion="Todas las anteriores son correctas", esSolucion=true});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=59, solucion="La reducción en el número de cromosomas", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=59, solucion="La amplificación en el número de cromosomas", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=59, solucion="Permite la reproducción sexual", esSolucion=false});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=60, solucion="Contiene proteínas y ADN muy compactadas", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=60, solucion="Aparece en distintas  células del organismo", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=60, solucion="Puede sintetizar ARN", esSolucion=false});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=61, solucion="Está formado por dos vueltas completas de ADN", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=61, solucion="Es un octámero de proteínas", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=61, solucion="Está formado por proteínas histonas ,  ADN y ácidos grasos", esSolucion=true});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=62, solucion="Poseen información en todos los seres vivos", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=62, solucion="Poseen secuencias de nucleótidos", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=62, solucion="Se encuentran presente en el núcleo de los organismos procariotas", esSolucion=true});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=63, solucion="Es una proteína", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=63, solucion="La  produce las células beta del páncreas", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=63, solucion="Es un azúcar", esSolucion=true});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=64, solucion="Aún no se conoce el mecanismo de la transcripción del gen", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=64, solucion="Conocemos la estructura terciaria de la insulina", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=64, solucion="Conocemos las cadenas unidas por un péptido C", esSolucion=true});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=65, solucion="Se encuentra en dos cromosomas homólogos", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=65, solucion="Se encuentra presente en todos los cromosomas humanos y algunos animales", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=65, solucion="En la especie humana se encuentra en una sola copia", esSolucion=true});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=66, solucion="Su secuencia muestra aminoácidos en la secuencia transcrita de ARNm", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=66, solucion="Su secuencia muestra aminoácidos en la secuencia transcrita de ARNm", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=66, solucion="Por la secuencia de nucleótidos del ARNm y la presencia de intrones y exones", esSolucion=true});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=67, solucion="A A T T U", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=67, solucion="U U A U U", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=67, solucion="T T U T T", esSolucion=false});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=68, solucion="El pH y la temperatura", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=68, solucion="La presencia o ausencia de cofactores, además de inhibidores enzimáticos", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=68, solucion="Todas las respuestas son correctas", esSolucion=true});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=69, solucion="Estructura sólo primaria", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=69, solucion="Estructura sólo secundaria", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=69, solucion="Estructura sólo terciaria", esSolucion=true});
+
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=70, solucion="Se ve disminuida en el transcurso de una reacción", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=70, solucion="Aumenta gracias a la acción catalítica", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=70, solucion="No se observa influenciada por acción catalítica", esSolucion=false});
 	}
 
 }

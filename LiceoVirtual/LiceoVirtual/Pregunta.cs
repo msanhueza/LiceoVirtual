@@ -52,8 +52,8 @@ namespace LiceoVirtual
 			pbPregunta.Progress = progreso;
 			numPregunta = 0;
 			tvProgreso.Text = (numPregunta + 1) + " / 10";
-
-			List<ListadoPreguntaSolucionItem> aux = getListadoPreguntaSolucion (1);
+			int auxNivel = Int32.Parse(nivel);
+			List<ListadoPreguntaSolucionItem> aux = getListadoPreguntaSolucion (auxNivel);
 
 			ListadoPreguntaSolucionItem p = aux[numPregunta];
 			string textPregunta = p.objPregunta.pregunta;
