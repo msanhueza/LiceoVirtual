@@ -58,10 +58,10 @@ namespace LiceoVirtual
 
 			ListadoPreguntaSolucionItem p = aux[numPregunta];
 			string textPregunta = p.objPregunta.pregunta;
+			tvPregunta.Text = textPregunta;
 			string opcion1 = p.objListaRespuestas[0].solucion;
 			string opcion2 = p.objListaRespuestas[1].solucion;
 			string opcion3 = p.objListaRespuestas[2].solucion;
-			tvPregunta.Text = textPregunta;
 			radioOp1.Text = opcion1;
 			radioOp2.Text = opcion2;
 			radioOp3.Text = opcion3;
@@ -74,26 +74,27 @@ namespace LiceoVirtual
 			}
 
 			btnPreguntaSiguiente.Click += delegate {
-				radioOp1.Checked = true; // para dejar siempre el primer radio button seleccionado
 				bool resp = comprobarRespuesta(p.objListaRespuestas);
-				Toast.MakeText (this, resp.ToString(), ToastLength.Short).Show();
 				if(numPregunta == 9){
+					Toast.MakeText (this, resp.ToString(), ToastLength.Short).Show();
 					var intent = new Intent (this, typeof(MensajeResultado));
 					intent.PutExtra ("nivel", nivel);
 					StartActivity (intent);
 					Finish ();
 				}
 				else{
+					radioOp1.Checked = true; // para dejar siempre el primer radio button seleccionado
+					Toast.MakeText (this, resp.ToString(), ToastLength.Short).Show();					
 					numPregunta++;
 					progreso = progreso + 10;
 					pbPregunta.Progress = progreso;
 					tvProgreso.Text = (numPregunta + 1) + " / 10";
 					p = aux[numPregunta];
 					textPregunta = p.objPregunta.pregunta;
+					tvPregunta.Text = textPregunta;
 					opcion1 = p.objListaRespuestas[0].solucion;
 					opcion2 = p.objListaRespuestas[1].solucion;
 					opcion3 = p.objListaRespuestas[2].solucion;
-					tvPregunta.Text = textPregunta;
 					radioOp1.Text = opcion1;
 					radioOp2.Text = opcion2;
 					radioOp3.Text = opcion3;
@@ -134,7 +135,7 @@ namespace LiceoVirtual
 			String respuesta = radioButtonSeleccionado.Text;
 			for (int i = 0; i<listaRespuestas.Count; i++) {
 				if(listaRespuestas[i].esSolucion){
-					string auxSol = listaRespuestas [i].solucion;
+					string auxSol = listaRespuestas[i].solucion;
 					if (( auxSol ).Equals (respuesta)) {
 						return true;
 					}
