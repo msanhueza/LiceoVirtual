@@ -17,6 +17,8 @@ namespace LiceoVirtual
 	public class MensajeResultado : Activity
 	{
 		public static string nivel;
+		public static int puntaje;
+		public static bool aprobo;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -24,10 +26,23 @@ namespace LiceoVirtual
 			SetContentView (Resource.Layout.MensajeResultado);
 
 			TextView tvTextoMensajeResultado = FindViewById<TextView> (Resource.Id.tvTextoMensajeResultado);
+			TextView tvPuntajeMensajeResultado = FindViewById<TextView> (Resource.Id.tvPuntajeMensajeResultado);
+			ImageView imgMensajeResultadoStudent = FindViewById<ImageView> (Resource.Id.imgMensajeResultadoStudent);
 
 			nivel = Intent.GetStringExtra ("nivel") ?? "0";
+			puntaje = Intent.GetIntExtra ("puntaje",0);
+			aprobo = Intent.GetBooleanExtra ("aprobo", false);
 
-			string baseTexto = "¡FELICITACIONES!, HAS COMPLETADO LA TRIVIA DE ";
+			tvPuntajeMensajeResultado.Text = (puntaje*10) + "%";
+
+			string baseTexto = "";
+			if(aprobo){
+				baseTexto = "¡FELICITACIONES!, HAS COMPLETADO LA TRIVIA DE ";
+			}
+			else{
+				baseTexto = "¡SIGUE INTENTANDOLO!, NO HAS COMPLETADO LA TRIVIA DE ";
+				imgMensajeResultadoStudent.SetImageResource (Resource.Drawable.student_sad);
+			}
 			string primero = "PRIMERO MEDIO";
 			string segundo = "SEGUNDO MEDIO";
 			string tercero = "TERCERO MEDIO";

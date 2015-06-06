@@ -52,7 +52,7 @@
                 p1:textAppearance="?android:attr/textAppearanceLarge"
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
-                p1:id="@+id/textView2"
+                p1:id="@+id/tvPuntajeMensajeResultado"
                 p1:gravity="center"
                 p1:textSize="50dp" />
         </RelativeLayout>
@@ -66,6 +66,6 @@
         p1:src="@drawable/student"
         p1:layout_width="0dp"
         p1:layout_height="match_parent"
-        p1:id="@+id/imageView1"
+        p1:id="@+id/imgMensajeResultadoStudent"
         p1:layout_weight="1" />
 </LinearLayout>

@@ -102,18 +102,25 @@ namespace LiceoVirtual
 						view.SetImageResource(Resource.Drawable.incorrect);
 						toast.View = view;
 						toast.Duration = ToastLength.Short;
-						toast.Show();						
-						// CUANDO SE EQUIVOCA DOS VECES SE TERMINA AUTOMATICAMENTE LA TRIVIA
-					//}
-					//else{
-					//	mostrarMensajeAlertaIncorrecto();
-					//}
+						toast.Show();
+
+						if(malas == 2){
+							var intent = new Intent (this, typeof(MensajeResultado));
+							intent.PutExtra ("nivel", nivel);
+							intent.PutExtra ("puntaje", buenas);
+							intent.PutExtra("aprobo", false);
+							StartActivity (intent);
+							Finish ();
+						}
+
 				}
 				tvCorrectas.Text = "CORRECTAS: " + buenas+"/10";
 				tvIncorrectas.Text = "INCORRECTAS: " + malas+"/2";
 				if(numPregunta == 9){
 					var intent = new Intent (this, typeof(MensajeResultado));
 					intent.PutExtra ("nivel", nivel);
+					intent.PutExtra ("puntaje", buenas);
+					intent.PutExtra("aprobo", true);
 					StartActivity (intent);
 					Finish ();
 				}
