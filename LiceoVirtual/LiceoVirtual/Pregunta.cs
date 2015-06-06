@@ -47,6 +47,7 @@ namespace LiceoVirtual
 			RadioButton radioOp1 = FindViewById<RadioButton> (Resource.Id.rbOp1);
 			RadioButton radioOp2 = FindViewById<RadioButton> (Resource.Id.rbOp2);
 			RadioButton radioOp3 = FindViewById<RadioButton> (Resource.Id.rbOp3);
+			ImageView imgPregunta = FindViewById<ImageView> (Resource.Id.imgPregunta);
 
 			int progreso = 10;
 			pbPregunta.Progress = progreso;
@@ -64,6 +65,13 @@ namespace LiceoVirtual
 			radioOp1.Text = opcion1;
 			radioOp2.Text = opcion2;
 			radioOp3.Text = opcion3;
+			if (p.objPregunta.idImagen != -1) {
+				imgPregunta.Visibility = ViewStates.Visible;
+				imgPregunta.SetImageResource (p.objPregunta.idImagen);
+			}
+			else{
+				imgPregunta.Visibility = ViewStates.Invisible;
+			}
 
 			btnPreguntaSiguiente.Click += delegate {
 				radioOp1.Checked = true; // para dejar siempre el primer radio button seleccionado
@@ -89,6 +97,13 @@ namespace LiceoVirtual
 					radioOp1.Text = opcion1;
 					radioOp2.Text = opcion2;
 					radioOp3.Text = opcion3;
+					if (p.objPregunta.idImagen != -1) {
+						imgPregunta.Visibility = ViewStates.Visible;
+						imgPregunta.SetImageResource (p.objPregunta.idImagen);
+					}
+					else{
+						imgPregunta.Visibility = ViewStates.Invisible;
+					}
 					if(numPregunta == 9){
 						btnPreguntaSiguiente.Text = "Terminar";
 					}

@@ -32,7 +32,7 @@
             p1:gravity="center" />
     </LinearLayout>
     <LinearLayout
-        p1:orientation="horizontal"
+        p1:orientation="vertical"
         p1:layout_width="match_parent"
         p1:layout_height="0dp"
         p1:id="@+id/pregunta"
@@ -51,6 +51,11 @@
             p1:layout_marginTop="10dp"
             p1:layout_weight="2"
             p1:textSize="@dimen/txt_18sp" />
+        <ImageView
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/imgPregunta"
+            p1:layout_weight="1" />
     </LinearLayout>
     <LinearLayout
         p1:orientation="horizontal"
