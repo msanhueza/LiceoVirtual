@@ -167,6 +167,9 @@
     <AndroidResource Include="Resources\drawable\n1_21.png" />
     <AndroidResource Include="Resources\drawable\n1_22.png" />
     <AndroidResource Include="Resources\drawable\n1_25.png" />
+    <AndroidResource Include="Resources\drawable\correct.png" />
+    <AndroidResource Include="Resources\layout\AlertaRespuestaIncorrecta.xml" />
+    <AndroidResource Include="Resources\drawable\incorrect.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

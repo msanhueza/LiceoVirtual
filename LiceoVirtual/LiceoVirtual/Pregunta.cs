@@ -10,6 +10,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using System.Threading;
 
 namespace LiceoVirtual
 {
@@ -19,6 +20,8 @@ namespace LiceoVirtual
 
 		public static int numPregunta;
 		public static string nivel;
+		public static int buenas;
+		public static int malas;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -44,15 +47,21 @@ namespace LiceoVirtual
 			ProgressBar pbPregunta = FindViewById<ProgressBar> (Resource.Id.pbPregunta);
 			TextView tvPregunta = FindViewById<TextView> (Resource.Id.tvPregunta);
 			TextView tvProgreso = FindViewById<TextView> (Resource.Id.tvProgreso);
+			TextView tvCorrectas = FindViewById<TextView> (Resource.Id.tvCorrectas);
+			TextView tvIncorrectas = FindViewById<TextView> (Resource.Id.tvIncorrectas);
 			RadioButton radioOp1 = FindViewById<RadioButton> (Resource.Id.rbOp1);
 			RadioButton radioOp2 = FindViewById<RadioButton> (Resource.Id.rbOp2);
 			RadioButton radioOp3 = FindViewById<RadioButton> (Resource.Id.rbOp3);
 			ImageView imgPregunta = FindViewById<ImageView> (Resource.Id.imgPregunta);
 
 			int progreso = 10;
+			buenas = 0;
+			malas = 0;
+			tvCorrectas.Text = "CORRECTAS: " + buenas+"/10";
+			tvIncorrectas.Text = "INCORRECTAS: " + malas+"/2";
 			pbPregunta.Progress = progreso;
 			numPregunta = 0;
-			tvProgreso.Text = (numPregunta + 1) + " / 10";
+			tvProgreso.Text = "Pregunta: " + (numPregunta + 1) + " / 10";
 			int auxNivel = Int32.Parse(nivel);
 			List<ListadoPreguntaSolucionItem> aux = getListadoPreguntaSolucion (auxNivel);
 
@@ -75,8 +84,34 @@ namespace LiceoVirtual
 
 			btnPreguntaSiguiente.Click += delegate {
 				bool resp = comprobarRespuesta(p.objListaRespuestas);
+				if(resp){
+					Toast toast = new Toast(this);
+					ImageView view = new ImageView(this); 
+					view.SetImageResource(Resource.Drawable.correct);
+					toast.View = view;
+					toast.Duration = ToastLength.Short;
+					toast.Show();
+					buenas++;
+				}
+				else{
+					malas++;
+					//if(malas == 2){
+						tvIncorrectas.SetTextColor(Android.Graphics.Color.Red);
+						Toast toast = new Toast(this);
+						ImageView view = new ImageView(this); 
+						view.SetImageResource(Resource.Drawable.incorrect);
+						toast.View = view;
+						toast.Duration = ToastLength.Short;
+						toast.Show();						
+						// CUANDO SE EQUIVOCA DOS VECES SE TERMINA AUTOMATICAMENTE LA TRIVIA
+					//}
+					//else{
+					//	mostrarMensajeAlertaIncorrecto();
+					//}
+				}
+				tvCorrectas.Text = "CORRECTAS: " + buenas+"/10";
+				tvIncorrectas.Text = "INCORRECTAS: " + malas+"/2";
 				if(numPregunta == 9){
-					Toast.MakeText (this, resp.ToString(), ToastLength.Short).Show();
 					var intent = new Intent (this, typeof(MensajeResultado));
 					intent.PutExtra ("nivel", nivel);
 					StartActivity (intent);
@@ -84,11 +119,10 @@ namespace LiceoVirtual
 				}
 				else{
 					radioOp1.Checked = true; // para dejar siempre el primer radio button seleccionado
-					Toast.MakeText (this, resp.ToString(), ToastLength.Short).Show();					
 					numPregunta++;
 					progreso = progreso + 10;
 					pbPregunta.Progress = progreso;
-					tvProgreso.Text = (numPregunta + 1) + " / 10";
+					tvProgreso.Text = "Pregunta: " + (numPregunta + 1) + " / 10";
 					p = aux[numPregunta];
 					textPregunta = p.objPregunta.pregunta;
 					tvPregunta.Text = textPregunta;
@@ -192,6 +226,21 @@ namespace LiceoVirtual
 				list.RemoveAt(index);
 			}
 			return randomizedList;
+		}
+
+		public void mostrarMensajeAlertaIncorrecto(){
+			AlertDialog.Builder alert = new AlertDialog.Builder (this);
+			var inputView = LayoutInflater.Inflate(Resource.Layout.AlertaRespuestaIncorrecta, null);
+			alert.SetView(inputView);
+			alert.SetTitle("Alerta");
+			alert.SetNeutralButton ("Aceptar", (senderAlert, args) => {
+				alert.Dispose();
+			} );
+
+			//run the alert in UI thread to display in the screen
+			RunOnUiThread (() => {
+				alert.Show();
+			} );
 		}
 
 		public void mostrarMensajeAlerta(){

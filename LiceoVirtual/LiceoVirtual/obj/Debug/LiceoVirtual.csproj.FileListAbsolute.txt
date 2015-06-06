@@ -110,3 +110,6 @@ C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable\n1_21.png
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable\n1_22.png
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable\n1_25.png
+C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable\correct.png
+C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\layout\alertarespuestaincorrecta.xml
+C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable\incorrect.png
