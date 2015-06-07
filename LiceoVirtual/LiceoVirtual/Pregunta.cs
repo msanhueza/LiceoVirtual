@@ -81,37 +81,24 @@ namespace LiceoVirtual
 			else{
 				imgPregunta.Visibility = ViewStates.Invisible;
 			}
-
 			btnPreguntaSiguiente.Click += delegate {
 				bool resp = comprobarRespuesta(p.objListaRespuestas);
 				if(resp){
-					Toast toast = new Toast(this);
-					ImageView view = new ImageView(this); 
-					view.SetImageResource(Resource.Drawable.correct);
-					toast.View = view;
-					toast.Duration = ToastLength.Short;
-					toast.Show();
+					mostrarToastConImagen(Resource.Drawable.correct);
 					buenas++;
 				}
 				else{
 					malas++;
-					//if(malas == 2){
-						tvIncorrectas.SetTextColor(Android.Graphics.Color.Red);
-						Toast toast = new Toast(this);
-						ImageView view = new ImageView(this); 
-						view.SetImageResource(Resource.Drawable.incorrect);
-						toast.View = view;
-						toast.Duration = ToastLength.Short;
-						toast.Show();
-
-						if(malas == 2){
-							var intent = new Intent (this, typeof(MensajeResultado));
-							intent.PutExtra ("nivel", nivel);
-							intent.PutExtra ("puntaje", buenas);
-							intent.PutExtra("aprobo", false);
-							StartActivity (intent);
-							Finish ();
-						}
+					tvIncorrectas.SetTextColor(Android.Graphics.Color.Red);
+					mostrarToastConImagen(Resource.Drawable.incorrect);
+					if(malas == 2){
+						var intent = new Intent (this, typeof(MensajeResultado));
+						intent.PutExtra ("nivel", nivel);
+						intent.PutExtra ("puntaje", buenas);
+						intent.PutExtra("aprobo", false);
+						StartActivity (intent);
+						Finish ();
+					}
 
 				}
 				tvCorrectas.Text = "CORRECTAS: " + buenas+"/10";
@@ -150,23 +137,9 @@ namespace LiceoVirtual
 						btnPreguntaSiguiente.Text = "Terminar";
 					}
 
-
-
-
 				}
 			};
 				
-			/*List<ListadoPreguntaSolucionItem> aux = getListadoPreguntaSolucion (1);
-			for (int i = 0; i < aux.Count; i++) {
-				Console.WriteLine ("");
-				Console.WriteLine (aux[i].objPregunta.pregunta);
-				List<PreguntaSolucionItem> lista = aux[i].objListaRespuestas;
-				for (int j = 0; j < lista.Count; j++) {
-					Console.WriteLine (lista[j].solucion + " " + lista[j].esSolucion);
-				}
-				Console.WriteLine ("");
-			}*/
-
 		}
 
 		public bool comprobarRespuesta(List<PreguntaSolucionItem> listaRespuestas){
@@ -233,6 +206,16 @@ namespace LiceoVirtual
 				list.RemoveAt(index);
 			}
 			return randomizedList;
+		}
+
+
+		public void mostrarToastConImagen(int idImagen){
+			Toast toast = new Toast(this);
+			ImageView view = new ImageView(this); 
+			view.SetImageResource(idImagen);
+			toast.View = view;
+			toast.Duration = ToastLength.Short;
+			toast.Show();
 		}
 
 		public void mostrarMensajeAlertaIncorrecto(){
