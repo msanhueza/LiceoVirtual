@@ -112,7 +112,7 @@ namespace LiceoVirtual
 					}
 				}
 
-				if(numPregunta == 9){ // si se terminaron las preguntas
+				if(numPregunta == 9 && esCorrecta){ // si se terminaron las preguntas
 					cambiarActivity(true);
 				}
 				else{ // si quedan preguntas
