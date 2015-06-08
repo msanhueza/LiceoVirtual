@@ -1,6 +1,13 @@
 ﻿<Properties StartupItem="LiceoVirtual/LiceoVirtual.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="LiceoVirtual/Login.cs" Line="1" Column="1" />
+      <File FileName="LiceoVirtual/Puntuacion.cs" Line="1" Column="1" />
+      <File FileName="LiceoVirtual/PuntuacionAdapter.cs" Line="1" Column="1" />
+      <File FileName="LiceoVirtual/Properties/AndroidManifest.xml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\Ranking.cs" line="41" column="1" />

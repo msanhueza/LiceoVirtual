@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Android.Util;
 
 using Android.App;
 using Android.Content;
@@ -18,9 +19,9 @@ using Android.Content.PM;
 namespace LiceoVirtual
 {
 	[Activity (Label = "Puntuacion", ScreenOrientation = ScreenOrientation.Portrait)]			
-	public class Puntuacion : Activity
+	public class Puntuacion : Activity, ActionBar.ITabListener
 	{
-
+		Fragment[] _fragments;
 		ListView listView;
 		List<PuntuacionItem> listaPuntuaciones = new List<PuntuacionItem>();
 
@@ -28,13 +29,14 @@ namespace LiceoVirtual
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-			SetContentView (Resource.Layout.Puntuacion);
+			this.ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
+			SetContentView (Resource.Layout.PuntuacionTabs);
 
 			ActionBar.SetHomeButtonEnabled(true);
 			ActionBar.SetDisplayHomeAsUpEnabled(true);
 
 
-			string nivel = Intent.GetStringExtra ("nivel") ?? "0";
+			/*string nivel = Intent.GetStringExtra ("nivel") ?? "0";
 
 			if (nivel.Equals ("1")) {
 				SetTitle (Resource.String.nivel_1);
@@ -44,13 +46,25 @@ namespace LiceoVirtual
 				SetTitle (Resource.String.nivel_3);
 			} else {
 				SetTitle (Resource.String.nivel_4);
-			}
+			}*/
 
-			listView = FindViewById<ListView>(Resource.Id.listViewPuntuacion);
+			_fragments = new Fragment[] {
+				PuntuacionFragment.NewInstance ("1"),
+				PuntuacionFragment.NewInstance ("2"),
+				PuntuacionFragment.NewInstance ("3"),
+				PuntuacionFragment.NewInstance ("4")
+			};
+			AddTabToActionBar (Resource.String.nivel_1, Resource.Drawable.ic_send);
+			AddTabToActionBar (Resource.String.nivel_2, Resource.Drawable.ic_send);
+			AddTabToActionBar (Resource.String.nivel_3, Resource.Drawable.ic_send);
+			AddTabToActionBar (Resource.String.nivel_4, Resource.Drawable.ic_send);
+
+
+			/*listView = FindViewById<ListView>(Resource.Id.listViewPuntuacion);
 			PuntuacionAccion p = new PuntuacionAccion ();
 			listaPuntuaciones = p.getPuntuacionesBD (nivel);
 			listView.Adapter = new PuntuacionAdapter(this, listaPuntuaciones);
-
+	
 			Button btnIrTrivia = FindViewById<Button> (Resource.Id.btnIrTrivia);
 
 			btnIrTrivia.Click += delegate {
@@ -58,10 +72,39 @@ namespace LiceoVirtual
 				//intent.PutExtra ("nivel", nivel);
 				//StartActivity (intent);		
 				//Finish ();
-			};
+			};*/
 
 
 		}
+		void AddTabToActionBar (int labelResourceId, int iconResourceId)
+		{
+			ActionBar.Tab tab = this.ActionBar.NewTab ()
+				.SetText (labelResourceId)
+				.SetIcon (iconResourceId)
+				.SetTabListener (this);
+			this.ActionBar.AddTab (tab);
+		}
+
+		public void OnTabSelected (ActionBar.Tab tab, FragmentTransaction ft)
+		{
+			FragmentManager.PopBackStack (null,PopBackStackFlags.Inclusive);
+
+			Log.Debug ("OnTabSelected", "The tab {0} has been selected.", tab.Text);
+			Fragment frag = _fragments [tab.Position];
+			ft.Replace (Resource.Id.content_frame, frag);
+		}
+
+		public void OnTabReselected (ActionBar.Tab tab, FragmentTransaction ft)
+		{
+			Log.Debug ("OnTabReselected", "The tab {0} was re-selected.", tab.Text);
+		}
+
+		public void OnTabUnselected (ActionBar.Tab tab, FragmentTransaction ft)
+		{
+			// perform any extra work associated with saving fragment state here.
+			Log.Debug ("OnTabUnselected", "The tab {0} as been unselected.", tab.Text);
+		}
+
 
 		public override bool OnOptionsItemSelected(IMenuItem item)
 		{
