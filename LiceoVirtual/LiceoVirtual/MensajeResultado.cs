@@ -33,7 +33,10 @@ namespace LiceoVirtual
 			puntaje = Intent.GetIntExtra ("puntaje",0);
 			aprobo = Intent.GetBooleanExtra ("aprobo", false);
 
-			tvPuntajeMensajeResultado.Text = (puntaje*10) + "%";
+			int auxNivel = Int32.Parse(nivel);
+			int auxPuntaje = puntaje * 10;
+			tvPuntajeMensajeResultado.Text = (auxPuntaje) + "%";
+			guardarPuntaje(auxNivel, auxPuntaje);
 
 			string baseTexto = "";
 			if(aprobo){
@@ -72,6 +75,13 @@ namespace LiceoVirtual
 			};
 
 			// Create your application here
+		}
+
+		public void guardarPuntaje(int auxNivel, int auxPuntaje){
+			DateTime date = DateTime.Now;
+			string auxDate = String.Format("{0:dd/MM/yyyy}", date);	
+			PuntuacionAccion puntuacionAccion = new PuntuacionAccion ();
+			puntuacionAccion.insertUpdateData(new PuntuacionBD{ IdUsuario= 1, nivel= auxNivel, fecha= auxDate, puntaje=auxPuntaje });
 		}
 
 		public override void OnBackPressed ()
