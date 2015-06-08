@@ -11,10 +11,11 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using SQLite;
+using Android.Content.PM;
 
 namespace LiceoVirtual
 {
-	[Activity (Label = "Nivel")]			
+	[Activity (Label = "Nivel", ScreenOrientation = ScreenOrientation.Portrait)]			
 	public class Nivel : Activity
 	{
 		protected override void OnCreate (Bundle bundle)

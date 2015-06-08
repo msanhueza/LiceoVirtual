@@ -10,10 +10,11 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Content.PM;
 
 namespace LiceoVirtual
 {
-	[Activity (Label = "Trivia")]			
+	[Activity (Label = "Trivia", ScreenOrientation = ScreenOrientation.Portrait)]			
 	public class MensajeResultado : Activity
 	{
 		public static string nivel;

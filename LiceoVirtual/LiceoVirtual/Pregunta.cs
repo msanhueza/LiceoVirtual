@@ -11,10 +11,11 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using System.Threading;
+using Android.Content.PM;
 
 namespace LiceoVirtual
 {
-	[Activity (Label = "Pregunta")]			
+	[Activity (Label = "Pregunta", ScreenOrientation = ScreenOrientation.Portrait)]			
 	public class Pregunta : Activity
 	{
 

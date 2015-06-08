@@ -13,10 +13,11 @@ using Android.Widget;
 using Android.Telephony.Gsm;
 using System.Threading.Tasks;
 using System.Threading;
+using Android.Content.PM;
 
 namespace LiceoVirtual
 {
-	[Activity (Label = "Trivia Biología")]			
+	[Activity (Label = "Trivia Biología", ScreenOrientation = ScreenOrientation.Portrait)]			
 	public class Menu : Activity
 	{
 		protected override void OnCreate (Bundle bundle)

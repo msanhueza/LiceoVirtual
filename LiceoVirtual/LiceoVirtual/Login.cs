@@ -12,10 +12,11 @@ using Android.Views;
 using Android.Widget;
 using System.Security.Cryptography;
 using Android.Graphics.Drawables;
+using Android.Content.PM;
 
 namespace LiceoVirtual
 {
-	[Activity (Label = "@string/app_name", MainLauncher = false, Theme = "@android:style/Theme.Holo.Light.NoActionBar.Fullscreen")]			
+	[Activity (Label = "@string/app_name", MainLauncher = false, Theme = "@android:style/Theme.Holo.Light.NoActionBar.Fullscreen", ScreenOrientation = ScreenOrientation.Portrait)]			
 	public class Login : Activity
 	{
 		protected override void OnCreate (Bundle bundle)

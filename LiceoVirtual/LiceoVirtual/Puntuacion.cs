@@ -13,10 +13,11 @@ using Android.Widget;
 using SQLite;
 using System.Globalization;
 using System.Threading.Tasks;
+using Android.Content.PM;
 
 namespace LiceoVirtual
 {
-	[Activity (Label = "Puntuacion")]			
+	[Activity (Label = "Puntuacion", ScreenOrientation = ScreenOrientation.Portrait)]			
 	public class Puntuacion : Activity
 	{
 
