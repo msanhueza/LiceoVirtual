@@ -621,8 +621,8 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f060000
 			public const int hello = 2131099648;
 			
-			// aapt resource value: 0x7f06000f
-			public const int log_in = 2131099663;
+			// aapt resource value: 0x7f060013
+			public const int log_in = 2131099667;
 			
 			// aapt resource value: 0x7f060004
 			public const int nivel_1 = 2131099652;
@@ -639,26 +639,38 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f060003
 			public const int niveles = 2131099651;
 			
-			// aapt resource value: 0x7f06000e
-			public const int password = 2131099662;
-			
-			// aapt resource value: 0x7f060008
-			public const int preguntas_n1 = 2131099656;
-			
-			// aapt resource value: 0x7f060009
-			public const int preguntas_n2 = 2131099657;
-			
-			// aapt resource value: 0x7f06000a
-			public const int preguntas_n3 = 2131099658;
-			
-			// aapt resource value: 0x7f06000b
-			public const int preguntas_n4 = 2131099659;
+			// aapt resource value: 0x7f060012
+			public const int password = 2131099666;
 			
 			// aapt resource value: 0x7f06000c
-			public const int ranking_estudiantes = 2131099660;
+			public const int preguntas_n1 = 2131099660;
 			
 			// aapt resource value: 0x7f06000d
-			public const int rut = 2131099661;
+			public const int preguntas_n2 = 2131099661;
+			
+			// aapt resource value: 0x7f06000e
+			public const int preguntas_n3 = 2131099662;
+			
+			// aapt resource value: 0x7f06000f
+			public const int preguntas_n4 = 2131099663;
+			
+			// aapt resource value: 0x7f060010
+			public const int ranking_estudiantes = 2131099664;
+			
+			// aapt resource value: 0x7f060011
+			public const int rut = 2131099665;
+			
+			// aapt resource value: 0x7f060008
+			public const int trivianivel_1 = 2131099656;
+			
+			// aapt resource value: 0x7f060009
+			public const int trivianivel_2 = 2131099657;
+			
+			// aapt resource value: 0x7f06000a
+			public const int trivianivel_3 = 2131099658;
+			
+			// aapt resource value: 0x7f06000b
+			public const int trivianivel_4 = 2131099659;
 			
 			static String()
 			{

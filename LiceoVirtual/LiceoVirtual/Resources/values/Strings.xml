@@ -8,6 +8,10 @@
 	<string name="nivel_2">Nivel 2</string>
 	<string name="nivel_3">Nivel 3</string>
 	<string name="nivel_4">Nivel 4</string>
+	<string name="trivianivel_1">Trivia Nivel 1</string>
+	<string name="trivianivel_2">Trivia Nivel 2</string>
+	<string name="trivianivel_3">Trivia Nivel 3</string>
+	<string name="trivianivel_4">Trivia Nivel 4</string>
 	<string name="preguntas_n1">Preguntas Nivel 1</string>
 	<string name="preguntas_n2">Preguntas Nivel 2</string>
 	<string name="preguntas_n3">Preguntas Nivel 3</string>

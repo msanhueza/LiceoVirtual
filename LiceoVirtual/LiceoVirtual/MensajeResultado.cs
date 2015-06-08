@@ -51,12 +51,16 @@ namespace LiceoVirtual
 
 			if (nivel.Equals ("1")) {
 				mensaje = baseTexto + primero;
+				SetTitle (Resource.String.trivianivel_1);
 			} else if (nivel.Equals ("2")) {
 				mensaje = baseTexto + segundo;
+				SetTitle (Resource.String.trivianivel_2);
 			} else if (nivel.Equals ("3")) {
 				mensaje = baseTexto + tercero;
+				SetTitle (Resource.String.trivianivel_3);
 			} else {
 				mensaje = baseTexto + cuarto;
+				SetTitle (Resource.String.trivianivel_4);
 			}
 
 			tvTextoMensajeResultado.Text = mensaje;
