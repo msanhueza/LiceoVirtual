@@ -75,6 +75,7 @@
     <Compile Include="TablasItem\PreguntaSolucionItem.cs" />
     <Compile Include="TablasAcciones\PreguntaAccion.cs" />
     <Compile Include="TablasItem\ListadoPreguntaSolucionItem.cs" />
+    <Compile Include="TablasItem\ResultadoRespuestaItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

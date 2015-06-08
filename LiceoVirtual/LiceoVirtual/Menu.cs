@@ -16,7 +16,7 @@ using System.Threading;
 
 namespace LiceoVirtual
 {
-	[Activity (Label = "Menu")]			
+	[Activity (Label = "Trivia Biología")]			
 	public class Menu : Activity
 	{
 		protected override void OnCreate (Bundle bundle)

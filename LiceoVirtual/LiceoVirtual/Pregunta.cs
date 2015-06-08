@@ -22,6 +22,7 @@ namespace LiceoVirtual
 		public static string nivel;
 		public static int buenas;
 		public static int malas;
+		public static bool esCorrecta;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -54,17 +55,18 @@ namespace LiceoVirtual
 			RadioButton radioOp3 = FindViewById<RadioButton> (Resource.Id.rbOp3);
 			ImageView imgPregunta = FindViewById<ImageView> (Resource.Id.imgPregunta);
 
+			esCorrecta = true;
 			int progreso = 10;
 			buenas = 0;
 			malas = 0;
 			tvCorrectas.Text = "CORRECTAS: " + buenas+"/10";
 			tvIncorrectas.Text = "INCORRECTAS: " + malas+"/2";
 			pbPregunta.Progress = progreso;
-			numPregunta = 0;
+			numPregunta = 0; // comienza en 0 para poder recorrer la lista de preguntas hasta llegar a 9 (10 preguntas)
 			tvProgreso.Text = "Pregunta: " + (numPregunta + 1) + " / 10";
 			int auxNivel = Int32.Parse(nivel);
-			List<ListadoPreguntaSolucionItem> aux = getListadoPreguntaSolucion (auxNivel);
 
+			List<ListadoPreguntaSolucionItem> aux = getListadoPreguntaSolucion (auxNivel);
 			ListadoPreguntaSolucionItem p = aux[numPregunta];
 			string textPregunta = p.objPregunta.pregunta;
 			tvPregunta.Text = textPregunta;
@@ -82,80 +84,100 @@ namespace LiceoVirtual
 				imgPregunta.Visibility = ViewStates.Invisible;
 			}
 			btnPreguntaSiguiente.Click += delegate {
-				bool resp = comprobarRespuesta(p.objListaRespuestas);
-				if(resp){
-					mostrarToastConImagen(Resource.Drawable.correct);
-					buenas++;
-				}
-				else{
-					malas++;
-					tvIncorrectas.SetTextColor(Android.Graphics.Color.Red);
-					mostrarToastConImagen(Resource.Drawable.incorrect);
-					if(malas == 2){
-						var intent = new Intent (this, typeof(MensajeResultado));
-						intent.PutExtra ("nivel", nivel);
-						intent.PutExtra ("puntaje", buenas);
-						intent.PutExtra("aprobo", false);
-						StartActivity (intent);
-						Finish ();
-					}
-
-				}
-				tvCorrectas.Text = "CORRECTAS: " + buenas+"/10";
-				tvIncorrectas.Text = "INCORRECTAS: " + malas+"/2";
-				if(numPregunta == 9){
-					var intent = new Intent (this, typeof(MensajeResultado));
-					intent.PutExtra ("nivel", nivel);
-					intent.PutExtra ("puntaje", buenas);
-					intent.PutExtra("aprobo", true);
-					StartActivity (intent);
-					Finish ();
-				}
-				else{
-					radioOp1.Checked = true; // para dejar siempre el primer radio button seleccionado
-					numPregunta++;
-					progreso = progreso + 10;
-					pbPregunta.Progress = progreso;
-					tvProgreso.Text = "Pregunta: " + (numPregunta + 1) + " / 10";
-					p = aux[numPregunta];
-					textPregunta = p.objPregunta.pregunta;
-					tvPregunta.Text = textPregunta;
-					opcion1 = p.objListaRespuestas[0].solucion;
-					opcion2 = p.objListaRespuestas[1].solucion;
-					opcion3 = p.objListaRespuestas[2].solucion;
-					radioOp1.Text = opcion1;
-					radioOp2.Text = opcion2;
-					radioOp3.Text = opcion3;
-					if (p.objPregunta.idImagen != -1) {
-						imgPregunta.Visibility = ViewStates.Visible;
-						imgPregunta.SetImageResource (p.objPregunta.idImagen);
+				ResultadoRespuestaItem resp;
+				if(esCorrecta){
+					resp = comprobarRespuesta(p.objListaRespuestas);
+					if(resp.esCorrecta){
+						mostrarToastConImagen(Resource.Drawable.correct);
+						buenas++;
+						tvCorrectas.Text = "CORRECTAS: " + buenas+"/10";
 					}
 					else{
-						imgPregunta.Visibility = ViewStates.Invisible;
+						malas++;
+						tvIncorrectas.Text = "INCORRECTAS: " + malas+"/2";
+						esCorrecta = false;
+						tvIncorrectas.SetTextColor(Android.Graphics.Color.Red);
+						mostrarToastConImagen(Resource.Drawable.incorrect);
+						mostrarResultado(resp.respuesta);
+						if(malas == 2){
+							btnPreguntaSiguiente.Text = "Terminar";
+						}
 					}
-					if(numPregunta == 9){
-						btnPreguntaSiguiente.Text = "Terminar";
+				}
+				else{
+					esCorrecta = true;
+					if(malas == 2 && buenas < 8){
+						cambiarActivity(false);
+						esCorrecta = false; // para que no muestre las siguientes preguntas
+					}
+				}
+
+				if(numPregunta == 9){ // si se terminaron las preguntas
+					cambiarActivity(true);
+				}
+				else{ // si quedan preguntas
+					if(esCorrecta){
+						numPregunta++;
+						progreso = progreso + 10;
+						pbPregunta.Progress = progreso;
+						tvProgreso.Text = "Pregunta: " + (numPregunta + 1) + " / 10";
+						p = aux[numPregunta];
+						textPregunta = p.objPregunta.pregunta;
+						tvPregunta.Text = textPregunta;
+						habilitarRadiosButton();
+						opcion1 = p.objListaRespuestas[0].solucion;
+						opcion2 = p.objListaRespuestas[1].solucion;
+						opcion3 = p.objListaRespuestas[2].solucion;
+						radioOp1.Text = opcion1;
+						radioOp2.Text = opcion2;
+						radioOp3.Text = opcion3;
+						if (p.objPregunta.idImagen != -1) {
+							imgPregunta.Visibility = ViewStates.Visible;
+							imgPregunta.SetImageResource (p.objPregunta.idImagen);
+						}
+						else{
+							imgPregunta.Visibility = ViewStates.Invisible;
+						}
+						if(numPregunta == 9){ // si se llega a la ultima pregunta se cambia el texto del boton siguiente
+							btnPreguntaSiguiente.Text = "Terminar";
+						}
+
 					}
 
 				}
+
 			};
 				
 		}
 
-		public bool comprobarRespuesta(List<PreguntaSolucionItem> listaRespuestas){
+		public void cambiarActivity(bool aprobo){
+			var intent = new Intent (this, typeof(MensajeResultado));
+			intent.PutExtra ("nivel", nivel);
+			intent.PutExtra ("puntaje", buenas);
+			intent.PutExtra("aprobo", aprobo);
+			StartActivity (intent);
+			Finish ();
+		}
+			
+
+		public ResultadoRespuestaItem comprobarRespuesta(List<PreguntaSolucionItem> listaRespuestas){
+			ResultadoRespuestaItem rri;
+			string auxSol = "";
 			RadioGroup radioGroup = FindViewById<RadioGroup> (Resource.Id.radioGroup1);
 			int idRadioButtonSeleccionado = radioGroup.CheckedRadioButtonId;
 			RadioButton radioButtonSeleccionado = FindViewById<RadioButton> (idRadioButtonSeleccionado);
 			String respuesta = radioButtonSeleccionado.Text;
 			for (int i = 0; i<listaRespuestas.Count; i++) {
 				if(listaRespuestas[i].esSolucion){
-					string auxSol = listaRespuestas[i].solucion;
+					auxSol = listaRespuestas[i].solucion;
 					if (( auxSol ).Equals (respuesta)) {
-						return true;
+						rri = new ResultadoRespuestaItem (true, "");
+						return rri;
 					}
 				}
 			}
-			return false;
+			rri = new ResultadoRespuestaItem (false, auxSol);
+			return rri;
 		}
 
 		public List<int> getDiezPreguntasAleatorias(int n){
@@ -226,11 +248,61 @@ namespace LiceoVirtual
 			alert.SetNeutralButton ("Aceptar", (senderAlert, args) => {
 				alert.Dispose();
 			} );
+				
+			RunOnUiThread (() => {
+				alert.Show();
+			} );
+		}
+
+		public void habilitarRadiosButton(){
+			RadioButton radioOp1 = FindViewById<RadioButton> (Resource.Id.rbOp1);
+			RadioButton radioOp2 = FindViewById<RadioButton> (Resource.Id.rbOp2);
+			RadioButton radioOp3 = FindViewById<RadioButton> (Resource.Id.rbOp3);			
+			radioOp1.Checked = true; // para dejar siempre el primer radio button seleccionado
+			radioOp1.SetTextColor(Android.Graphics.Color.Black);
+			radioOp2.SetTextColor(Android.Graphics.Color.Black);
+			radioOp3.SetTextColor(Android.Graphics.Color.Black);
+			radioOp1.Enabled = true;
+			radioOp2.Enabled = true;
+			radioOp3.Enabled = true;
+		}
+
+		public void mostrarResultado(string resultado){
+			RadioButton radioOp1 = FindViewById<RadioButton> (Resource.Id.rbOp1);
+			RadioButton radioOp2 = FindViewById<RadioButton> (Resource.Id.rbOp2);
+			RadioButton radioOp3 = FindViewById<RadioButton> (Resource.Id.rbOp3);
+			string r1 = radioOp1.Text;
+			string r2 = radioOp2.Text;
+			string r3 = radioOp3.Text;
+			radioOp1.Enabled = false;
+			radioOp2.Enabled = false;
+			radioOp3.Enabled = false;
+			if(r1.Equals(resultado)){
+				radioOp1.Text = "(Respuesta Correcta) - " + r1;
+				radioOp1.SetTextColor(Android.Graphics.Color.Green);
+			}
+			else if(r2.Equals(resultado)){
+				radioOp2.Text = "(Respuesta Correcta) - " + r2;
+				radioOp2.SetTextColor(Android.Graphics.Color.Green);
+			}
+			else{ // r3 es igual al resultado
+				radioOp3.Text = "(Respuesta Correcta) - " + r3;
+				radioOp3.SetTextColor(Android.Graphics.Color.Green);
+			}
+			/*AlertDialog.Builder alert = new AlertDialog.Builder (this);
+			alert.SetTitle("Respuesta Correcta");
+			alert.SetMessage (resultado);
+			alert.SetNeutralButton ("Aceptar", (senderAlert, args) => {
+				alert.Dispose();
+				if(malas == 2 && buenas<8){
+					cambiarActivity(false);
+				}
+			} );
 
 			//run the alert in UI thread to display in the screen
 			RunOnUiThread (() => {
 				alert.Show();
-			} );
+			} );*/
 		}
 
 		public void mostrarMensajeAlerta(){
@@ -242,16 +314,13 @@ namespace LiceoVirtual
 
 			alert.SetPositiveButton ("Si", (senderAlert, args) => {
 				base.OnBackPressed ();
-				//var intent = new Intent (this, typeof(Puntuacion));
-				//intent.PutExtra ("nivel", nivel);
-				//StartActivity (typeof(Nivel));
 				Finish ();
 			} );
 
 			alert.SetNegativeButton ("No", (senderAlert, args) => {
 
 			} );
-			//run the alert in UI thread to display in the screen
+
 			RunOnUiThread (() => {
 				alert.Show();
 			} );
@@ -272,7 +341,6 @@ namespace LiceoVirtual
 				editor.PutString ("idUsuario", String.Empty);
 				editor.PutString ("nombre", String.Empty);
 				editor.PutBoolean ("guardar", false);
-				//editor.PutBoolean ("estaCargadaBD", false);
 				editor.Apply ();
 
 				StartActivity(typeof(Login));
