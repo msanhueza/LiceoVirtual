@@ -25,31 +25,28 @@
             p1:id="@+id/tvIncorrectas"
             p1:gravity="right" />
     </LinearLayout>
-    <LinearLayout
+    <RelativeLayout
         p1:orientation="vertical"
         p1:layout_width="match_parent"
-        p1:layout_height="0dp"
+        p1:layout_height="30dp"
         p1:id="@+id/barraAvance"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:gravity="center"
-        p1:layout_weight="1.5">
+        p1:padding="0dip">
         <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             p1:layout_width="match_parent"
-            p1:layout_height="0dp"
+            p1:layout_height="30dp"
             p1:id="@+id/pbPregunta"
-            p1:layout_weight="1"
+            p1:layout_centerInParent="true"
             p1:progressDrawable="@drawable/LVProgress" />
         <TextView xmlns:tools="http://schemas.android.com/tools"
             p1:id="@+id/tvProgreso"
             p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_width="wrap_content"
-            p1:layout_height="0dp"
-            p1:layout_weight="1"
-            tools:text="10%"
-            p1:gravity="center" />
-    </LinearLayout>
+            p1:layout_height="30dp"
+            p1:layout_centerInParent="true"
+            p1:textColor="#FFFFFF"
+            tools:text="10%" />
+    </RelativeLayout>
     <LinearLayout
         p1:orientation="vertical"
         p1:layout_width="match_parent"
