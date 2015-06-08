@@ -112,7 +112,7 @@ public final class R {
         public static final int btn2=0x7f0a0020;
         public static final int btn3=0x7f0a001e;
         public static final int btn4=0x7f0a0021;
-        public static final int btnAceptarTerminoTrivia=0x7f0a0011;
+        public static final int btnAceptarTerminoTrivia=0x7f0a0012;
         public static final int btnIrTrivia=0x7f0a0033;
         public static final int btnJugar=0x7f0a0015;
         public static final int btnLogin=0x7f0a000a;
@@ -127,7 +127,7 @@ public final class R {
         public static final int imageView1=0x7f0a001a;
         public static final int imgAlerta=0x7f0a0001;
         public static final int imgLogo=0x7f0a0004;
-        public static final int imgMensajeResultadoStudent=0x7f0a0012;
+        public static final int imgMensajeResultadoStudent=0x7f0a0011;
         public static final int imgPregunta=0x7f0a002a;
         public static final int info_menu=0x7f0a0034;
         public static final int linearLayout1=0x7f0a0003;
@@ -136,7 +136,7 @@ public final class R {
         public static final int linearLayout3=0x7f0a001c;
         public static final int linearLayout4=0x7f0a001f;
         public static final int linearLayout5=0x7f0a000f;
-        public static final int linearLayout6=0x7f0a000c;
+        public static final int linearLayout6=0x7f0a000e;
         public static final int linearLayoutAlerta=0x7f0a0000;
         public static final int listViewPuntuacion=0x7f0a0035;
         public static final int listViewRanking=0x7f0a003d;
@@ -169,8 +169,8 @@ public final class R {
         public static final int tvPuntaje=0x7f0a003a;
         public static final int tvPuntajeMensajeResultado=0x7f0a0010;
         public static final int tvPuntajeRanking=0x7f0a0040;
-        public static final int tvTextoMensajeResultado=0x7f0a000e;
-        public static final int v1=0x7f0a000d;
+        public static final int tvTextoMensajeResultado=0x7f0a000d;
+        public static final int v1=0x7f0a000c;
     }
     public static final class layout {
         public static final int alertarespuestaincorrecta=0x7f030000;

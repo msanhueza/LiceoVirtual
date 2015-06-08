@@ -88,8 +88,6 @@ C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable\lvprogress.xml
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable-hdpi\student.png
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable\lvbackgroundmenu.xml
-C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\R.cs.flag
-C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\uploadflags.txt
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable\n1_1.png
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable\n1_2.png
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable\n1_3.png
@@ -114,3 +112,7 @@ C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\layout\alertarespuestaincorrecta.xml
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable\incorrect.png
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable-hdpi\student_sad.png
+C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\layout\puntuaciontabs.xml
+C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\layout\puntuacionfragment.xml
+C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\R.cs.flag
+C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\uploadflags.txt
