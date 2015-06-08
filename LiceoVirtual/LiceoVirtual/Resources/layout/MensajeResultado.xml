@@ -56,7 +56,7 @@
                 p1:layout_height="wrap_content"
                 p1:id="@+id/tvPuntajeMensajeResultado"
                 p1:gravity="center"
-                p1:textSize="50dp" />
+                p1:textSize="15dp" />
         </RelativeLayout>
         <ImageView
             p1:src="@drawable/student"

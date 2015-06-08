@@ -19,6 +19,7 @@ namespace LiceoVirtual
 	{
 		public static string nivel;
 		public static int puntaje;
+		public static int malas;
 		public static bool aprobo;
 
 		protected override void OnCreate (Bundle bundle)
@@ -31,12 +32,17 @@ namespace LiceoVirtual
 			ImageView imgMensajeResultadoStudent = FindViewById<ImageView> (Resource.Id.imgMensajeResultadoStudent);
 
 			nivel = Intent.GetStringExtra ("nivel") ?? "0";
-			puntaje = Intent.GetIntExtra ("puntaje",0);
+			puntaje = Intent.GetIntExtra ("buenas",0);
+			malas = Intent.GetIntExtra ("malas",0);
 			aprobo = Intent.GetBooleanExtra ("aprobo", false);
 
 			int auxNivel = Int32.Parse(nivel);
 			int auxPuntaje = puntaje * 10;
-			tvPuntajeMensajeResultado.Text = (auxPuntaje) + "%";
+			string aprobacion = (aprobo) ? "APROBADO" : "NO APROBADO";
+			tvPuntajeMensajeResultado.Text = "CORRECTAS   : "+puntaje+"\n"+
+											 "INCORRECTAS : "+malas+"\n"+
+				                             "\n"+
+											  aprobacion;
 			guardarPuntaje(auxNivel, auxPuntaje);
 
 			string baseTexto = "";

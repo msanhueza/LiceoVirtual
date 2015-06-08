@@ -154,7 +154,8 @@ namespace LiceoVirtual
 		public void cambiarActivity(bool aprobo){
 			var intent = new Intent (this, typeof(MensajeResultado));
 			intent.PutExtra ("nivel", nivel);
-			intent.PutExtra ("puntaje", buenas);
+			intent.PutExtra ("buenas", buenas);
+			intent.PutExtra ("malas", malas);
 			intent.PutExtra("aprobo", aprobo);
 			StartActivity (intent);
 			Finish ();
