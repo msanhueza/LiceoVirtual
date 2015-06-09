@@ -175,6 +175,7 @@
     <AndroidResource Include="Resources\drawable-hdpi\student_sad.png" />
     <AndroidResource Include="Resources\layout\PuntuacionTabs.axml" />
     <AndroidResource Include="Resources\layout\PuntuacionFragment.axml" />
+    <AndroidResource Include="Resources\drawable\punto.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

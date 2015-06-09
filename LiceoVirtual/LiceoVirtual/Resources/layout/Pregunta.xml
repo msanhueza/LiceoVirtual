@@ -75,7 +75,13 @@
                 p1:layout_width="match_parent"
                 p1:layout_height="wrap_content"
                 p1:id="@+id/imgPregunta"
-                p1:adjustViewBounds="true" />
+                p1:scaleType="centerInside"
+                p1:layout_marginLeft="@dimen/pad_20dp"
+                p1:layout_marginRight="@dimen/pad_20dp"
+                p1:minWidth="@dimen/pad_5dp"
+                p1:minHeight="@dimen/pad_5dp"
+                p1:layout_marginTop="0.0dp"
+                p1:src="@drawable/punto" />
         </LinearLayout>
     </ScrollView>
     <LinearLayout

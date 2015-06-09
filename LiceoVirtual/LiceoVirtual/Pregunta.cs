@@ -82,7 +82,7 @@ namespace LiceoVirtual
 				imgPregunta.SetImageResource (p.objPregunta.idImagen);
 			}
 			else{
-				imgPregunta.Visibility = ViewStates.Invisible;
+				imgPregunta.SetImageResource (Resource.Drawable.punto);
 			}
 			btnPreguntaSiguiente.Click += delegate {
 				ResultadoRespuestaItem resp;
@@ -137,7 +137,7 @@ namespace LiceoVirtual
 							imgPregunta.SetImageResource (p.objPregunta.idImagen);
 						}
 						else{
-							imgPregunta.Visibility = ViewStates.Invisible;
+							imgPregunta.SetImageResource (Resource.Drawable.punto);
 						}
 						if(numPregunta == 9){ // si se llega a la ultima pregunta se cambia el texto del boton siguiente
 							btnPreguntaSiguiente.Text = "Terminar";
