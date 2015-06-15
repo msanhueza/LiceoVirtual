@@ -108,7 +108,6 @@
     <AndroidResource Include="Resources\layout\PuntuacionPersonalizado.xml" />
     <AndroidResource Include="Resources\drawable\LVBackground.xml" />
     <AndroidResource Include="Resources\drawable\LVButton.xml" />
-    <AndroidResource Include="Resources\drawable-hdpi\candado.png" />
     <AndroidResource Include="Resources\drawable\LVBlockedButton.xml" />
     <AndroidResource Include="Resources\drawable\LVMenuBtn.xml" />
     <AndroidResource Include="Resources\layout\RankingPersonalizado.xml" />
@@ -176,6 +175,8 @@
     <AndroidResource Include="Resources\layout\PuntuacionTabs.axml" />
     <AndroidResource Include="Resources\layout\PuntuacionFragment.axml" />
     <AndroidResource Include="Resources\drawable\punto.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\login_ic.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\candado.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

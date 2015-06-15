@@ -16,7 +16,7 @@ namespace LiceoVirtual
 {
 	public class PuntuacionFragment : Fragment
 	{
-
+		
 
 		public static PuntuacionFragment NewInstance (string nivel)
 		{
@@ -35,6 +35,7 @@ namespace LiceoVirtual
 
 		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
+			
 			if (container == null) {
 				// Currently in a layout without a container, so no reason to create our view.
 				return null;
@@ -45,7 +46,10 @@ namespace LiceoVirtual
 
 			int aprovadas = p.getPuntuacionMore80 (nivel);
 			int desaprovadas = p.getPuntuacionLess80 (nivel);
-
+			int completadas = aprovadas + desaprovadas;
+			int porcentaje = (int)(((float)aprovadas / (float)completadas)* 100.0);
+			if (porcentaje < 0)
+				porcentaje = 0;
 
 			aprovadasTextView = view.FindViewById<TextView> (Resource.Id.aprovadas);
 			aprovadasTextView.Text = ""+aprovadas;
@@ -53,6 +57,12 @@ namespace LiceoVirtual
 
 			desaprovadasTextView = view.FindViewById<TextView> (Resource.Id.desaprovadas);
 			desaprovadasTextView.Text = ""+desaprovadas;
+
+			aprovadasTextView = view.FindViewById<TextView> (Resource.Id.completadas);
+			aprovadasTextView.Text = ""+completadas;
+
+			aprovadasTextView = view.FindViewById<TextView> (Resource.Id.porcentaje);
+			aprovadasTextView.Text = ""+porcentaje+"%";
 
 
 

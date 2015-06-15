@@ -1,11 +1,8 @@
 ﻿<Properties StartupItem="LiceoVirtual/LiceoVirtual.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual/Pregunta.cs">
     <Files>
-      <File FileName="LiceoVirtual/Login.cs" Line="1" Column="1" />
-      <File FileName="LiceoVirtual/Puntuacion.cs" Line="1" Column="1" />
-      <File FileName="LiceoVirtual/PuntuacionAdapter.cs" Line="1" Column="1" />
-      <File FileName="LiceoVirtual/Properties/AndroidManifest.xml" Line="1" Column="1" />
+      <File FileName="LiceoVirtual/Pregunta.cs" Line="85" Column="60" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

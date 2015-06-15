@@ -22,8 +22,7 @@ namespace LiceoVirtual
 	public class Puntuacion : Activity, ActionBar.ITabListener
 	{
 		Fragment[] _fragments;
-		ListView listView;
-		List<PuntuacionItem> listaPuntuaciones = new List<PuntuacionItem>();
+
 
 
 		protected override void OnCreate (Bundle bundle)
@@ -36,51 +35,25 @@ namespace LiceoVirtual
 			ActionBar.SetDisplayHomeAsUpEnabled(true);
 
 
-			/*string nivel = Intent.GetStringExtra ("nivel") ?? "0";
-
-			if (nivel.Equals ("1")) {
-				SetTitle (Resource.String.nivel_1);
-			} else if (nivel.Equals ("2")) {
-				SetTitle (Resource.String.nivel_2);
-			} else if (nivel.Equals ("3")) {
-				SetTitle (Resource.String.nivel_3);
-			} else {
-				SetTitle (Resource.String.nivel_4);
-			}*/
-
 			_fragments = new Fragment[] {
 				PuntuacionFragment.NewInstance ("1"),
 				PuntuacionFragment.NewInstance ("2"),
 				PuntuacionFragment.NewInstance ("3"),
 				PuntuacionFragment.NewInstance ("4")
 			};
-			AddTabToActionBar (Resource.String.nivel_1, Resource.Drawable.ic_send);
-			AddTabToActionBar (Resource.String.nivel_2, Resource.Drawable.ic_send);
-			AddTabToActionBar (Resource.String.nivel_3, Resource.Drawable.ic_send);
-			AddTabToActionBar (Resource.String.nivel_4, Resource.Drawable.ic_send);
+			AddTabToActionBar (Resource.String.nivel_1);
+			AddTabToActionBar (Resource.String.nivel_2);
+			AddTabToActionBar (Resource.String.nivel_3);
+			AddTabToActionBar (Resource.String.nivel_4);
 
-
-			/*listView = FindViewById<ListView>(Resource.Id.listViewPuntuacion);
-			PuntuacionAccion p = new PuntuacionAccion ();
-			listaPuntuaciones = p.getPuntuacionesBD (nivel);
-			listView.Adapter = new PuntuacionAdapter(this, listaPuntuaciones);
-	
-			Button btnIrTrivia = FindViewById<Button> (Resource.Id.btnIrTrivia);
-
-			btnIrTrivia.Click += delegate {
-				//var intent = new Intent (this, typeof(Pregunta));
-				//intent.PutExtra ("nivel", nivel);
-				//StartActivity (intent);		
-				//Finish ();
-			};*/
 
 
 		}
-		void AddTabToActionBar (int labelResourceId, int iconResourceId)
+		void AddTabToActionBar (int labelResourceId)
 		{
 			ActionBar.Tab tab = this.ActionBar.NewTab ()
 				.SetText (labelResourceId)
-				.SetIcon (iconResourceId)
+
 				.SetTabListener (this);
 			this.ActionBar.AddTab (tab);
 		}
