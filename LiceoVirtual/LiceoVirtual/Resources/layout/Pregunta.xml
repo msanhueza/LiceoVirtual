@@ -49,80 +49,11 @@
             p1:textColor="#FFFFFF"
             tools:text="10%" />
     </RelativeLayout>
-    <ScrollView
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_width="match_parent"
-        p1:layout_height="0dp"
-        p1:id="@+id/scrollView1"
-        p1:layout_weight="5">
-        <LinearLayout
-            p1:orientation="vertical"
-            p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/pregunta"
-            p1:minWidth="25px"
-            p1:minHeight="25px"
-            p1:paddingTop="10dp"
-            p1:paddingBottom="10dp">
-            <TextView
-                p1:text="¿Desde dónde hasta dónde va la savia elaborada(en las plantas)?"
-                p1:id="@+id/tvPregunta"
-                p1:textSize="@dimen/txt_18sp"
-                p1:layout_width="match_parent"
-                p1:layout_height="wrap_content" />
-            <ImageView
-                p1:layout_width="match_parent"
-                p1:layout_height="wrap_content"
-                p1:id="@+id/imgPregunta"
-                p1:scaleType="centerInside"
-                p1:layout_marginLeft="@dimen/pad_20dp"
-                p1:layout_marginRight="@dimen/pad_20dp"
-                p1:minWidth="@dimen/pad_5dp"
-                p1:minHeight="@dimen/pad_5dp"
-                p1:layout_marginTop="0.0dp"
-                p1:src="@drawable/punto" />
-        </LinearLayout>
-    </ScrollView>
     <LinearLayout
-        p1:orientation="horizontal"
-        p1:layout_width="match_parent"
-        p1:layout_height="0dp"
-        p1:id="@+id/respuesta"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:paddingBottom="10dp"
-        p1:layout_weight="3">
-        <RadioGroup
-            p1:minWidth="25px"
-            p1:minHeight="25px"
-            p1:layout_width="wrap_content"
-            p1:layout_height="match_parent"
-            p1:id="@+id/radioGroup1">
-            <RadioButton
-                p1:layout_width="wrap_content"
-                p1:layout_height="wrap_content"
-                p1:checked="true"
-                p1:text="Desde las hojas hasta toda la planta."
-                p1:id="@+id/rbOp1"
-                p1:layout_weight="2"
-                p1:textSize="@dimen/txt_18sp" />
-            <RadioButton
-                p1:layout_width="wrap_content"
-                p1:layout_height="wrap_content"
-                p1:text="Desde la raíz hasta las hojas."
-                p1:id="@+id/rbOp2"
-                p1:layout_weight="2"
-                p1:textSize="@dimen/txt_18sp" />
-            <RadioButton
-                p1:layout_width="wrap_content"
-                p1:layout_height="wrap_content"
-                p1:text="Desde la boca hasta el estómago."
-                p1:id="@+id/rbOp3"
-                p1:layout_weight="2"
-                p1:textSize="@dimen/txt_18sp" />
-        </RadioGroup>
-    </LinearLayout>
+        p1:id="@+id/fragment_container"
+        p1:orientation="vertical"
+        p1:layout_width="fill_parent"
+        p1:layout_height="wrap_content" />
     <LinearLayout
         p1:orientation="vertical"
         p1:layout_width="match_parent"

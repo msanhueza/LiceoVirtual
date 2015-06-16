@@ -1,8 +1,8 @@
-﻿<Properties StartupItem="LiceoVirtual/LiceoVirtual.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual/Pregunta.cs">
+﻿<Properties StartupItem="LiceoVirtual\LiceoVirtual.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SSG" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual\CargarBaseDeDatos.cs">
     <Files>
-      <File FileName="LiceoVirtual/Pregunta.cs" Line="85" Column="60" />
+      <File FileName="LiceoVirtual\CargarBaseDeDatos.cs" Line="44" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -77,6 +77,8 @@
     <Compile Include="TablasItem\ListadoPreguntaSolucionItem.cs" />
     <Compile Include="TablasItem\ResultadoRespuestaItem.cs" />
     <Compile Include="PuntuacionFragment.cs" />
+    <Compile Include="FragmentPreguntaA.cs" />
+    <Compile Include="FragmentPreguntaB.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -177,6 +179,8 @@
     <AndroidResource Include="Resources\drawable\punto.png" />
     <AndroidResource Include="Resources\drawable-hdpi\login_ic.png" />
     <AndroidResource Include="Resources\drawable-hdpi\candado.png" />
+    <AndroidResource Include="Resources\layout\FragmentPreguntaA.axml" />
+    <AndroidResource Include="Resources\layout\FragmentPreguntaB.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
