@@ -75,7 +75,7 @@ namespace LiceoVirtual
 			listadoPreguntas = getListadoPreguntaSolucion (auxNivel);
 
 			mostrarFragmentA ();
-			//habilitarButtonSiguiente (false);
+			habilitarButtonSiguiente (false);
 
 			btnPreguntaSiguiente.Click += delegate {
 				indicePregunta++;
@@ -86,7 +86,7 @@ namespace LiceoVirtual
 					}
 					else{
 						mostrarFragmentA();
-						//habilitarButtonSiguiente(false);
+						habilitarButtonSiguiente(false);
 						preguntaA = true;
 					}
 				}
@@ -103,8 +103,10 @@ namespace LiceoVirtual
 			Button btnPreguntaSiguiente = FindViewById<Button> (Resource.Id.btnPreguntaSiguiente);
 			if (habilitar) {
 				btnPreguntaSiguiente.Enabled = true;
+				btnPreguntaSiguiente.Visibility = ViewStates.Visible;
 			} else {
 				btnPreguntaSiguiente.Enabled = false;
+				btnPreguntaSiguiente.Visibility = ViewStates.Invisible;
 			}
 		}
 
