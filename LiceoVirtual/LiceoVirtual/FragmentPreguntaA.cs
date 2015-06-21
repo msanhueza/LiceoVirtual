@@ -31,6 +31,7 @@ namespace LiceoVirtual
 
 			var pregunta = view.FindViewById<TextView>(Resource.Id.frag1_pregunta);
 			var imagen = view.FindViewById<ImageView> (Resource.Id.frag1_imagen);
+
 			var radioGroup = view.FindViewById<RadioGroup> (Resource.Id.frag1_radio_group);
 			var radio1 = view.FindViewById<RadioButton> (Resource.Id.frag1_radio1);
 			var radio2 = view.FindViewById<RadioButton> (Resource.Id.frag1_radio2);
@@ -44,7 +45,9 @@ namespace LiceoVirtual
 
 
 			pregunta.Text = p.objPregunta.pregunta;
-			imagen.SetImageResource (p.objPregunta.idImagen);
+			if (p.objPregunta.idImagen != -1) {
+				imagen.SetImageResource (p.objPregunta.idImagen);
+			}
 			radio1.Text = p.objListaRespuestas [0].solucion;
 			radio2.Text = p.objListaRespuestas [1].solucion;
 			radio3.Text = p.objListaRespuestas [2].solucion;
