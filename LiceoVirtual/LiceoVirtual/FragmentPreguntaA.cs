@@ -36,13 +36,12 @@ namespace LiceoVirtual
 			var radio2 = view.FindViewById<RadioButton> (Resource.Id.frag1_radio2);
 			var radio3 = view.FindViewById<RadioButton> (Resource.Id.frag1_radio3);
 
+			radioGroup.ClearCheck();
+
 			radio1.Click += RadioButtonClick;
 			radio2.Click += RadioButtonClick;
 			radio3.Click += RadioButtonClick;
 
-			radio1.Checked = false;
-			radio2.Checked = false;
-			radio3.Checked = false;
 
 			pregunta.Text = p.objPregunta.pregunta;
 			imagen.SetImageResource (p.objPregunta.idImagen);
@@ -60,11 +59,19 @@ namespace LiceoVirtual
 			radioButtonSeleccionado.Checked = true;
 
 			var myActivity = (Pregunta)this.Activity;
+
 			ListadoPreguntaSolucionItem p = myActivity.getPreguntaActual ();
 			ResultadoRespuestaItem resultado = comprobarRespuesta (p.objListaRespuestas);
      
 			mostrarResultado(resultado.respuesta, radioButtonSeleccionado, resultado.esCorrecta);
 			myActivity.habilitarButtonSiguiente (true);
+
+			if(resultado.esCorrecta){
+				myActivity.incrementarRespuestasBuenas ();
+			}
+			else{
+				myActivity.incrementarRespuestasMalas ();
+			}
 
 		}
 

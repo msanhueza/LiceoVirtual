@@ -29,6 +29,7 @@ namespace LiceoVirtual
 		public static bool preguntaA;
 		public static int indicePregunta;
 		public static List<ListadoPreguntaSolucionItem> listadoPreguntas;
+		public static int progreso;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -60,18 +61,15 @@ namespace LiceoVirtual
 			TextView tvCorrectas = FindViewById<TextView> (Resource.Id.tvCorrectas);
 			TextView tvIncorrectas = FindViewById<TextView> (Resource.Id.tvIncorrectas);
 
-
-			esCorrecta = true;
-			int progreso = 10;
+			progreso = 10;
 			buenas = 0;
 			malas = 0;
 			tvCorrectas.Text = "CORRECTAS: " + buenas+"/10";
 			tvIncorrectas.Text = "INCORRECTAS: " + malas+"/2";
 			pbPregunta.Progress = progreso;
-			numPregunta = 0; // comienza en 0 para poder recorrer la lista de preguntas hasta llegar a 9 (10 preguntas)
 			tvProgreso.Text = "Pregunta: " + (numPregunta + 1) + " / 10";
-			int auxNivel = Int32.Parse(nivel);
 
+			int auxNivel = Int32.Parse(nivel);
 			listadoPreguntas = getListadoPreguntaSolucion (auxNivel);
 
 			mostrarFragmentA ();
@@ -79,6 +77,10 @@ namespace LiceoVirtual
 
 			btnPreguntaSiguiente.Click += delegate {
 				indicePregunta++;
+				actualizarProgressBar();
+				if(indicePregunta == 9){
+					btnPreguntaSiguiente.Text = "Terminar";
+				}
 				if(indicePregunta < 10){
 					if(preguntaA){
 						mostrarFragmentB();
@@ -92,6 +94,35 @@ namespace LiceoVirtual
 				}
 			};
 				
+		}
+
+		public void incrementarRespuestasBuenas(){
+			buenas++;
+
+			TextView tvCorrectas = FindViewById<TextView> (Resource.Id.tvCorrectas);
+			TextView tvIncorrectas = FindViewById<TextView> (Resource.Id.tvIncorrectas);
+
+			tvCorrectas.Text = "CORRECTAS: " + buenas+"/10";
+			tvIncorrectas.Text = "INCORRECTAS: " + malas+"/2";
+		}
+
+		public void actualizarProgressBar(){
+			ProgressBar pbPregunta = FindViewById<ProgressBar> (Resource.Id.pbPregunta);
+			TextView tvProgreso = FindViewById<TextView> (Resource.Id.tvProgreso);
+
+			progreso += 10;
+			pbPregunta.Progress = progreso;
+			tvProgreso.Text = "Pregunta: " + (indicePregunta + 1) + " / 10";
+
+		}
+
+		public void incrementarRespuestasMalas(){
+			malas++;
+			TextView tvCorrectas = FindViewById<TextView> (Resource.Id.tvCorrectas);
+			TextView tvIncorrectas = FindViewById<TextView> (Resource.Id.tvIncorrectas);
+
+			tvCorrectas.Text = "CORRECTAS: " + buenas+"/10";
+			tvIncorrectas.Text = "INCORRECTAS: " + malas+"/2";
 		}
 
 		public ListadoPreguntaSolucionItem getPreguntaActual(){
