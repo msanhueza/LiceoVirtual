@@ -1,11 +1,10 @@
 ﻿<Properties StartupItem="LiceoVirtual\LiceoVirtual.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SSG" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual\FragmentPreguntaB.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.TA071014P8" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual\Pregunta.cs">
     <Files>
-      <File FileName="LiceoVirtual\CargarBaseDeDatos.cs" Line="44" Column="2" />
-      <File FileName="LiceoVirtual\Pregunta.cs" Line="89" Column="41" />
-      <File FileName="LiceoVirtual\FragmentPreguntaA.cs" Line="34" Column="4" />
-      <File FileName="LiceoVirtual\FragmentPreguntaB.cs" Line="36" Column="77" />
+      <File FileName="LiceoVirtual\Pregunta.cs" Line="84" Column="31" />
+      <File FileName="LiceoVirtual\FragmentPreguntaA.cs" Line="76" Column="5" />
+      <File FileName="LiceoVirtual\FragmentPreguntaB.cs" Line="58" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

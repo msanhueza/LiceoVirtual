@@ -77,23 +77,44 @@ namespace LiceoVirtual
 
 			btnPreguntaSiguiente.Click += delegate {
 				indicePregunta++;
-				actualizarProgressBar();
-				if(indicePregunta == 9){
-					btnPreguntaSiguiente.Text = "Terminar";
+				if(malas == 2 && buenas<10){
+					cambiarActivity(false);
 				}
-				if(indicePregunta < 10){
-					if(preguntaA){
-						mostrarFragmentB();
-						preguntaA = false;
+				else{
+					if(indicePregunta == 10){
+						cambiarActivity(true);
 					}
-					else{
-						mostrarFragmentA();
-						habilitarButtonSiguiente(false);
-						preguntaA = true;
+
+					actualizarProgressBar();
+					habilitarButtonSiguiente (false);
+					if(indicePregunta == 9){
+						btnPreguntaSiguiente.Text = "Terminar";
+					}
+					if(indicePregunta < 10){
+						if(preguntaA){
+							mostrarFragmentB();
+							preguntaA = false;
+						}
+						else{
+							mostrarFragmentA();
+							habilitarButtonSiguiente(false);
+							preguntaA = true;
+						}
 					}
 				}
+
 			};
 				
+		}
+
+		public void cambiarActivity(bool aprobo){
+			var intent = new Intent (this, typeof(MensajeResultado));
+			intent.PutExtra ("nivel", nivel);
+			intent.PutExtra ("buenas", buenas);
+			intent.PutExtra ("malas", malas);
+			intent.PutExtra("aprobo", aprobo);
+			StartActivity (intent);
+			Finish ();
 		}
 
 		public void incrementarRespuestasBuenas(){
@@ -156,19 +177,7 @@ namespace LiceoVirtual
 			//fragmentTx.AddToBackStack(null);
 			fragmentTx.Commit();
 		}
-
-		public void cambiarActivity(bool aprobo){
-			var intent = new Intent (this, typeof(MensajeResultado));
-			intent.PutExtra ("nivel", nivel);
-			intent.PutExtra ("buenas", buenas);
-			intent.PutExtra ("malas", malas);
-			intent.PutExtra("aprobo", aprobo);
-			StartActivity (intent);
-			Finish ();
-		}
 			
-
-
 
 		public List<int> getDiezPreguntasAleatorias(int n){
 			List<int> listaTotalPreguntas = new List<int>();

@@ -44,9 +44,32 @@ namespace LiceoVirtual
 			}
 			respuestaDesordenada.Text = auxRespuestaDesordenada;
 			var respuesta = view.FindViewById<EditText>(Resource.Id.frag2_respuesta);
-
+			Button botonComprobar = view.FindViewById<Button> (Resource.Id.frag2_comprobar);
+			EditText editTextRespuesta = view.FindViewById <EditText> (Resource.Id.frag2_respuesta);
+			botonComprobar.Click += delegate {
+				string respuestaJugador = editTextRespuesta.Text.ToUpper();
+				bool esCorrecta = comprobarRespuesta(respuestaCorrecta, respuestaJugador);
+				botonComprobar.Enabled = false;
+				editTextRespuesta.Enabled = false;
+				myActivity.habilitarButtonSiguiente(true);
+				if(esCorrecta){
+					Toast.MakeText (myActivity, "CORRECTA", ToastLength.Long).Show();
+					myActivity.incrementarRespuestasBuenas ();
+				}
+				else{
+					Toast.MakeText (myActivity, "INCORRECTA", ToastLength.Long).Show();
+					myActivity.incrementarRespuestasMalas ();
+				}
+			};
 			return view;
 
+		}
+
+		public bool comprobarRespuesta(string respuesta1, string respuesta2){
+			if(respuesta1.Equals(respuesta2)){
+				return true;
+			}
+			return false;
 		}
 
 		public string swap(string palabra){

@@ -63,6 +63,11 @@
                     p1:id="@+id/frag2_respuesta"
                     p1:hint="Ingresa tu respuesta..." />
             </LinearLayout>
+            <Button
+                p1:text="Comprobar"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/frag2_comprobar" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
