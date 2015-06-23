@@ -5,14 +5,15 @@
     p1:minHeight="25px"
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
-    p1:id="@+id/linearLayout1">
+    p1:id="@+id/linearLayout1"
+    p1:gravity="center">
     <ScrollView
         p1:minWidth="25px"
         p1:minHeight="25px"
         p1:layout_width="match_parent"
         p1:layout_height="0dp"
         p1:id="@+id/scrollView1"
-        p1:layout_weight="5">
+        p1:layout_weight="9">
         <LinearLayout
             p1:orientation="vertical"
             p1:layout_width="match_parent"
@@ -63,11 +64,11 @@
                     p1:id="@+id/frag2_respuesta"
                     p1:hint="Ingresa tu respuesta..." />
             </LinearLayout>
-            <Button
-                p1:text="Comprobar"
-                p1:layout_width="match_parent"
-                p1:layout_height="wrap_content"
-                p1:id="@+id/frag2_comprobar" />
         </LinearLayout>
     </ScrollView>
+    <Button
+        p1:text="Estoy Seguro"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/frag2_comprobar" />
 </LinearLayout>

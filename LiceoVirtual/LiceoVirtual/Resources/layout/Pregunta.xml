@@ -13,7 +13,7 @@
         p1:layout_width="match_parent"
         p1:layout_height="0dp"
         p1:id="@+id/linearLayout2"
-        p1:layout_weight="0.5">
+        p1:layout_weight="0.3">
         <TextView
             p1:text=""
             p1:layout_width="wrap_content"
@@ -53,22 +53,14 @@
         p1:id="@+id/fragment_container"
         p1:orientation="vertical"
         p1:layout_width="fill_parent"
-        p1:layout_height="wrap_content" />
-    <LinearLayout
-        p1:orientation="vertical"
-        p1:layout_width="match_parent"
         p1:layout_height="0dp"
-        p1:id="@+id/botonSiguiente"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:paddingTop="10dp"
-        p1:paddingBottom="10dp"
-        p1:layout_weight="1">
-        <Button
-            p1:text="Siguiente"
-            style="@style/btn_white_large"
-            p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/btnPreguntaSiguiente" />
-    </LinearLayout>
+        p1:layout_weight="5" />
+    <Button
+        p1:text="Siguiente"
+        style="@style/btn_white_large"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/btnPreguntaSiguiente"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:visibility="visible" />
 </LinearLayout>

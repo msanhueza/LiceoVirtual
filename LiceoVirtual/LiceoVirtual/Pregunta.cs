@@ -158,7 +158,7 @@ namespace LiceoVirtual
 				btnPreguntaSiguiente.Visibility = ViewStates.Visible;
 			} else {
 				btnPreguntaSiguiente.Enabled = false;
-				btnPreguntaSiguiente.Visibility = ViewStates.Invisible;
+				btnPreguntaSiguiente.Visibility = ViewStates.Gone;
 			}
 		}
 
