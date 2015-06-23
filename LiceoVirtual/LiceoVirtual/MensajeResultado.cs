@@ -44,34 +44,38 @@ namespace LiceoVirtual
 				                             "\n"+
 											  aprobacion;
 			guardarPuntaje(auxNivel, auxPuntaje);
-
+			string mensaje = "";
 			string baseTexto = "";
-			if(aprobo){
-				baseTexto = "¡FELICITACIONES!, HAS COMPLETADO LA TRIVIA DE ";
-			}
-			else{
-				baseTexto = "¡SIGUE INTENTANDOLO!, NO HAS COMPLETADO LA TRIVIA DE ";
-				imgMensajeResultadoStudent.SetImageResource (Resource.Drawable.student_sad);
-			}
 			string primero = "PRIMERO MEDIO";
 			string segundo = "SEGUNDO MEDIO";
 			string tercero = "TERCERO MEDIO";
 			string cuarto = "CUARTO MEDIO";
-			string mensaje = "";
-
-			if (nivel.Equals ("1")) {
-				mensaje = baseTexto + primero;
-				SetTitle (Resource.String.trivianivel_1);
-			} else if (nivel.Equals ("2")) {
-				mensaje = baseTexto + segundo;
-				SetTitle (Resource.String.trivianivel_2);
-			} else if (nivel.Equals ("3")) {
-				mensaje = baseTexto + tercero;
-				SetTitle (Resource.String.trivianivel_3);
-			} else {
-				mensaje = baseTexto + cuarto;
-				SetTitle (Resource.String.trivianivel_4);
+			if(aprobo){
+				baseTexto = "¡FELICITACIONES!, HAS COMPLETADO LA TRIVIA DE ";
+				if (nivel.Equals ("1")) {
+					mensaje = baseTexto + primero ;
+					SetTitle (Resource.String.trivianivel_1);
+				} else if (nivel.Equals ("2")) {
+					mensaje = baseTexto + segundo;
+					SetTitle (Resource.String.trivianivel_2);
+				} else if (nivel.Equals ("3")) {
+					mensaje = baseTexto + tercero;
+					SetTitle (Resource.String.trivianivel_3);
+				} else {
+					mensaje = baseTexto + cuarto;
+					SetTitle (Resource.String.trivianivel_4);
+				}
 			}
+			else{
+				mensaje = "No has completado la trivia.\n ¡Sigue intentandolo!";
+
+				imgMensajeResultadoStudent.SetImageResource (Resource.Drawable.student_sad);
+			}
+
+
+
+
+
 
 			tvTextoMensajeResultado.Text = mensaje;
 
