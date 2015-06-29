@@ -46,18 +46,24 @@ namespace LiceoVirtual
 			var respuesta = view.FindViewById<EditText>(Resource.Id.frag2_respuesta);
 			Button botonComprobar = view.FindViewById<Button> (Resource.Id.frag2_comprobar);
 			EditText editTextRespuesta = view.FindViewById <EditText> (Resource.Id.frag2_respuesta);
+			var imagenRespuestaAux = view.FindViewById<ImageView> (Resource.Id.frag2_imagen_respuesta);
+			imagenRespuestaAux.Visibility = ViewStates.Gone;
 			botonComprobar.Click += delegate {
+				botonComprobar.Visibility = ViewStates.Gone;
 				string respuestaJugador = editTextRespuesta.Text.ToUpper();
 				bool esCorrecta = comprobarRespuesta(respuestaCorrecta, respuestaJugador);
 				botonComprobar.Enabled = false;
 				editTextRespuesta.Enabled = false;
 				myActivity.habilitarButtonSiguiente(true);
+				var imagenRespuesta = view.FindViewById<ImageView> (Resource.Id.frag2_imagen_respuesta);
 				if(esCorrecta){
-					Toast.MakeText (myActivity, "CORRECTA", ToastLength.Long).Show();
+					imagenRespuesta.Visibility = ViewStates.Visible;
+					imagenRespuesta.SetImageResource(Resource.Drawable.respuesta_correcta);
 					myActivity.incrementarRespuestasBuenas ();
 				}
 				else{
-					Toast.MakeText (myActivity, "INCORRECTA", ToastLength.Long).Show();
+					imagenRespuesta.Visibility = ViewStates.Visible;
+					imagenRespuesta.SetImageResource(Resource.Drawable.respuesta_incorrecta);
 					myActivity.incrementarRespuestasMalas ();
 				}
 			};
