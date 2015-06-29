@@ -109,21 +109,24 @@ namespace LiceoVirtual
 			radio2.Enabled = false;
 			radio3.Enabled = false;
 			if(r1.Equals(resultado)){
-				radio1.Text = "(Respuesta Correcta) - " + r1;
+				radio1.Text = " - " + r1;
 				radio1.SetTextColor(Android.Graphics.Color.Green);
+				radio1.SetCompoundDrawablesWithIntrinsicBounds (Resource.Drawable.respuesta_correcta,0,0,0);
 			}
 			else if(r2.Equals(resultado)){
-				radio2.Text = "(Respuesta Correcta) - " + r2;
-				radio2.SetTextColor(Android.Graphics.Color.Green);
+				radio2.Text = " - " + r2;
+				radio2.SetCompoundDrawablesWithIntrinsicBounds (Resource.Drawable.respuesta_correcta,0,0,0);
 			}
 			else{ // r3 es igual al resultado
-				radio3.Text = "(Respuesta Correcta) - " + r3;
+				radio3.Text = " - " + r3;
 				radio3.SetTextColor(Android.Graphics.Color.Green);
+				radio3.SetCompoundDrawablesWithIntrinsicBounds (Resource.Drawable.respuesta_correcta,0,0,0);
 			}
 
 			if (!esCorrecta) { // SOLO si la respuesta NO ES CORRECTA, se pinta en rojo
-				radioButtonSeleccionado.Text = "(Respuesta Incorrecta) - " + radioButtonSeleccionado.Text;
+				radioButtonSeleccionado.Text = " - " + radioButtonSeleccionado.Text;
 				radioButtonSeleccionado.SetTextColor (Android.Graphics.Color.Red);
+				radioButtonSeleccionado.SetCompoundDrawablesWithIntrinsicBounds (Resource.Drawable.respuesta_incorrecta,0,0,0);
 			}
 
 		}

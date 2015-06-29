@@ -181,6 +181,8 @@
     <AndroidResource Include="Resources\drawable-hdpi\candado.png" />
     <AndroidResource Include="Resources\layout\FragmentPreguntaA.axml" />
     <AndroidResource Include="Resources\layout\FragmentPreguntaB.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\respuesta_correcta.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\respuesta_incorrecta.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

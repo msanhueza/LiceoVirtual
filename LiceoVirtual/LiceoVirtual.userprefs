@@ -1,8 +1,8 @@
-﻿<Properties StartupItem="LiceoVirtual/LiceoVirtual.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual/MensajeResultado.cs">
+﻿<Properties StartupItem="LiceoVirtual\LiceoVirtual.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SSG" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual\MensajeResultado.cs">
     <Files>
-      <File FileName="LiceoVirtual/MensajeResultado.cs" Line="68" Column="5" />
+      <File FileName="LiceoVirtual\MensajeResultado.cs" Line="70" Column="69" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

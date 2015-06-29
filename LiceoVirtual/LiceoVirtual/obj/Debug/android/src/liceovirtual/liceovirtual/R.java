@@ -99,11 +99,13 @@ public final class R {
         public static final int nota=0x7f020036;
         public static final int punto=0x7f020037;
         public static final int puntos=0x7f020038;
-        public static final int splash=0x7f020039;
-        public static final int student=0x7f02003a;
-        public static final int student_sad=0x7f02003b;
-        public static final int user_chat1=0x7f02003c;
-        public static final int user_chat2=0x7f02003d;
+        public static final int respuesta_correcta=0x7f020039;
+        public static final int respuesta_incorrecta=0x7f02003a;
+        public static final int splash=0x7f02003b;
+        public static final int student=0x7f02003c;
+        public static final int student_sad=0x7f02003d;
+        public static final int user_chat1=0x7f02003e;
+        public static final int user_chat2=0x7f02003f;
     }
     public static final class id {
         public static final int aprovadas=0x7f0a003c;
