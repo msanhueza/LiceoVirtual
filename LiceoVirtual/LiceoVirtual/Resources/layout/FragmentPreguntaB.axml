@@ -54,12 +54,6 @@
                     p1:textStyle="bold"
                     p1:textSize="15dp"
                     p1:gravity="center" />
-                <TextView
-                    p1:text="Ordena las palabras para construir la respuesta correcta..."
-                    p1:layout_width="match_parent"
-                    p1:layout_height="wrap_content"
-                    p1:id="@+id/frag2_mensaje"
-                    p1:gravity="center" />
                 <LinearLayout
                     p1:orientation="horizontal"
                     p1:layout_width="match_parent"
@@ -67,10 +61,10 @@
                     p1:id="@+id/linearLayout3">
                     <EditText
                         p1:id="@+id/frag2_respuesta"
-                        p1:hint="Ingresa tu respuesta..."
                         p1:layout_width="wrap_content"
                         p1:layout_weight="4"
-                        p1:layout_height="match_parent" />
+                        p1:layout_height="match_parent"
+                        p1:hint="Ordena la respuesta..." />
                     <ImageView
                         p1:src="@android:drawable/ic_menu_gallery"
                         p1:layout_width="wrap_content"

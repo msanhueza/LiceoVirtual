@@ -336,7 +336,7 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=46, solucion="Derribosa", esSolucion=false});
 
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=47, solucion="Uracilo, guanina, citosina", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=47, solucion="Uracilo, citosina timina", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=47, solucion="Uracilo, citosina, timina", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=47, solucion="Citosina, timina, guanina", esSolucion=true});
 
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=48, solucion="Pentosa, base nitrogenada y ácido fosfórico ( Fosfato)", esSolucion=true});
