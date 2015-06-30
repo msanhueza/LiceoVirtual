@@ -183,6 +183,7 @@
     <AndroidResource Include="Resources\layout\FragmentPreguntaB.axml" />
     <AndroidResource Include="Resources\drawable-hdpi\respuesta_correcta.png" />
     <AndroidResource Include="Resources\drawable-hdpi\respuesta_incorrecta.png" />
+    <AndroidResource Include="Resources\drawable\pizarron.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

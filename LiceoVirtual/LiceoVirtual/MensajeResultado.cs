@@ -44,6 +44,11 @@ namespace LiceoVirtual
 				                             "\n"+
 											  aprobacion;
 			guardarPuntaje(auxNivel, auxPuntaje);
+			PuntuacionAccion p = new PuntuacionAccion ();
+			int cantidadAprobadas = p.getPuntuacionMore80 (nivel);
+			if (cantidadAprobadas == 3) {
+				mostrarDialogNivelDesbloqueado (nivel);
+			}
 			string mensaje = "";
 			string baseTexto = "";
 			string primero = "PRIMERO MEDIO";
@@ -86,6 +91,10 @@ namespace LiceoVirtual
 			};
 
 			// Create your application here
+		}
+
+		public void mostrarDialogNivelDesbloqueado(string nivel){
+			// agregar codigo del alert dialog
 		}
 
 		public void guardarPuntaje(int auxNivel, int auxPuntaje){
