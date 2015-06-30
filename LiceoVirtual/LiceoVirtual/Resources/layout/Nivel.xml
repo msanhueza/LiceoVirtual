@@ -14,6 +14,7 @@
         p1:minWidth="25px"
         p1:minHeight="25px"
         p1:layout_gravity="center"
+        p1:background="@drawable/pizarron"
         p1:layout_weight="50">
         <TextView
             p1:text="Selecciona el nivel que deseas jugar.\n Necesitas responder correctamente 10 preguntas para pasar de nivel, para esto solo te puedes equivocar 2 veces.\n ¡Buena suerte! "
@@ -28,22 +29,19 @@
             p1:gravity="fill_horizontal"
             p1:layout_gravity="center"
             p1:layout_weight="2"
-            p1:background="@drawable/chat_bubble_green"
-            p1:textSize="@dimen/txt_20sp"
+            p1:textSize="18dp"
             p1:includeFontPadding="true"
             p1:textColor="#ffffffff"
             p1:paddingTop="@dimen/pad_10dp"
-            p1:paddingRight="@dimen/pad_30dp"
             p1:paddingBottom="@dimen/pad_10dp"
-            p1:paddingLeft="@dimen/pad_10dp"
+            p1:paddingLeft="@dimen/pad_20dp"
             p1:textAlignment="gravity" />
         <ImageView
             p1:src="@drawable/student"
             p1:layout_width="0dp"
             p1:layout_height="match_parent"
             p1:id="@+id/imageView1"
-            p1:layout_weight="1"
-            p1:scaleType="centerCrop" />
+            p1:layout_weight="1" />
     </LinearLayout>
     <LinearLayout
         p1:orientation="horizontal"

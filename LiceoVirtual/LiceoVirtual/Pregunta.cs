@@ -71,12 +71,14 @@ namespace LiceoVirtual
 			tvProgreso.Text = "Pregunta: " + (numPregunta + 1) + " / 10";
 
 
-			//obtengo la respuesta correcta de la pregunta actual
-			ListadoPreguntaSolucionItem preguntaActual = getPreguntaActual ();	
-			string respuestaActual = obtenerRespuesta (preguntaActual.objListaRespuestas);
+
 
 			int auxNivel = Int32.Parse(nivel);
 			listadoPreguntas = getListadoPreguntaSolucion (auxNivel);
+
+			//obtengo la respuesta correcta de la pregunta actual
+			ListadoPreguntaSolucionItem preguntaActual = getPreguntaActual ();	
+			string respuestaActual = obtenerRespuesta (preguntaActual.objListaRespuestas);
 
 			//Decido si ocupo fragment A o B para la primera pregunta
 			if (getTipoFragment (respuestaActual) == 1) {
@@ -356,7 +358,8 @@ namespace LiceoVirtual
 		{
 			//tiene una sola palabra sin saber si tiene caracateres raros
 			string[] palabras = respuesta.Split(' ');
-			if (palabras.Count == 1) {
+			int npalabras = palabras.Count();
+			if (npalabras == 1) {
 				//si es un numero Romano
 				if (palabras [0].Equals ("I") ||
 				    palabras [0].Equals ("II") ||
@@ -381,7 +384,7 @@ namespace LiceoVirtual
 					return 1;
 				} 
 				//palabras humanas de mas de una letra
-				else if (palabras[0].Count>1 && Regex.IsMatch (respuesta, @"^[a-zA-Z ]+$")) {
+				else if (palabras[0].Count() >1 && Regex.IsMatch (respuesta, @"^[a-zA-Z ]+$")) {
 					return 3;
 				}
 
