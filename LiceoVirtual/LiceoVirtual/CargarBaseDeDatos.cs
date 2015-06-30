@@ -62,31 +62,31 @@ public class CargarBaseDeDatos
 	private void cargarPreguntaBD(){	
 
 		//PREGUNTAS DE PRIMERO MEDIO
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = 2130837537, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = 2130837545, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = 2130837550, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = 2130837551, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = 2130837552, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha tiene como función", idImagen = 2130837553, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En la parte de la célula indicado con la flecha se realiza la función de", idImagen = 2130837554, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Las células de la siguiente imagen tienen como función principal", idImagen = 2130837555, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos es propio de la célula vegetal?", idImagen = 2130837556, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de los siguientes organelos ocurre la replicación del ADN?", idImagen = 2130837538, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos utiliza CO2?", idImagen = 2130837539, nivel=1});
+		/*1*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = 2130837538, nivel=1});
+		/*2*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = 2130837546, nivel=1});
+		/*3*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = 2130837551, nivel=1});
+		/*4*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = 2130837552, nivel=1});
+		/*5*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = 2130837553, nivel=1});
+		/*6*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha tiene como función", idImagen = 2130837554, nivel=1});
+		/*7*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En la parte de la célula indicado con la flecha se realiza la función de", idImagen = 2130837555, nivel=1});
+		/*8*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Las células de la siguiente imagen tienen como función principal", idImagen = 2130837556, nivel=1});
+		/*9*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos es propio de la célula vegetal?", idImagen = 2130837557, nivel=1});
+		/*10*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de los siguientes organelos ocurre la replicación del ADN?", idImagen = 2130837539, nivel=1});
+		/*11*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos utiliza CO2?", idImagen = 2130837540, nivel=1});
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de los siguientes organelos se sintetizan la mayor cantidad de proteínas?", idImagen = -1, nivel=1});
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de los siguientes organelos se realiza la respiración celular?", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio indicada con la flecha corresponde a", idImagen = 2130837540, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio indicada con la flecha corresponde a", idImagen = 2130837541, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿A qué tejido corresponde la siguiente imagen?", idImagen = 2130837542, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La secuencia de menor a mayor aumento es", idImagen = 2130837543, nivel=1});
+		/*14*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio indicada con la flecha corresponde a", idImagen = 2130837541, nivel=1});
+		/*15*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio indicada con la flecha corresponde a", idImagen = 2130837542, nivel=1});
+		/*16*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿A qué tejido corresponde la siguiente imagen?", idImagen = 2130837543, nivel=1});
+		/*17*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La secuencia de menor a mayor aumento es", idImagen = 2130837544, nivel=1});
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Una de las diferencias fundamentales entre la célula vegetal y animal es que la primera presenta:", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de las siguientes imágenes corresponde al Complejo de Golgi?", idImagen = 2130837544, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio que se indica con la flecha es", idImagen = 2130837546, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado en la figura se encuentra en mayor proporción en", idImagen = 2130837547, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos se encuentra en gran cantidad en las células del músculo esquelético?", idImagen = 2130837548, nivel=1});
+		/*19*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de las siguientes imágenes corresponde al Complejo de Golgi?", idImagen = 2130837545, nivel=1});
+		/*20*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio que se indica con la flecha es", idImagen = 2130837547, nivel=1});
+		/*21*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado en la figura se encuentra en mayor proporción en", idImagen = 2130837548, nivel=1});
+		/*22*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos se encuentra en gran cantidad en las células del músculo esquelético?", idImagen = 2130837549, nivel=1});
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En una célula del epitelio respiratorio que tiene como función la secreción de mucosidad para mantener húmeda la vía respiratoria debiera observarse una gran cantidad de", idImagen = -1, nivel=1});
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En una célula de la corteza suprarenal que secreta glucocorticoides (hormona lipofílica) debiera observarse una gran cantidad de", idImagen = -1, nivel=1});
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La secuencia de las siguientes imágenes vistas al microscopio de menor a mayor aumento es:", idImagen = 2130837549, nivel=1});
+		/*25*/preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La secuencia de las siguientes imágenes vistas al microscopio de menor a mayor aumento es:", idImagen = 2130837550, nivel=1});
 
 
 		//PREGUNTAS DE SEGUNDO MEDIO
@@ -146,37 +146,37 @@ public class CargarBaseDeDatos
 	private void cargarPreguntaSolucionBD(){	
 
 		//soluciones primero medio 1-25
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="un centríolo.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="una mitocondria.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="un retículo endoplasmico rugoso.", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="un centríolo", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="una mitocondria", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="un retículo endoplasmico rugoso", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=2, solucion="mitocondria.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=2, solucion="núcleo.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=2, solucion="cloroplasto.",  esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=2, solucion="mitocondria", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=2, solucion="núcleo", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=2, solucion="cloroplasto",  esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=3, solucion="una vacuola.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=3, solucion="un cloroplasto.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=3, solucion="una mitocondria.", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=3, solucion="una vacuola", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=3, solucion="un cloroplasto", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=3, solucion="una mitocondria", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=4, solucion="una vacuola.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=4, solucion="un cloroplasto.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=4, solucion="una mitocondria.", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=4, solucion="una vacuola", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=4, solucion="un cloroplasto", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=4, solucion="una mitocondria", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=5, solucion="una lisosoma.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=5, solucion="un cloroplasto.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=5, solucion="la membrana nuclear.", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=5, solucion="una lisosoma", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=5, solucion="un cloroplasto", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=5, solucion="la membrana nuclear", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=6, solucion="transporte de sustancias.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=6, solucion="síntesis de ATP.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=6, solucion="transcripción génica.", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=6, solucion="transporte de sustancias", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=6, solucion="síntesis de ATP", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=6, solucion="transcripción génica", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=7, solucion="transporte de sustancias.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=7, solucion="síntesis de ATP.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=7, solucion="síntesis de proteínas.", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=7, solucion="transporte de sustancias", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=7, solucion="síntesis de ATP", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=7, solucion="síntesis de proteínas", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=8, solucion="el transporte de sustancias.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=8, solucion="la síntesis de ATP.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=8, solucion="la secreción de sustancias.", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=8, solucion="el transporte de sustancias", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=8, solucion="la síntesis de ATP", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=8, solucion="la secreción de sustancias", esSolucion=true});
 
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=9, solucion="1", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=9, solucion="3", esSolucion=true});
@@ -198,13 +198,13 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=13, solucion="El cloroplasto", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=13, solucion="La mitocondria", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=14, solucion="la platina.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=14, solucion="el objetivo.", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=14, solucion="el condensador.", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=14, solucion="la platina", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=14, solucion="el objetivo", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=14, solucion="el condensador", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=15, solucion="la platina.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=15, solucion="el cuerpo.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=15, solucion="la iluminación.", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=15, solucion="la platina", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=15, solucion="el cuerpo", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=15, solucion="la iluminación", esSolucion=true});
 
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=16, solucion="Nervioso", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=16, solucion="Epitelial", esSolucion=false});
@@ -226,21 +226,21 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=20, solucion="el condensador", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=20, solucion="el ocular", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=21, solucion="neurona.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=21, solucion="célula muscular esquelética.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=21, solucion="célula pancreática secretora de insulina (beta).", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=21, solucion="neurona", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=21, solucion="célula muscular esquelética", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=21, solucion="célula pancreática secretora de insulina (beta)", esSolucion=true});
 
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=22, solucion="1", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=22, solucion="2", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=22, solucion="3", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=23, solucion="retículo endoplasmico rugoso.", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=23, solucion="retículo endoplasmico rugoso", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=23, solucion="ribosomas citoplasmaticos", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=23, solucion="complejo de Golgi.", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=23, solucion="complejo de Golgi", esSolucion=true});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=24, solucion="mitocondrias.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=24, solucion="membrana plasmática.", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=24, solucion="retículo endoplásmico rugoso.", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=24, solucion="mitocondrias", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=24, solucion="membrana plasmática", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=24, solucion="retículo endoplásmico rugoso", esSolucion=true});
 
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=25, solucion="1-2-4-3", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=25, solucion="4-3-2-1", esSolucion=false});
@@ -347,7 +347,7 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=49, solucion="Los nucleótidos poseen grupos fosfatos con tres grupos fosfato de baja energía", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=49, solucion="El GTP es una guanina y tres fosfatos", esSolucion=false});
 
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=50, solucion="A-T y C-G con dos y tres enlaces de hidrógeno respectivamente.", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=50, solucion="A-T y C-G con dos y tres enlaces de hidrógeno respectivamente", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=50, solucion="A-C y T-G Con dos enlaces de hidrógeno y uno entre T y G ", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=50, solucion="A-G y T-C Con dos y tres enlaces de hidrógeno respectivamente", esSolucion=false});
 
