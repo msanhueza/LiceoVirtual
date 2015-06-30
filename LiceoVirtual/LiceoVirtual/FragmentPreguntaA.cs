@@ -47,6 +47,8 @@ namespace LiceoVirtual
 			pregunta.Text = p.objPregunta.pregunta;
 			if (p.objPregunta.idImagen != -1) {
 				imagen.SetImageResource (p.objPregunta.idImagen);
+			} else {
+				imagen.Visibility = ViewStates.Gone;
 			}
 			radio1.Text = p.objListaRespuestas [0].solucion;
 			radio2.Text = p.objListaRespuestas [1].solucion;
@@ -67,14 +69,17 @@ namespace LiceoVirtual
 			ResultadoRespuestaItem resultado = comprobarRespuesta (p.objListaRespuestas);
      
 			mostrarResultado(resultado.respuesta, radioButtonSeleccionado, resultado.esCorrecta);
-			myActivity.habilitarButtonSiguiente (true);
 
 			if(resultado.esCorrecta){
 				myActivity.incrementarRespuestasBuenas ();
 			}
 			else{
 				myActivity.incrementarRespuestasMalas ();
+				if (myActivity.getMalas () == 2) {
+					myActivity.cambiarTextoBotonSiguiente ("Terminar");
+				}
 			}
+			myActivity.habilitarButtonSiguiente (true);
 
 		}
 

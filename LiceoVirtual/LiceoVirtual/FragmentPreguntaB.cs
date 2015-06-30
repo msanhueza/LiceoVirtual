@@ -33,6 +33,8 @@ namespace LiceoVirtual
 			var imagen = view.FindViewById<ImageView> (Resource.Id.frag2_imagen);
 			if(p.objPregunta.idImagen != -1){
 				imagen.SetImageResource (p.objPregunta.idImagen);
+			} else {
+				imagen.Visibility = ViewStates.Gone;
 			}
 			var respuestaDesordenada = view.FindViewById<TextView>(Resource.Id.frag2_respuesta_desordenada);
 			respuestaDesordenada.SetTextColor (Android.Graphics.Color.Green);
@@ -54,7 +56,6 @@ namespace LiceoVirtual
 				bool esCorrecta = comprobarRespuesta(respuestaCorrecta, respuestaJugador);
 				botonComprobar.Enabled = false;
 				editTextRespuesta.Enabled = false;
-				myActivity.habilitarButtonSiguiente(true);
 				var imagenRespuesta = view.FindViewById<ImageView> (Resource.Id.frag2_imagen_respuesta);
 				if(esCorrecta){
 					imagenRespuesta.Visibility = ViewStates.Visible;
@@ -65,7 +66,11 @@ namespace LiceoVirtual
 					imagenRespuesta.Visibility = ViewStates.Visible;
 					imagenRespuesta.SetImageResource(Resource.Drawable.respuesta_incorrecta);
 					myActivity.incrementarRespuestasMalas ();
+					if (myActivity.getMalas () == 2) {
+						myActivity.cambiarTextoBotonSiguiente ("Terminar");
+					}
 				}
+				myActivity.habilitarButtonSiguiente(true);
 			};
 			return view;
 

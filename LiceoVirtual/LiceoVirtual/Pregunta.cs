@@ -146,6 +146,14 @@ namespace LiceoVirtual
 			tvIncorrectas.Text = "INCORRECTAS: " + malas+"/2";
 		}
 
+		public int getBuenas(){
+			return buenas;
+		}
+
+		public int getMalas(){
+			return malas;
+		}
+
 		public ListadoPreguntaSolucionItem getPreguntaActual(){
 			ListadoPreguntaSolucionItem p = listadoPreguntas[indicePregunta];
 			return p;
@@ -160,6 +168,11 @@ namespace LiceoVirtual
 				btnPreguntaSiguiente.Enabled = false;
 				btnPreguntaSiguiente.Visibility = ViewStates.Gone;
 			}
+		}
+
+		public void cambiarTextoBotonSiguiente(string mensaje){
+			Button btnPreguntaSiguiente = FindViewById<Button> (Resource.Id.btnPreguntaSiguiente);
+			btnPreguntaSiguiente.Text = mensaje;
 		}
 
 		public void mostrarFragmentA(){

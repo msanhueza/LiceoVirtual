@@ -32,7 +32,7 @@
                 p1:layout_height="wrap_content" />
             <ImageView
                 p1:layout_width="match_parent"
-                p1:layout_height="wrap_content"
+                p1:layout_height="170dp"
                 p1:id="@+id/frag1_imagen"
                 p1:scaleType="fitCenter"
                 p1:layout_marginRight="50dp"
