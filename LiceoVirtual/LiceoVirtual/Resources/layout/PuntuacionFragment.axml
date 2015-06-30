@@ -23,7 +23,7 @@
             android:layout_weight="1"
             android:gravity="top">
             <TextView
-                android:text="Aprobadas"
+                android:text="APROBADAS"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/textView1"
                 android:textColor="#ff454242"
@@ -53,7 +53,7 @@
             android:layout_weight="1"
             android:gravity="top">
             <TextView
-                android:text="No Aprobadas"
+                android:text="NO APROBADAS"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/textView3"
                 android:textColor="#ff3b3b3b"
@@ -92,7 +92,7 @@
             android:layout_weight="1"
             android:gravity="top">
             <TextView
-                android:text="Trivias Completadas"
+                android:text="COMPLETADAS"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/textView3"
                 android:textColor="#ff454242"
@@ -122,7 +122,7 @@
             android:layout_weight="1"
             android:gravity="top">
             <TextView
-                android:text="Porcentaje Aprobación"
+                android:text="% APROBADAS"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/textView4"
                 android:textColor="#ff3b3b3b"

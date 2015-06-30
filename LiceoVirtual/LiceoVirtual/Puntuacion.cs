@@ -18,7 +18,7 @@ using Android.Content.PM;
 
 namespace LiceoVirtual
 {
-	[Activity (Label = "Puntuacion", ScreenOrientation = ScreenOrientation.Portrait)]			
+	[Activity (Label = "Trivia", ScreenOrientation = ScreenOrientation.Portrait)]			
 	public class Puntuacion : Activity, ActionBar.ITabListener
 	{
 		Fragment[] _fragments;
