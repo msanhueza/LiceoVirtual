@@ -98,6 +98,8 @@
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable-hdpi/candado.png
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/layout/fragmentpreguntaa.xml
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/layout/fragmentpreguntab.xml
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable-hdpi/respuesta_correcta.png
+/Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/res/drawable-hdpi/respuesta_incorrecta.png
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/R.cs.flag
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/bin/Debug/LiceoVirtual.LiceoVirtual-Signed.apk
 /Users/francisco/Projects/LiceoVirtual/LiceoVirtual/LiceoVirtual/obj/Debug/uploadflags.txt

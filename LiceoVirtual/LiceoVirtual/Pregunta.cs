@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 using Android.App;
 using Android.Content;
@@ -61,7 +62,7 @@ namespace LiceoVirtual
 			TextView tvCorrectas = FindViewById<TextView> (Resource.Id.tvCorrectas);
 			TextView tvIncorrectas = FindViewById<TextView> (Resource.Id.tvIncorrectas);
 
-			progreso = 10;
+			progreso = 10; 
 			buenas = 0;
 			malas = 0;
 			tvCorrectas.Text = "CORRECTAS: " + buenas+"/10";
@@ -69,14 +70,32 @@ namespace LiceoVirtual
 			pbPregunta.Progress = progreso;
 			tvProgreso.Text = "Pregunta: " + (numPregunta + 1) + " / 10";
 
+
+			//obtengo la respuesta correcta de la pregunta actual
+			ListadoPreguntaSolucionItem preguntaActual = getPreguntaActual ();	
+			string respuestaActual = obtenerRespuesta (preguntaActual.objListaRespuestas);
+
 			int auxNivel = Int32.Parse(nivel);
 			listadoPreguntas = getListadoPreguntaSolucion (auxNivel);
 
-			mostrarFragmentA ();
+			//Decido si ocupo fragment A o B para la primera pregunta
+			if (getTipoFragment (respuestaActual) == 1) {
+				mostrarFragmentA ();
+			}
+			else if(getTipoFragment (respuestaActual) == 2){
+				mostrarFragmentB ();
+			}
+			//else if(getTipoFragment (respuestaActual) == 3){
+			//	mostrarFragmentC ();
+			//}
+
+
 			habilitarButtonSiguiente (false);
 
 			btnPreguntaSiguiente.Click += delegate {
 				indicePregunta++;
+				preguntaActual = getPreguntaActual ();
+				respuestaActual = obtenerRespuesta (preguntaActual.objListaRespuestas);
 				if(malas == 2 && buenas<10){
 					cambiarActivity(false);
 				}
@@ -90,16 +109,14 @@ namespace LiceoVirtual
 					if(indicePregunta == 9){
 						btnPreguntaSiguiente.Text = "Terminar";
 					}
-					if(indicePregunta < 10){
-						if(preguntaA){
-							mostrarFragmentB();
-							preguntaA = false;
+					if(indicePregunta < 10){        //Decido si ocupo fragment A o B
+						if (getTipoFragment (respuestaActual) == 1) {
+							mostrarFragmentA ();
 						}
-						else{
-							mostrarFragmentA();
-							habilitarButtonSiguiente(false);
-							preguntaA = true;
+						else if(getTipoFragment (respuestaActual) == 2){
+							mostrarFragmentB ();
 						}
+
 					}
 				}
 
@@ -319,7 +336,62 @@ namespace LiceoVirtual
 			return base.OnOptionsItemSelected(item);
 		}
 
+		/**
+		 * Funcion que retorna la respuesta correcta desde un listado de respuestas
+		 * de una pregunta actual
+		 * */
+		public string obtenerRespuesta(List<PreguntaSolucionItem> lista){
+			for(int i=0; i<lista.Count; i++){
+				if(lista[i].esSolucion){
+					return lista [i].solucion;
+				}
+			}
+			return "";
+		}
+
+		/**
+		 * Funcion que retorna 1, 2 o 3 si la respuesta es para el fragment A, B, C
+		 * */
+		public int getTipoFragment(string respuesta)
+		{
+			//tiene una sola palabra sin saber si tiene caracateres raros
+			string[] palabras = respuesta.Split(' ');
+			if (palabras.Count == 1) {
+				//si es un numero Romano
+				if (palabras [0].Equals ("I") ||
+				    palabras [0].Equals ("II") ||
+				    palabras [0].Equals ("III") ||
+				    palabras [0].Equals ("IV") ||
+				    palabras [0].Equals ("Ninguna")) {
+					return 1;
+				} else if (Regex.IsMatch (respuesta, @"^[a-zA-Z]+$")) {
+					return 2;
+				}
+
+
+			}
+			else 
+			{
+				//numero Romano
+				if (palabras [0].Equals ("I") ||
+					palabras [0].Equals ("II") ||
+					palabras [0].Equals ("III") ||
+					palabras [0].Equals ("IV") ||
+					palabras [0].Equals ("Ninguna")) {
+					return 1;
+				} 
+				//palabras humanas de mas de una letra
+				else if (palabras[0].Count>1 && Regex.IsMatch (respuesta, @"^[a-zA-Z ]+$")) {
+					return 3;
+				}
+
+
+			}
+			return 1;
+
+		}
 
 	}
+
 }
 
