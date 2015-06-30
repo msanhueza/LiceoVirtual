@@ -84,7 +84,7 @@ namespace LiceoVirtual
 			if (getTipoFragment (respuestaActual) == 1) {
 				mostrarFragmentA ();
 			}
-			else if(getTipoFragment (respuestaActual) == 2){
+			else{
 				mostrarFragmentB ();
 			}
 			//else if(getTipoFragment (respuestaActual) == 3){
