@@ -71,12 +71,14 @@ namespace LiceoVirtual
 			tvProgreso.Text = "Pregunta: " + (numPregunta + 1) + " / 10";
 
 
+
+			int auxNivel = Int32.Parse(nivel);
+			listadoPreguntas = getListadoPreguntaSolucion (auxNivel);
+
 			//obtengo la respuesta correcta de la pregunta actual
 			ListadoPreguntaSolucionItem preguntaActual = getPreguntaActual ();	
 			string respuestaActual = obtenerRespuesta (preguntaActual.objListaRespuestas);
 
-			int auxNivel = Int32.Parse(nivel);
-			listadoPreguntas = getListadoPreguntaSolucion (auxNivel);
 
 			//Decido si ocupo fragment A o B para la primera pregunta
 			if (getTipoFragment (respuestaActual) == 1) {
@@ -85,9 +87,10 @@ namespace LiceoVirtual
 			else if(getTipoFragment (respuestaActual) == 2){
 				mostrarFragmentB ();
 			}
-			//else if(getTipoFragment (respuestaActual) == 3){
+			else if(getTipoFragment (respuestaActual) == 3){
 			//	mostrarFragmentC ();
-			//}
+			mostrarFragmentB ();
+			}
 
 
 			habilitarButtonSiguiente (false);
@@ -114,6 +117,9 @@ namespace LiceoVirtual
 							mostrarFragmentA ();
 						}
 						else if(getTipoFragment (respuestaActual) == 2){
+							mostrarFragmentB ();
+						}
+						else if(getTipoFragment (respuestaActual) == 3){
 							mostrarFragmentB ();
 						}
 
@@ -356,7 +362,8 @@ namespace LiceoVirtual
 		{
 			//tiene una sola palabra sin saber si tiene caracateres raros
 			string[] palabras = respuesta.Split(' ');
-			if (palabras.Count == 1) {
+			int npalabras = palabras.Count ();
+			if (npalabras == 1) {
 				//si es un numero Romano
 				if (palabras [0].Equals ("I") ||
 				    palabras [0].Equals ("II") ||
@@ -364,7 +371,7 @@ namespace LiceoVirtual
 				    palabras [0].Equals ("IV") ||
 				    palabras [0].Equals ("Ninguna")) {
 					return 1;
-				} else if (Regex.IsMatch (respuesta, @"^[a-zA-Z]+$")) {
+				} else if (Regex.IsMatch (respuesta, @"^[a-zA-ZáéíóúÁÉÍÓÚ]+$")) {
 					return 2;
 				}
 
@@ -381,7 +388,7 @@ namespace LiceoVirtual
 					return 1;
 				} 
 				//palabras humanas de mas de una letra
-				else if (palabras[0].Count>1 && Regex.IsMatch (respuesta, @"^[a-zA-Z ]+$")) {
+				else if ((npalabras > 1) && Regex.IsMatch (palabras[0], @"^[a-zA-ZáéíóúÁÉÍÓÚ]+$")) {
 					return 3;
 				}
 
