@@ -49,8 +49,8 @@ namespace LiceoVirtual
 			if (cantidadAprobadas == 3) {
 				if (auxNivel <= 3) {
 					NivelDesbloqueadoAccion n = new NivelDesbloqueadoAccion ();
-					mostrarMensajeNivelDesbloqueado (auxNivel);
-					if (auxNivel == 1) {
+					if (auxNivel == 3 && aprobo) {
+						mostrarMensajeNivelDesbloqueado (auxNivel);
 						n.desbloquearNivel ((auxNivel).ToString());	
 					}
 					n.desbloquearNivel ((auxNivel+1).ToString());

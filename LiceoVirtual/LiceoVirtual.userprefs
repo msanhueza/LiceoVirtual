@@ -1,12 +1,6 @@
-﻿<Properties StartupItem="LiceoVirtual/LiceoVirtual.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual/Pregunta.cs">
-    <Files>
-      <File FileName="LiceoVirtual/Nivel.cs" Line="1" Column="1" />
-      <File FileName="LiceoVirtual/Pregunta.cs" Line="77" Column="4" />
-      <File FileName="LiceoVirtual/FragmentPreguntaB.cs" Line="111" Column="4" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+﻿<Properties StartupItem="LiceoVirtual\LiceoVirtual.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SSG" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\Ranking.cs" line="41" column="1" />
