@@ -198,160 +198,163 @@ namespace LiceoVirtual
 			public const int error = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int green_btn = 2130837517;
+			public const int felicitaciones = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int ic_action_overflow = 2130837518;
+			public const int green_btn = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int ic_compose = 2130837519;
+			public const int ic_action_overflow = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int ic_launcher = 2130837520;
+			public const int ic_compose = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int ic_offline = 2130837521;
+			public const int ic_launcher = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int ic_online = 2130837522;
+			public const int ic_offline = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int ic_pwd = 2130837523;
+			public const int ic_online = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int ic_send = 2130837524;
+			public const int ic_pwd = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int ic_username = 2130837525;
+			public const int ic_send = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public const int Icon = 2130837526;
+			public const int ic_username = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int incorrect = 2130837527;
+			public const int Icon = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int jugar = 2130837528;
+			public const int incorrect = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int login_ic = 2130837529;
+			public const int jugar = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int LogoBlanco = 2130837530;
+			public const int login_ic = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int logoLogin = 2130837531;
+			public const int LogoBlanco = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int LVBackground = 2130837532;
+			public const int logoLogin = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int LVBackgroundMenu = 2130837533;
+			public const int LVBackground = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public const int LVBlockedButton = 2130837534;
+			public const int LVBackgroundMenu = 2130837534;
 			
 			// aapt resource value: 0x7f02001f
-			public const int LVButton = 2130837535;
+			public const int LVBlockedButton = 2130837535;
 			
 			// aapt resource value: 0x7f020020
-			public const int LVMenuBtn = 2130837536;
+			public const int LVButton = 2130837536;
 			
 			// aapt resource value: 0x7f020021
-			public const int LVProgress = 2130837537;
+			public const int LVMenuBtn = 2130837537;
 			
 			// aapt resource value: 0x7f020022
-			public const int n1_1 = 2130837538;
+			public const int LVProgress = 2130837538;
 			
 			// aapt resource value: 0x7f020023
-			public const int n1_10 = 2130837539;
+			public const int n1_1 = 2130837539;
 			
 			// aapt resource value: 0x7f020024
-			public const int n1_11 = 2130837540;
+			public const int n1_10 = 2130837540;
 			
 			// aapt resource value: 0x7f020025
-			public const int n1_14 = 2130837541;
+			public const int n1_11 = 2130837541;
 			
 			// aapt resource value: 0x7f020026
-			public const int n1_15 = 2130837542;
+			public const int n1_14 = 2130837542;
 			
 			// aapt resource value: 0x7f020027
-			public const int n1_16 = 2130837543;
+			public const int n1_15 = 2130837543;
 			
 			// aapt resource value: 0x7f020028
-			public const int n1_17 = 2130837544;
+			public const int n1_16 = 2130837544;
 			
 			// aapt resource value: 0x7f020029
-			public const int n1_19 = 2130837545;
+			public const int n1_17 = 2130837545;
 			
 			// aapt resource value: 0x7f02002a
-			public const int n1_2 = 2130837546;
+			public const int n1_19 = 2130837546;
 			
 			// aapt resource value: 0x7f02002b
-			public const int n1_20 = 2130837547;
+			public const int n1_2 = 2130837547;
 			
 			// aapt resource value: 0x7f02002c
-			public const int n1_21 = 2130837548;
+			public const int n1_20 = 2130837548;
 			
 			// aapt resource value: 0x7f02002d
-			public const int n1_22 = 2130837549;
+			public const int n1_21 = 2130837549;
 			
 			// aapt resource value: 0x7f02002e
-			public const int n1_25 = 2130837550;
+			public const int n1_22 = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public const int n1_3 = 2130837551;
+			public const int n1_25 = 2130837551;
 			
 			// aapt resource value: 0x7f020030
-			public const int n1_4 = 2130837552;
+			public const int n1_3 = 2130837552;
 			
 			// aapt resource value: 0x7f020031
-			public const int n1_5 = 2130837553;
+			public const int n1_4 = 2130837553;
 			
 			// aapt resource value: 0x7f020032
-			public const int n1_6 = 2130837554;
+			public const int n1_5 = 2130837554;
 			
 			// aapt resource value: 0x7f020033
-			public const int n1_7 = 2130837555;
+			public const int n1_6 = 2130837555;
 			
 			// aapt resource value: 0x7f020034
-			public const int n1_8 = 2130837556;
+			public const int n1_7 = 2130837556;
 			
 			// aapt resource value: 0x7f020035
-			public const int n1_9 = 2130837557;
+			public const int n1_8 = 2130837557;
 			
 			// aapt resource value: 0x7f020036
-			public const int nota = 2130837558;
+			public const int n1_9 = 2130837558;
 			
 			// aapt resource value: 0x7f020037
-			public const int pizarron = 2130837559;
+			public const int nota = 2130837559;
 			
 			// aapt resource value: 0x7f020038
-			public const int punto = 2130837560;
+			public const int pizarron = 2130837560;
 			
 			// aapt resource value: 0x7f020039
-			public const int puntos = 2130837561;
+			public const int punto = 2130837561;
 			
 			// aapt resource value: 0x7f02003a
-			public const int respuesta_correcta = 2130837562;
+			public const int puntos = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int respuesta_incorrecta = 2130837563;
+			public const int respuesta_correcta = 2130837563;
 			
 			// aapt resource value: 0x7f02003c
-			public const int splash = 2130837564;
+			public const int respuesta_incorrecta = 2130837564;
 			
 			// aapt resource value: 0x7f02003d
-			public const int student = 2130837565;
+			public const int splash = 2130837565;
 			
 			// aapt resource value: 0x7f02003e
-			public const int student_sad = 2130837566;
+			public const int student = 2130837566;
 			
 			// aapt resource value: 0x7f02003f
-			public const int user_chat1 = 2130837567;
+			public const int student_sad = 2130837567;
 			
 			// aapt resource value: 0x7f020040
-			public const int user_chat2 = 2130837568;
+			public const int user_chat1 = 2130837568;
+			
+			// aapt resource value: 0x7f020041
+			public const int user_chat2 = 2130837569;
 			
 			static Drawable()
 			{
@@ -366,233 +369,230 @@ namespace LiceoVirtual
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0a003c
-			public const int aprovadas = 2131361852;
-			
-			// aapt resource value: 0x7f0a0025
-			public const int backmenu = 2131361829;
-			
-			// aapt resource value: 0x7f0a0033
-			public const int barraAvance = 2131361843;
-			
-			// aapt resource value: 0x7f0a002c
-			public const int btn1 = 2131361836;
-			
-			// aapt resource value: 0x7f0a002f
-			public const int btn2 = 2131361839;
-			
-			// aapt resource value: 0x7f0a002d
-			public const int btn3 = 2131361837;
-			
-			// aapt resource value: 0x7f0a0030
-			public const int btn4 = 2131361840;
-			
-			// aapt resource value: 0x7f0a0023
-			public const int btnAceptarTerminoTrivia = 2131361827;
-			
-			// aapt resource value: 0x7f0a0039
-			public const int btnIrTrivia = 2131361849;
-			
-			// aapt resource value: 0x7f0a0026
-			public const int btnJugar = 2131361830;
-			
-			// aapt resource value: 0x7f0a001b
-			public const int btnLogin = 2131361819;
-			
-			// aapt resource value: 0x7f0a0037
-			public const int btnPreguntaSiguiente = 2131361847;
-			
-			// aapt resource value: 0x7f0a0029
-			public const int btnRanking = 2131361833;
-			
-			// aapt resource value: 0x7f0a0019
-			public const int cbxRecordarContrasena = 2131361817;
-			
-			// aapt resource value: 0x7f0a004b
-			public const int cerrarSesion = 2131361867;
-			
-			// aapt resource value: 0x7f0a003f
-			public const int completadas = 2131361855;
-			
-			// aapt resource value: 0x7f0a0044
-			public const int content_frame = 2131361860;
-			
-			// aapt resource value: 0x7f0a003e
-			public const int desaprovadas = 2131361854;
-			
-			// aapt resource value: 0x7f0a0018
-			public const int edtContrasena = 2131361816;
-			
-			// aapt resource value: 0x7f0a0016
-			public const int edtRut = 2131361814;
-			
-			// aapt resource value: 0x7f0a0007
-			public const int frag1_imagen = 2131361799;
-			
-			// aapt resource value: 0x7f0a0006
-			public const int frag1_pregunta = 2131361798;
-			
-			// aapt resource value: 0x7f0a000a
-			public const int frag1_radio1 = 2131361802;
-			
-			// aapt resource value: 0x7f0a000b
-			public const int frag1_radio2 = 2131361803;
-			
-			// aapt resource value: 0x7f0a000c
-			public const int frag1_radio3 = 2131361804;
-			
-			// aapt resource value: 0x7f0a0009
-			public const int frag1_radio_group = 2131361801;
-			
-			// aapt resource value: 0x7f0a0014
-			public const int frag2_comprobar = 2131361812;
-			
-			// aapt resource value: 0x7f0a000e
-			public const int frag2_imagen = 2131361806;
-			
-			// aapt resource value: 0x7f0a0013
-			public const int frag2_imagen_respuesta = 2131361811;
-			
-			// aapt resource value: 0x7f0a000d
-			public const int frag2_pregunta = 2131361805;
-			
-			// aapt resource value: 0x7f0a0012
-			public const int frag2_respuesta = 2131361810;
-			
-			// aapt resource value: 0x7f0a0010
-			public const int frag2_respuesta_desordenada = 2131361808;
-			
-			// aapt resource value: 0x7f0a0036
-			public const int fragment_container = 2131361846;
-			
-			// aapt resource value: 0x7f0a002b
-			public const int imageView1 = 2131361835;
-			
-			// aapt resource value: 0x7f0a0001
-			public const int imgAlerta = 2131361793;
-			
-			// aapt resource value: 0x7f0a0015
-			public const int imgLogo = 2131361813;
-			
-			// aapt resource value: 0x7f0a0022
-			public const int imgMensajeResultadoStudent = 2131361826;
-			
-			// aapt resource value: 0x7f0a003a
-			public const int info_menu = 2131361850;
-			
-			// aapt resource value: 0x7f0a0003
-			public const int linearLayout1 = 2131361795;
-			
-			// aapt resource value: 0x7f0a0047
-			public const int linearLayout1Ranking = 2131361863;
-			
-			// aapt resource value: 0x7f0a000f
-			public const int linearLayout2 = 2131361807;
-			
-			// aapt resource value: 0x7f0a0011
-			public const int linearLayout3 = 2131361809;
-			
-			// aapt resource value: 0x7f0a002e
-			public const int linearLayout4 = 2131361838;
-			
-			// aapt resource value: 0x7f0a0020
-			public const int linearLayout5 = 2131361824;
-			
-			// aapt resource value: 0x7f0a001f
-			public const int linearLayout6 = 2131361823;
-			
-			// aapt resource value: 0x7f0a0000
-			public const int linearLayoutAlerta = 2131361792;
-			
 			// aapt resource value: 0x7f0a003b
-			public const int listViewPuntuacion = 2131361851;
-			
-			// aapt resource value: 0x7f0a0046
-			public const int listViewRanking = 2131361862;
-			
-			// aapt resource value: 0x7f0a0038
-			public const int lyPuntuacion1 = 2131361848;
-			
-			// aapt resource value: 0x7f0a0045
-			public const int lyRanking1 = 2131361861;
-			
-			// aapt resource value: 0x7f0a001a
-			public const int main = 2131361818;
-			
-			// aapt resource value: 0x7f0a004a
-			public const int menuBar = 2131361866;
-			
-			// aapt resource value: 0x7f0a001c
-			public const int myButton = 2131361820;
-			
-			// aapt resource value: 0x7f0a0034
-			public const int pbPregunta = 2131361844;
-			
-			// aapt resource value: 0x7f0a0041
-			public const int porcentaje = 2131361857;
-			
-			// aapt resource value: 0x7f0a0005
-			public const int pregunta = 2131361797;
-			
-			// aapt resource value: 0x7f0a0028
-			public const int relativeLayout1 = 2131361832;
+			public const int aprovadas = 2131361851;
 			
 			// aapt resource value: 0x7f0a0024
-			public const int relativeLayout2 = 2131361828;
-			
-			// aapt resource value: 0x7f0a0017
-			public const int requestFocus1 = 2131361815;
-			
-			// aapt resource value: 0x7f0a0008
-			public const int respuesta = 2131361800;
-			
-			// aapt resource value: 0x7f0a0004
-			public const int scrollView1 = 2131361796;
-			
-			// aapt resource value: 0x7f0a0027
-			public const int space1 = 2131361831;
-			
-			// aapt resource value: 0x7f0a002a
-			public const int textView1 = 2131361834;
-			
-			// aapt resource value: 0x7f0a003d
-			public const int textView3 = 2131361853;
-			
-			// aapt resource value: 0x7f0a0040
-			public const int textView4 = 2131361856;
-			
-			// aapt resource value: 0x7f0a0002
-			public const int tvAlerta = 2131361794;
-			
-			// aapt resource value: 0x7f0a0031
-			public const int tvCorrectas = 2131361841;
-			
-			// aapt resource value: 0x7f0a0042
-			public const int tvFecha = 2131361858;
+			public const int backmenu = 2131361828;
 			
 			// aapt resource value: 0x7f0a0032
-			public const int tvIncorrectas = 2131361842;
+			public const int barraAvance = 2131361842;
 			
-			// aapt resource value: 0x7f0a0048
-			public const int tvNombreRanking = 2131361864;
+			// aapt resource value: 0x7f0a002b
+			public const int btn1 = 2131361835;
 			
-			// aapt resource value: 0x7f0a0035
-			public const int tvProgreso = 2131361845;
+			// aapt resource value: 0x7f0a002e
+			public const int btn2 = 2131361838;
+			
+			// aapt resource value: 0x7f0a002c
+			public const int btn3 = 2131361836;
+			
+			// aapt resource value: 0x7f0a002f
+			public const int btn4 = 2131361839;
+			
+			// aapt resource value: 0x7f0a0022
+			public const int btnAceptarTerminoTrivia = 2131361826;
+			
+			// aapt resource value: 0x7f0a0038
+			public const int btnIrTrivia = 2131361848;
+			
+			// aapt resource value: 0x7f0a0025
+			public const int btnJugar = 2131361829;
+			
+			// aapt resource value: 0x7f0a0018
+			public const int btnLogin = 2131361816;
+			
+			// aapt resource value: 0x7f0a0036
+			public const int btnPreguntaSiguiente = 2131361846;
+			
+			// aapt resource value: 0x7f0a0028
+			public const int btnRanking = 2131361832;
+			
+			// aapt resource value: 0x7f0a0016
+			public const int cbxRecordarContrasena = 2131361814;
+			
+			// aapt resource value: 0x7f0a004a
+			public const int cerrarSesion = 2131361866;
+			
+			// aapt resource value: 0x7f0a003e
+			public const int completadas = 2131361854;
 			
 			// aapt resource value: 0x7f0a0043
-			public const int tvPuntaje = 2131361859;
+			public const int content_frame = 2131361859;
+			
+			// aapt resource value: 0x7f0a003d
+			public const int desaprovadas = 2131361853;
+			
+			// aapt resource value: 0x7f0a0015
+			public const int edtContrasena = 2131361813;
+			
+			// aapt resource value: 0x7f0a0013
+			public const int edtRut = 2131361811;
+			
+			// aapt resource value: 0x7f0a001b
+			public const int felicitaciones_mensaje = 2131361819;
+			
+			// aapt resource value: 0x7f0a0004
+			public const int frag1_imagen = 2131361796;
+			
+			// aapt resource value: 0x7f0a0003
+			public const int frag1_pregunta = 2131361795;
+			
+			// aapt resource value: 0x7f0a0007
+			public const int frag1_radio1 = 2131361799;
+			
+			// aapt resource value: 0x7f0a0008
+			public const int frag1_radio2 = 2131361800;
+			
+			// aapt resource value: 0x7f0a0009
+			public const int frag1_radio3 = 2131361801;
+			
+			// aapt resource value: 0x7f0a0006
+			public const int frag1_radio_group = 2131361798;
+			
+			// aapt resource value: 0x7f0a0011
+			public const int frag2_comprobar = 2131361809;
+			
+			// aapt resource value: 0x7f0a000b
+			public const int frag2_imagen = 2131361803;
+			
+			// aapt resource value: 0x7f0a0010
+			public const int frag2_imagen_respuesta = 2131361808;
+			
+			// aapt resource value: 0x7f0a000a
+			public const int frag2_pregunta = 2131361802;
+			
+			// aapt resource value: 0x7f0a000f
+			public const int frag2_respuesta = 2131361807;
+			
+			// aapt resource value: 0x7f0a000d
+			public const int frag2_respuesta_desordenada = 2131361805;
+			
+			// aapt resource value: 0x7f0a0035
+			public const int fragment_container = 2131361845;
+			
+			// aapt resource value: 0x7f0a002a
+			public const int imageView1 = 2131361834;
+			
+			// aapt resource value: 0x7f0a0012
+			public const int imgLogo = 2131361810;
 			
 			// aapt resource value: 0x7f0a0021
-			public const int tvPuntajeMensajeResultado = 2131361825;
+			public const int imgMensajeResultadoStudent = 2131361825;
 			
-			// aapt resource value: 0x7f0a0049
-			public const int tvPuntajeRanking = 2131361865;
+			// aapt resource value: 0x7f0a0039
+			public const int info_menu = 2131361849;
+			
+			// aapt resource value: 0x7f0a0000
+			public const int linearLayout1 = 2131361792;
+			
+			// aapt resource value: 0x7f0a0046
+			public const int linearLayout1Ranking = 2131361862;
+			
+			// aapt resource value: 0x7f0a000c
+			public const int linearLayout2 = 2131361804;
+			
+			// aapt resource value: 0x7f0a000e
+			public const int linearLayout3 = 2131361806;
+			
+			// aapt resource value: 0x7f0a002d
+			public const int linearLayout4 = 2131361837;
+			
+			// aapt resource value: 0x7f0a001f
+			public const int linearLayout5 = 2131361823;
 			
 			// aapt resource value: 0x7f0a001e
-			public const int tvTextoMensajeResultado = 2131361822;
+			public const int linearLayout6 = 2131361822;
+			
+			// aapt resource value: 0x7f0a001a
+			public const int linearLayoutAlerta = 2131361818;
+			
+			// aapt resource value: 0x7f0a003a
+			public const int listViewPuntuacion = 2131361850;
+			
+			// aapt resource value: 0x7f0a0045
+			public const int listViewRanking = 2131361861;
+			
+			// aapt resource value: 0x7f0a0037
+			public const int lyPuntuacion1 = 2131361847;
+			
+			// aapt resource value: 0x7f0a0044
+			public const int lyRanking1 = 2131361860;
+			
+			// aapt resource value: 0x7f0a0017
+			public const int main = 2131361815;
+			
+			// aapt resource value: 0x7f0a0049
+			public const int menuBar = 2131361865;
+			
+			// aapt resource value: 0x7f0a0019
+			public const int myButton = 2131361817;
+			
+			// aapt resource value: 0x7f0a0033
+			public const int pbPregunta = 2131361843;
+			
+			// aapt resource value: 0x7f0a0040
+			public const int porcentaje = 2131361856;
+			
+			// aapt resource value: 0x7f0a0002
+			public const int pregunta = 2131361794;
+			
+			// aapt resource value: 0x7f0a0027
+			public const int relativeLayout1 = 2131361831;
+			
+			// aapt resource value: 0x7f0a0023
+			public const int relativeLayout2 = 2131361827;
+			
+			// aapt resource value: 0x7f0a0014
+			public const int requestFocus1 = 2131361812;
+			
+			// aapt resource value: 0x7f0a0005
+			public const int respuesta = 2131361797;
+			
+			// aapt resource value: 0x7f0a0001
+			public const int scrollView1 = 2131361793;
+			
+			// aapt resource value: 0x7f0a0026
+			public const int space1 = 2131361830;
+			
+			// aapt resource value: 0x7f0a0029
+			public const int textView1 = 2131361833;
+			
+			// aapt resource value: 0x7f0a003c
+			public const int textView3 = 2131361852;
+			
+			// aapt resource value: 0x7f0a003f
+			public const int textView4 = 2131361855;
+			
+			// aapt resource value: 0x7f0a0030
+			public const int tvCorrectas = 2131361840;
+			
+			// aapt resource value: 0x7f0a0041
+			public const int tvFecha = 2131361857;
+			
+			// aapt resource value: 0x7f0a0031
+			public const int tvIncorrectas = 2131361841;
+			
+			// aapt resource value: 0x7f0a0047
+			public const int tvNombreRanking = 2131361863;
+			
+			// aapt resource value: 0x7f0a0034
+			public const int tvProgreso = 2131361844;
+			
+			// aapt resource value: 0x7f0a0042
+			public const int tvPuntaje = 2131361858;
+			
+			// aapt resource value: 0x7f0a0020
+			public const int tvPuntajeMensajeResultado = 2131361824;
+			
+			// aapt resource value: 0x7f0a0048
+			public const int tvPuntajeRanking = 2131361864;
 			
 			// aapt resource value: 0x7f0a001d
-			public const int v1 = 2131361821;
+			public const int tvTextoMensajeResultado = 2131361821;
+			
+			// aapt resource value: 0x7f0a001c
+			public const int v1 = 2131361820;
 			
 			static Id()
 			{
@@ -608,19 +608,19 @@ namespace LiceoVirtual
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int AlertaRespuestaIncorrecta = 2130903040;
+			public const int FragmentPreguntaA = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int FragmentPreguntaA = 2130903041;
+			public const int FragmentPreguntaB = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int FragmentPreguntaB = 2130903042;
+			public const int Login = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Login = 2130903043;
+			public const int Main = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int Main = 2130903044;
+			public const int MensajeNivelDesbloqueado = 2130903044;
 			
 			// aapt resource value: 0x7f030005
 			public const int MensajeResultado = 2130903045;

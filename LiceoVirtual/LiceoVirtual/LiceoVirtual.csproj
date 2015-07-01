@@ -171,7 +171,6 @@
     <AndroidResource Include="Resources\drawable\n1_22.png" />
     <AndroidResource Include="Resources\drawable\n1_25.png" />
     <AndroidResource Include="Resources\drawable\correct.png" />
-    <AndroidResource Include="Resources\layout\AlertaRespuestaIncorrecta.xml" />
     <AndroidResource Include="Resources\drawable\incorrect.png" />
     <AndroidResource Include="Resources\drawable-hdpi\student_sad.png" />
     <AndroidResource Include="Resources\layout\PuntuacionTabs.axml" />
@@ -184,6 +183,8 @@
     <AndroidResource Include="Resources\drawable-hdpi\respuesta_correcta.png" />
     <AndroidResource Include="Resources\drawable-hdpi\respuesta_incorrecta.png" />
     <AndroidResource Include="Resources\drawable\pizarron.png" />
+    <AndroidResource Include="Resources\layout\MensajeNivelDesbloqueado.xml" />
+    <AndroidResource Include="Resources\drawable\felicitaciones.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

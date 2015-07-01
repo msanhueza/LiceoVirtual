@@ -47,7 +47,7 @@ namespace LiceoVirtual
 			PuntuacionAccion p = new PuntuacionAccion ();
 			int cantidadAprobadas = p.getPuntuacionMore80 (nivel);
 			if (cantidadAprobadas == 3) {
-				mostrarDialogNivelDesbloqueado (nivel);
+				mostrarMensajeNivelDesbloqueado (nivel);
 			}
 			string mensaje = "";
 			string baseTexto = "";
@@ -93,8 +93,21 @@ namespace LiceoVirtual
 			// Create your application here
 		}
 
-		public void mostrarDialogNivelDesbloqueado(string nivel){
-			// agregar codigo del alert dialog
+		public void mostrarMensajeNivelDesbloqueado(string nivel){
+			AlertDialog.Builder alert = new AlertDialog.Builder (this);
+			var inputView = LayoutInflater.Inflate(Resource.Layout.MensajeNivelDesbloqueado, null);
+			var textView = inputView.FindViewById (Resource.Id.felicitaciones_mensaje);
+			TextView tvFelicitaciones = inputView.FindViewById<TextView> (Resource.Id.felicitaciones_mensaje);
+			tvFelicitaciones.Text = tvFelicitaciones.Text + " " + nivel;
+			alert.SetView(inputView);
+			alert.SetTitle("¡FELICITACIONES!");
+			alert.SetNeutralButton ("Aceptar", (senderAlert, args) => {
+				alert.Dispose();
+			} );
+
+			RunOnUiThread (() => {
+				alert.Show();
+			} );
 		}
 
 		public void guardarPuntaje(int auxNivel, int auxPuntaje){

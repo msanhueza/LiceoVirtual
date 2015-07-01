@@ -275,21 +275,6 @@ namespace LiceoVirtual
 			toast.Show();
 		}
 
-		public void mostrarMensajeAlertaIncorrecto(){
-			AlertDialog.Builder alert = new AlertDialog.Builder (this);
-			var inputView = LayoutInflater.Inflate(Resource.Layout.AlertaRespuestaIncorrecta, null);
-			alert.SetView(inputView);
-			alert.SetTitle("Alerta");
-			alert.SetNeutralButton ("Aceptar", (senderAlert, args) => {
-				alert.Dispose();
-			} );
-				
-			RunOnUiThread (() => {
-				alert.Show();
-			} );
-		}
-
-
 
 		public void mostrarMensajeAlerta(){
 			AlertDialog.Builder alert = new AlertDialog.Builder (this);

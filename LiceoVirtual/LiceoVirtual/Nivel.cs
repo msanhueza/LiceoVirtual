@@ -36,7 +36,12 @@ namespace LiceoVirtual
 			for (int i = 0; i < listaNivelesDesbloqueados.Count; i++) {
 				NivelDesbloqueadoItem item = listaNivelesDesbloqueados [i];
 				if (item.nivel == 1) {
-					btn1.SetBackgroundResource (Resource.Drawable.LVButton);
+					if(item.desbloqueado == true){
+						btn1.SetBackgroundResource (Resource.Drawable.LVButton);
+					}
+					else{
+						btn1.SetBackgroundResource (Resource.Drawable.LVBlockedButton);
+					}
 					btn1.Click += delegate {
 						var intent = new Intent (this, typeof(Pregunta));
 						intent.PutExtra ("nivel", "1");
