@@ -48,6 +48,13 @@ namespace LiceoVirtual
 			int cantidadAprobadas = p.getPuntuacionMore80 (nivel);
 			if (cantidadAprobadas == 3) {
 				mostrarMensajeNivelDesbloqueado (nivel);
+				NivelDesbloqueadoAccion n = new NivelDesbloqueadoAccion ();
+				if (auxNivel <= 3) {
+					if (auxNivel == 1) {
+						n.desbloquearNivel ((auxNivel).ToString());	
+					}
+					n.desbloquearNivel ((auxNivel+1).ToString());
+				}
 			}
 			string mensaje = "";
 			string baseTexto = "";

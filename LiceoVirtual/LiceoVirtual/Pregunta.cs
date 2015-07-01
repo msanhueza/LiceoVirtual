@@ -97,16 +97,17 @@ namespace LiceoVirtual
 
 			btnPreguntaSiguiente.Click += delegate {
 				indicePregunta++;
-				preguntaActual = getPreguntaActual ();
-				respuestaActual = obtenerRespuesta (preguntaActual.objListaRespuestas);
-				if(malas == 2 && buenas<10){
+				if(malas == 2 && buenas<8){
 					cambiarActivity(false);
+					return;
 				}
 				else{
 					if(indicePregunta == 10){
 						cambiarActivity(true);
+						return;
 					}
-
+					preguntaActual = getPreguntaActual ();
+					respuestaActual = obtenerRespuesta (preguntaActual.objListaRespuestas);
 					actualizarProgressBar();
 					habilitarButtonSiguiente (false);
 					if(indicePregunta == 9){
