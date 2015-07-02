@@ -79,6 +79,7 @@
     <Compile Include="PuntuacionFragment.cs" />
     <Compile Include="FragmentPreguntaA.cs" />
     <Compile Include="FragmentPreguntaB.cs" />
+    <Compile Include="FragmentPreguntaC.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -185,6 +186,7 @@
     <AndroidResource Include="Resources\drawable\pizarron.png" />
     <AndroidResource Include="Resources\layout\MensajeNivelDesbloqueado.xml" />
     <AndroidResource Include="Resources\drawable\felicitaciones.png" />
+    <AndroidResource Include="Resources\layout\FragmentPreguntaC.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

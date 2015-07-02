@@ -27,6 +27,7 @@ namespace LiceoVirtual
 		public static bool esCorrecta;
 		public static FragmentPreguntaA fragmentPreguntaA;
 		public static FragmentPreguntaB fragmentPreguntaB;
+		public static FragmentPreguntaC fragmentPreguntaC;
 		public static bool preguntaA;
 		public static int indicePregunta;
 		public static List<ListadoPreguntaSolucionItem> listadoPreguntas;
@@ -39,6 +40,7 @@ namespace LiceoVirtual
 			preguntaA = true;
 			fragmentPreguntaA = new FragmentPreguntaA ();
 			fragmentPreguntaB = new FragmentPreguntaB ();
+			fragmentPreguntaC = new FragmentPreguntaC ();
 			indicePregunta = 0;
 
 			ActionBar.SetHomeButtonEnabled(true);
@@ -85,11 +87,11 @@ namespace LiceoVirtual
 				mostrarFragmentA ();
 			}
 			else if(getTipoFragment (respuestaActual) == 2){
-				mostrarFragmentB ();
+				mostrarFragmentC ();
 			}
 			else if(getTipoFragment (respuestaActual) == 3){
 			//	mostrarFragmentC ();
-			mostrarFragmentB ();
+			mostrarFragmentC ();
 			}
 
 
@@ -118,10 +120,10 @@ namespace LiceoVirtual
 							mostrarFragmentA ();
 						}
 						else if(getTipoFragment (respuestaActual) == 2){
-							mostrarFragmentB ();
+							mostrarFragmentC ();
 						}
 						else if(getTipoFragment (respuestaActual) == 3){
-							mostrarFragmentB ();
+							mostrarFragmentC ();
 						}
 
 					}
@@ -211,6 +213,14 @@ namespace LiceoVirtual
 			FragmentTransaction fragmentTx = this.FragmentManager.BeginTransaction();
 			fragmentPreguntaB = new FragmentPreguntaB();
 			fragmentTx.Replace(Resource.Id.fragment_container, fragmentPreguntaB);
+			//fragmentTx.AddToBackStack(null);
+			fragmentTx.Commit();
+		}
+
+		public void mostrarFragmentC(){
+			FragmentTransaction fragmentTx = this.FragmentManager.BeginTransaction();
+			fragmentPreguntaC = new FragmentPreguntaC();
+			fragmentTx.Replace(Resource.Id.fragment_container, fragmentPreguntaC);
 			//fragmentTx.AddToBackStack(null);
 			fragmentTx.Commit();
 		}

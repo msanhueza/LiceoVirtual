@@ -124,3 +124,4 @@ C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\uploadflags.txt
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\layout\mensajeniveldesbloqueado.xml
 C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\drawable\felicitaciones.png
+C:\Users\msanhuezal\Documents\GitHub\LiceoVirtual\LiceoVirtual\LiceoVirtual\obj\Debug\res\layout\fragmentpreguntac.xml
