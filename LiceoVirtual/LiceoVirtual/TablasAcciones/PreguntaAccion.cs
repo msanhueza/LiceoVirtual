@@ -44,7 +44,8 @@ public class PreguntaAccion
 				var pregunta = lista[i].pregunta;
 				var idImagen = lista[i].idImagen;
 				var nivelPregunta = lista[i].nivel;
-				PreguntaItem p = new PreguntaItem(ID, pregunta, idImagen, nivelPregunta);
+				var tipoFragment = lista[i].tipoFragment;
+				PreguntaItem p = new PreguntaItem(ID, pregunta, idImagen, nivelPregunta, tipoFragment);
 				listaPreguntas.Add(p);
 			}
 			return listaPreguntas;

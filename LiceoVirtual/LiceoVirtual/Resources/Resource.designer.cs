@@ -282,79 +282,73 @@ namespace LiceoVirtual
 			public const int n1_16 = 2130837544;
 			
 			// aapt resource value: 0x7f020029
-			public const int n1_17 = 2130837545;
+			public const int n1_19 = 2130837545;
 			
 			// aapt resource value: 0x7f02002a
-			public const int n1_19 = 2130837546;
+			public const int n1_2 = 2130837546;
 			
 			// aapt resource value: 0x7f02002b
-			public const int n1_2 = 2130837547;
+			public const int n1_20 = 2130837547;
 			
 			// aapt resource value: 0x7f02002c
-			public const int n1_20 = 2130837548;
+			public const int n1_21 = 2130837548;
 			
 			// aapt resource value: 0x7f02002d
-			public const int n1_21 = 2130837549;
+			public const int n1_22 = 2130837549;
 			
 			// aapt resource value: 0x7f02002e
-			public const int n1_22 = 2130837550;
+			public const int n1_25 = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public const int n1_25 = 2130837551;
+			public const int n1_3 = 2130837551;
 			
 			// aapt resource value: 0x7f020030
-			public const int n1_3 = 2130837552;
+			public const int n1_4 = 2130837552;
 			
 			// aapt resource value: 0x7f020031
-			public const int n1_4 = 2130837553;
+			public const int n1_5 = 2130837553;
 			
 			// aapt resource value: 0x7f020032
-			public const int n1_5 = 2130837554;
+			public const int n1_6 = 2130837554;
 			
 			// aapt resource value: 0x7f020033
-			public const int n1_6 = 2130837555;
+			public const int n1_7 = 2130837555;
 			
 			// aapt resource value: 0x7f020034
-			public const int n1_7 = 2130837556;
+			public const int n1_9 = 2130837556;
 			
 			// aapt resource value: 0x7f020035
-			public const int n1_8 = 2130837557;
+			public const int nota = 2130837557;
 			
 			// aapt resource value: 0x7f020036
-			public const int n1_9 = 2130837558;
+			public const int pizarron = 2130837558;
 			
 			// aapt resource value: 0x7f020037
-			public const int nota = 2130837559;
+			public const int punto = 2130837559;
 			
 			// aapt resource value: 0x7f020038
-			public const int pizarron = 2130837560;
+			public const int puntos = 2130837560;
 			
 			// aapt resource value: 0x7f020039
-			public const int punto = 2130837561;
+			public const int respuesta_correcta = 2130837561;
 			
 			// aapt resource value: 0x7f02003a
-			public const int puntos = 2130837562;
+			public const int respuesta_incorrecta = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int respuesta_correcta = 2130837563;
+			public const int splash = 2130837563;
 			
 			// aapt resource value: 0x7f02003c
-			public const int respuesta_incorrecta = 2130837564;
+			public const int student = 2130837564;
 			
 			// aapt resource value: 0x7f02003d
-			public const int splash = 2130837565;
+			public const int student_sad = 2130837565;
 			
 			// aapt resource value: 0x7f02003e
-			public const int student = 2130837566;
+			public const int user_chat1 = 2130837566;
 			
 			// aapt resource value: 0x7f02003f
-			public const int student_sad = 2130837567;
-			
-			// aapt resource value: 0x7f020040
-			public const int user_chat1 = 2130837568;
-			
-			// aapt resource value: 0x7f020041
-			public const int user_chat2 = 2130837569;
+			public const int user_chat2 = 2130837567;
 			
 			static Drawable()
 			{
