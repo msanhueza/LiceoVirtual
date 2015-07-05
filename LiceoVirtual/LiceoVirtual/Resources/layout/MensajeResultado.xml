@@ -69,5 +69,6 @@
         p1:text="Aceptar"
         p1:id="@+id/btnAceptarTerminoTrivia"
         p1:layout_width="match_parent"
-        p1:layout_height="wrap_content" />
+        p1:layout_height="wrap_content"
+        style="@style/btn_white_large" />
 </LinearLayout>

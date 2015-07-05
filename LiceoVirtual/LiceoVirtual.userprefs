@@ -1,12 +1,12 @@
-﻿<Properties StartupItem="LiceoVirtual/LiceoVirtual.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.EmuladorXamarin" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual/Pregunta.cs">
+﻿<Properties StartupItem="LiceoVirtual\LiceoVirtual.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SSG" />
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="LiceoVirtual/Nivel.cs" Line="1" Column="1" />
-      <File FileName="LiceoVirtual/Pregunta.cs" Line="1" Column="1" />
-      <File FileName="LiceoVirtual/FragmentPreguntaB.cs" Line="1" Column="1" />
-      <File FileName="LiceoVirtual/CargarBaseDeDatos.cs" Line="1" Column="1" />
-      <File FileName="LiceoVirtual/Properties/AndroidManifest.xml" Line="1" Column="1" />
+      <File FileName="LiceoVirtual\MensajeResultado.cs" Line="125" Column="22" />
+      <File FileName="LiceoVirtual\Nivel.cs" Line="1" Column="1" />
+      <File FileName="LiceoVirtual\FragmentPreguntaC.cs" Line="68" Column="38" />
+      <File FileName="LiceoVirtual\Pregunta.cs" Line="94" Column="24" />
+      <File FileName="LiceoVirtual\CargarBaseDeDatos.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -15,4 +15,5 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.LiceoVirtual AndroidDesignerPreferredDevice="Nexus 4" />
 </Properties>

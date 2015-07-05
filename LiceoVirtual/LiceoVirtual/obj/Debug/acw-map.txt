@@ -12,3 +12,4 @@ LiceoVirtual.Menu;liceovirtual.Menu
 LiceoVirtual.PuntuacionFragment;liceovirtual.PuntuacionFragment
 LiceoVirtual.FragmentPreguntaA;liceovirtual.FragmentPreguntaA
 LiceoVirtual.FragmentPreguntaB;liceovirtual.FragmentPreguntaB
+LiceoVirtual.FragmentPreguntaC;liceovirtual.FragmentPreguntaC

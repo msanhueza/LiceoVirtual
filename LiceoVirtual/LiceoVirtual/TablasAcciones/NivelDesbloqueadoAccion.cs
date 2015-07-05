@@ -69,6 +69,18 @@ public class NivelDesbloqueadoAccion
 		}
 	}
 
+	public void desbloquearNivel(string nivel){
+		try{
+			var db = new SQLiteConnection(pathToDatabase);
+			var resultado = db.ExecuteScalar<int>("UPDATE NivelDesbloqueadoBD Set desbloqueado  = ? WHERE nivel = ?",true,nivel);
+		}
+		catch (SQLiteException)
+		{
+
+		}
+
+	}
+
 }
 
 

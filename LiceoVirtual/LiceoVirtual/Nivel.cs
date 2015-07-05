@@ -36,11 +36,17 @@ namespace LiceoVirtual
 			for (int i = 0; i < listaNivelesDesbloqueados.Count; i++) {
 				NivelDesbloqueadoItem item = listaNivelesDesbloqueados [i];
 				if (item.nivel == 1) {
-					btn1.SetBackgroundResource (Resource.Drawable.LVButton);
+					if(item.desbloqueado == true){
+						btn1.SetBackgroundResource (Resource.Drawable.LVButton);
+					}
+					else{
+						btn1.SetBackgroundResource (Resource.Drawable.LVBlockedButton);
+					}
 					btn1.Click += delegate {
 						var intent = new Intent (this, typeof(Pregunta));
 						intent.PutExtra ("nivel", "1");
 						StartActivity (intent);
+						Finish();
 					};
 				} else if (item.nivel == 2) {
 					if(item.desbloqueado == true){
@@ -54,6 +60,7 @@ namespace LiceoVirtual
 							var intent = new Intent (this, typeof(Pregunta));
 							intent.PutExtra ("nivel", "2");
 							StartActivity (intent);
+							Finish();
 						}
 						else{
 							Toast.MakeText (this, "Debes desbloquear el NIVEL 1", ToastLength.Short).Show();
@@ -70,7 +77,8 @@ namespace LiceoVirtual
 						if(item.desbloqueado == true){
 							var intent = new Intent (this, typeof(Pregunta));
 							intent.PutExtra ("nivel", "3");
-							StartActivity (intent);							
+							StartActivity (intent);
+							Finish();
 						}
 						else{
 							Toast.MakeText (this, "Debes desbloquear el NIVEL 2", ToastLength.Short).Show();
@@ -87,7 +95,8 @@ namespace LiceoVirtual
 						if(item.desbloqueado == true){
 							var intent = new Intent (this, typeof(Pregunta));
 							intent.PutExtra ("nivel", "4");
-							StartActivity (intent);							
+							StartActivity (intent);
+							Finish();
 						}
 						else{
 							Toast.MakeText (this, "Debes desbloquear el NIVEL 3", ToastLength.Short).Show();

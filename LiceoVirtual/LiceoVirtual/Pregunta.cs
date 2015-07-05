@@ -27,6 +27,7 @@ namespace LiceoVirtual
 		public static bool esCorrecta;
 		public static FragmentPreguntaA fragmentPreguntaA;
 		public static FragmentPreguntaB fragmentPreguntaB;
+		public static FragmentPreguntaC fragmentPreguntaC;
 		public static bool preguntaA;
 		public static int indicePregunta;
 		public static List<ListadoPreguntaSolucionItem> listadoPreguntas;
@@ -39,6 +40,7 @@ namespace LiceoVirtual
 			preguntaA = true;
 			fragmentPreguntaA = new FragmentPreguntaA ();
 			fragmentPreguntaB = new FragmentPreguntaB ();
+			fragmentPreguntaC = new FragmentPreguntaC ();
 			indicePregunta = 0;
 
 			ActionBar.SetHomeButtonEnabled(true);
@@ -77,57 +79,51 @@ namespace LiceoVirtual
 
 			//obtengo la respuesta correcta de la pregunta actual
 			ListadoPreguntaSolucionItem preguntaActual = getPreguntaActual ();	
-			string respuestaActual = obtenerRespuesta (preguntaActual.objListaRespuestas);
 
-
-			//Decido si ocupo fragment A o B para la primera pregunta
-			if (getTipoFragment (respuestaActual) == 1) {
-				mostrarFragmentA ();
-			}
-			else if(getTipoFragment (respuestaActual) == 2){
-				mostrarFragmentB ();
-			}
-			else if(getTipoFragment (respuestaActual) == 3){
-			//	mostrarFragmentC ();
-			mostrarFragmentB ();
-			}
-
+			elegirFragment (preguntaActual.objPregunta.tipoFragment);
 
 			habilitarButtonSiguiente (false);
 
 			btnPreguntaSiguiente.Click += delegate {
 				indicePregunta++;
-				preguntaActual = getPreguntaActual ();
-				respuestaActual = obtenerRespuesta (preguntaActual.objListaRespuestas);
-				if(malas == 2 && buenas<10){
+				if(malas == 2 && buenas<8){
 					cambiarActivity(false);
+					return;
 				}
 				else{
 					if(indicePregunta == 10){
 						cambiarActivity(true);
+						return;
 					}
-
+					preguntaActual = getPreguntaActual ();
 					actualizarProgressBar();
 					habilitarButtonSiguiente (false);
 					if(indicePregunta == 9){
 						btnPreguntaSiguiente.Text = "Terminar";
 					}
-					if(indicePregunta < 10){        //Decido si ocupo fragment A o B
-						if (getTipoFragment (respuestaActual) == 1) {
-							mostrarFragmentA ();
-						}
-						else if(getTipoFragment (respuestaActual) == 2){
-							mostrarFragmentB ();
-						}
-						else if(getTipoFragment (respuestaActual) == 3){
-							mostrarFragmentB ();
-						}
-
+					if(indicePregunta < 10){
+						elegirFragment (preguntaActual.objPregunta.tipoFragment);
 					}
 				}
 
 			};
 				
+		}
+
+		public void elegirFragment(string tipoFragment){
+			string[] tipo = tipoFragment.Split ('-');
+			Random r = new Random ();
+			int indice = r.Next (0, tipo.Count ());
+			string fragmentElegido = tipo [indice];
+			if(fragmentElegido.Equals("1")){
+				mostrarFragmentA ();
+			}
+			else if(fragmentElegido.Equals("2")){
+				mostrarFragmentB ();
+			}
+			else{
+				mostrarFragmentC ();
+			}
 		}
 
 		public void cambiarActivity(bool aprobo){
@@ -213,6 +209,14 @@ namespace LiceoVirtual
 			//fragmentTx.AddToBackStack(null);
 			fragmentTx.Commit();
 		}
+
+		public void mostrarFragmentC(){
+			FragmentTransaction fragmentTx = this.FragmentManager.BeginTransaction();
+			fragmentPreguntaC = new FragmentPreguntaC();
+			fragmentTx.Replace(Resource.Id.fragment_container, fragmentPreguntaC);
+			//fragmentTx.AddToBackStack(null);
+			fragmentTx.Commit();
+		}
 			
 
 		public List<int> getDiezPreguntasAleatorias(int n){
@@ -275,21 +279,6 @@ namespace LiceoVirtual
 			toast.Show();
 		}
 
-		public void mostrarMensajeAlertaIncorrecto(){
-			AlertDialog.Builder alert = new AlertDialog.Builder (this);
-			var inputView = LayoutInflater.Inflate(Resource.Layout.AlertaRespuestaIncorrecta, null);
-			alert.SetView(inputView);
-			alert.SetTitle("Alerta");
-			alert.SetNeutralButton ("Aceptar", (senderAlert, args) => {
-				alert.Dispose();
-			} );
-				
-			RunOnUiThread (() => {
-				alert.Show();
-			} );
-		}
-
-
 
 		public void mostrarMensajeAlerta(){
 			AlertDialog.Builder alert = new AlertDialog.Builder (this);
@@ -299,7 +288,7 @@ namespace LiceoVirtual
 			alert.SetMessage ("Si desea salir de la trivia no quedará registrado su progreso, debe terminarla para guardar su puntaje. ¿Desea salir de todas formas?");
 
 			alert.SetPositiveButton ("Si", (senderAlert, args) => {
-				base.OnBackPressed ();
+				StartActivity (typeof(Nivel));
 				Finish ();
 			} );
 
