@@ -79,21 +79,8 @@ namespace LiceoVirtual
 
 			//obtengo la respuesta correcta de la pregunta actual
 			ListadoPreguntaSolucionItem preguntaActual = getPreguntaActual ();	
-			string respuestaActual = obtenerRespuesta (preguntaActual.objListaRespuestas);
 
-
-			//Decido si ocupo fragment A o B para la primera pregunta
-			if (getTipoFragment (respuestaActual) == 1) {
-				mostrarFragmentA ();
-			}
-			else if(getTipoFragment (respuestaActual) == 2){
-				mostrarFragmentC ();
-			}
-			else if(getTipoFragment (respuestaActual) == 3){
-			//	mostrarFragmentC ();
-			mostrarFragmentC ();
-			}
-
+			elegirFragment (preguntaActual.objPregunta.tipoFragment);
 
 			habilitarButtonSiguiente (false);
 
@@ -109,28 +96,34 @@ namespace LiceoVirtual
 						return;
 					}
 					preguntaActual = getPreguntaActual ();
-					respuestaActual = obtenerRespuesta (preguntaActual.objListaRespuestas);
 					actualizarProgressBar();
 					habilitarButtonSiguiente (false);
 					if(indicePregunta == 9){
 						btnPreguntaSiguiente.Text = "Terminar";
 					}
-					if(indicePregunta < 10){        //Decido si ocupo fragment A o B
-						if (getTipoFragment (respuestaActual) == 1) {
-							mostrarFragmentA ();
-						}
-						else if(getTipoFragment (respuestaActual) == 2){
-							mostrarFragmentC ();
-						}
-						else if(getTipoFragment (respuestaActual) == 3){
-							mostrarFragmentC ();
-						}
-
+					if(indicePregunta < 10){
+						elegirFragment (preguntaActual.objPregunta.tipoFragment);
 					}
 				}
 
 			};
 				
+		}
+
+		public void elegirFragment(string tipoFragment){
+			string[] tipo = tipoFragment.Split ('-');
+			Random r = new Random ();
+			int indice = r.Next (0, tipo.Count ());
+			string fragmentElegido = tipo [indice];
+			if(fragmentElegido.Equals("1")){
+				mostrarFragmentA ();
+			}
+			else if(fragmentElegido.Equals("2")){
+				mostrarFragmentB ();
+			}
+			else{
+				mostrarFragmentC ();
+			}
 		}
 
 		public void cambiarActivity(bool aprobo){
