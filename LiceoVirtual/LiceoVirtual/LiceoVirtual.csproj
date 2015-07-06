@@ -158,7 +158,6 @@
     <AndroidResource Include="Resources\layout\PuntuacionFragment.axml" />
     <AndroidResource Include="Resources\drawable\punto.png" />
     <AndroidResource Include="Resources\drawable-hdpi\login_ic.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\candado.png" />
     <AndroidResource Include="Resources\layout\FragmentPreguntaA.axml" />
     <AndroidResource Include="Resources\layout\FragmentPreguntaB.axml" />
     <AndroidResource Include="Resources\drawable-hdpi\respuesta_correcta.png" />
@@ -186,6 +185,10 @@
     <AndroidResource Include="Resources\drawable\n1_20.png" />
     <AndroidResource Include="Resources\drawable\n1_23.png" />
     <AndroidResource Include="Resources\drawable\n1_26.png" />
+    <AndroidResource Include="Resources\drawable\LVMsg.axml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\candado.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\candado.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\candado.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

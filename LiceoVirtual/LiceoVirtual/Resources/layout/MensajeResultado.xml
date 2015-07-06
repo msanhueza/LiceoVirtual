@@ -4,66 +4,64 @@
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
     p1:padding="20dp"
-    p1:id="@+id/linearLayout1">
-    <LinearLayout
-        p1:id="@+id/v1"
+    p1:id="@+id/linearLayout1"
+    p1:background="@drawable/lvbackgroundmenu">
+    <TextView xmlns:tools="http://schemas.android.com/tools"
+        p1:text=""
+        p1:textAppearance="?android:attr/textAppearanceLarge"
+        p1:textSize="20dp"
+        p1:textColor="#ff519bd8"
+        p1:id="@+id/tvTextoMensajeResultado"
         p1:layout_width="match_parent"
-        p1:layout_height="400dp"
-        p1:layout_weight="1"
-        p1:layout_alignParentRight="true"
-        p1:layout_marginLeft="@dimen/pad_10dp"
-        p1:background="@drawable/chat_bubble_green"
+        p1:layout_height="0dp"
         p1:gravity="center"
-        p1:orientation="vertical"
-        p1:paddingBottom="@dimen/pad_5dp"
-        p1:paddingLeft="@dimen/pad_5dp"
-        p1:paddingRight="@dimen/pad_chat_item"
-        p1:paddingTop="@dimen/pad_5dp"
-        p1:layout_marginBottom="@dimen/pad_10dp">
-        <TextView xmlns:tools="http://schemas.android.com/tools"
-            p1:text=""
-            p1:textAppearance="?android:attr/textAppearanceLarge"
-            p1:textSize="20dp"
-            p1:textColor="@color/white"
-            p1:id="@+id/tvTextoMensajeResultado"
-            p1:layout_width="match_parent"
-            p1:layout_height="match_parent"
-            p1:gravity="center"
-            tools:text="Felicitaciones, has completado la trivia"
-            p1:layout_marginLeft="0.0dp" />
-    </LinearLayout>
+        tools:text="Felicitaciones, has completado la trivia"
+        p1:layout_marginLeft="0.0dp"
+        p1:layout_weight="2"
+        p1:textStyle="bold" />
+    <View
+        p1:layout_width="wrap_content"
+        p1:id="@+id/space1"
+        p1:layout_height="1dp"
+        p1:background="#ffc1d5e2"
+        p1:paddingLeft="@dimen/pad_15dp"
+        p1:paddingRight="@dimen/pad_15dp"
+        p1:layout_marginLeft="@dimen/pad_15dp"
+        p1:layout_marginRight="@dimen/pad_15dp" />
+    <TextView
+        p1:text="80%"
+        p1:textAppearance="?android:attr/textAppearanceLarge"
+        p1:id="@+id/tvPuntajeMensajeResultado"
+        p1:gravity="center"
+        p1:textSize="15dp"
+        p1:layout_width="match_parent"
+        p1:layout_height="0dp"
+        p1:layout_weight="2"
+        p1:textColor="@color/main_color_gray_dk" />
+    <View
+        p1:layout_width="wrap_content"
+        p1:id="@+id/space1"
+        p1:layout_height="1dp"
+        p1:background="#ffc1d5e2"
+        p1:paddingLeft="@dimen/pad_15dp"
+        p1:paddingRight="@dimen/pad_15dp"
+        p1:layout_marginLeft="@dimen/pad_15dp"
+        p1:layout_marginRight="@dimen/pad_15dp" />
     <LinearLayout
         p1:orientation="horizontal"
         p1:minWidth="25px"
         p1:minHeight="25px"
         p1:layout_width="match_parent"
-        p1:layout_height="match_parent"
+        p1:layout_height="0dp"
         p1:id="@+id/linearLayout6"
-        p1:layout_weight="1">
-        <RelativeLayout
-            p1:orientation="vertical"
-            p1:id="@+id/linearLayout5"
-            p1:background="@drawable/nota"
-            p1:padding="20dp"
-            p1:gravity="center"
-            p1:layout_width="350dp"
-            p1:layout_height="200dp"
-            p1:layout_weight="1">
-            <TextView
-                p1:text="80%"
-                p1:textAppearance="?android:attr/textAppearanceLarge"
-                p1:layout_width="match_parent"
-                p1:layout_height="wrap_content"
-                p1:id="@+id/tvPuntajeMensajeResultado"
-                p1:gravity="center"
-                p1:textSize="15dp" />
-        </RelativeLayout>
+        p1:layout_weight="3">
         <ImageView
             p1:src="@drawable/student"
             p1:layout_width="match_parent"
             p1:layout_height="match_parent"
             p1:id="@+id/imgMensajeResultadoStudent"
-            p1:layout_weight="1" />
+            p1:layout_weight="1"
+            p1:padding="5dp" />
     </LinearLayout>
     <Button
         p1:text="Aceptar"

@@ -1,12 +1,11 @@
-﻿<Properties StartupItem="LiceoVirtual\LiceoVirtual.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SSG" />
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupItem="LiceoVirtual/LiceoVirtual.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual/Resources/drawable/LVButton.xml">
     <Files>
-      <File FileName="LiceoVirtual\MensajeResultado.cs" Line="125" Column="22" />
-      <File FileName="LiceoVirtual\Nivel.cs" Line="1" Column="1" />
-      <File FileName="LiceoVirtual\FragmentPreguntaC.cs" Line="68" Column="38" />
-      <File FileName="LiceoVirtual\Pregunta.cs" Line="94" Column="24" />
-      <File FileName="LiceoVirtual\CargarBaseDeDatos.cs" Line="1" Column="1" />
+      <File FileName="LiceoVirtual/TablasItem/ListadoPreguntaSolucionItem.cs" Line="1" Column="1" />
+      <File FileName="LiceoVirtual/Resources/drawable/LVBlockedButton.xml" Line="23" Column="38" />
+      <File FileName="LiceoVirtual/Menu.cs" Line="37" Column="6" />
+      <File FileName="LiceoVirtual/Resources/drawable/LVButton.xml" Line="14" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
