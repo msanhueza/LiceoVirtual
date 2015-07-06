@@ -22,7 +22,9 @@
             p1:minWidth="25px"
             p1:minHeight="25px"
             p1:paddingTop="10dp"
-            p1:paddingBottom="10dp">
+            p1:paddingBottom="10dp"
+            p1:focusable="true"
+            p1:focusableInTouchMode="true">
             <TextView
                 p1:text="¿Desde dónde hasta dónde va la savia elaborada(en las plantas)?"
                 p1:id="@+id/frag2_pregunta"
