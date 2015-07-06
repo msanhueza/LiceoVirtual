@@ -46,13 +46,11 @@ namespace LiceoVirtual
 			guardarPuntaje(auxNivel, auxPuntaje);
 			PuntuacionAccion p = new PuntuacionAccion ();
 			int cantidadAprobadas = p.getPuntuacionMore80 (nivel);
-			if (cantidadAprobadas == 3) {
+			if (cantidadAprobadas == 3 && aprobo) {
 				if (auxNivel <= 3) {
 					NivelDesbloqueadoAccion n = new NivelDesbloqueadoAccion ();
-					if (auxNivel == 3 && aprobo) {
-						mostrarMensajeNivelDesbloqueado (auxNivel);
-						n.desbloquearNivel ((auxNivel).ToString());	
-					}
+					mostrarMensajeNivelDesbloqueado (auxNivel);
+					n.desbloquearNivel ((auxNivel).ToString());	
 					n.desbloquearNivel ((auxNivel+1).ToString());
 				}
 			}
