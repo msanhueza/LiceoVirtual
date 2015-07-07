@@ -103,7 +103,6 @@
     <AndroidResource Include="Resources\layout\Login.xml" />
     <AndroidResource Include="Resources\layout\Menu.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\error.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\baseLogin.png" />
     <AndroidResource Include="Resources\drawable-hdpi\logoLogin.png" />
     <AndroidResource Include="Resources\layout\Nivel.xml" />
     <AndroidResource Include="Resources\layout\Ranking.xml" />
@@ -151,8 +150,6 @@
     <AndroidResource Include="Resources\drawable\LVProgress.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\student.png" />
     <AndroidResource Include="Resources\drawable\LVBackgroundMenu.xml" />
-    <AndroidResource Include="Resources\drawable\correct.png" />
-    <AndroidResource Include="Resources\drawable\incorrect.png" />
     <AndroidResource Include="Resources\drawable-hdpi\student_sad.png" />
     <AndroidResource Include="Resources\layout\PuntuacionTabs.axml" />
     <AndroidResource Include="Resources\layout\PuntuacionFragment.axml" />
