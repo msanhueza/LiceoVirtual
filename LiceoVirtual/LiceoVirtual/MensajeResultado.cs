@@ -77,7 +77,7 @@ namespace LiceoVirtual
 				}
 			}
 			else{
-				mensaje = "No has completado la trivia.\n ¡Sigue intentandolo!";
+				mensaje = "No has completado la trivia.\n ¡Sigue intentándolo!";
 
 				imgMensajeResultadoStudent.SetImageResource (Resource.Drawable.student_sad);
 			}
