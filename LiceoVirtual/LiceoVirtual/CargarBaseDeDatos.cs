@@ -62,52 +62,52 @@ public class CargarBaseDeDatos
 	private void cargarPreguntaRespuestaBD(){	
 
 		//PREGUNTAS DE PRIMERO MEDIO
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = 2130837539, nivel=1, tipoFragment="1-2-3"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = 2130837537, nivel=1, tipoFragment="1-2-3"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="un centríolo", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="una mitocondria", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="un retículo endoplasmico rugoso", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = 2130837547, nivel=1, tipoFragment="1-2"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = 2130837545, nivel=1, tipoFragment="1-2"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=2, solucion="mitocondria", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=2, solucion="núcleo", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=2, solucion="cloroplasto",  esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = 2130837551, nivel=1, tipoFragment="1-2"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = 2130837549, nivel=1, tipoFragment="1-2"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=3, solucion="una vacuola", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=3, solucion="un cloroplasto", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=3, solucion="una mitocondria", esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = 2130837552, nivel=1, tipoFragment="1-2"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = 2130837550, nivel=1, tipoFragment="1-2"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=4, solucion="una vacuola", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=4, solucion="un cloroplasto", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=4, solucion="una mitocondria", esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = 2130837553, nivel=1, tipoFragment="1-2-3"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = 2130837551, nivel=1, tipoFragment="1-2-3"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=5, solucion="una lisosoma", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=5, solucion="un cloroplasto", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=5, solucion="la membrana nuclear", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha tiene como función", idImagen = 2130837554, nivel=1, tipoFragment="1-2-3"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha tiene como función", idImagen = 2130837552, nivel=1, tipoFragment="1-2-3"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=6, solucion="transporte de sustancias", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=6, solucion="síntesis de ATP", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=6, solucion="transcripción génica", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En la parte de la célula indicado con la flecha se realiza la función de", idImagen = 2130837555, nivel=1, tipoFragment="1-2-3"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En la parte de la célula indicado con la flecha se realiza la función de", idImagen = 2130837553, nivel=1, tipoFragment="1-2-3"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=7, solucion="transporte de sustancias", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=7, solucion="síntesis de ATP", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=7, solucion="síntesis de proteínas", esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos es propio de la célula vegetal?", idImagen = 2130837556, nivel=1, tipoFragment="1"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos es propio de la célula vegetal?", idImagen = 2130837554, nivel=1, tipoFragment="1"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=8, solucion="1", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=8, solucion="2", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=8, solucion="3", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de los siguientes organelos ocurre la replicación del ADN?", idImagen = 2130837557, nivel=1, tipoFragment="1"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de los siguientes organelos ocurre la replicación del ADN?", idImagen = 2130837555, nivel=1, tipoFragment="1"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=9, solucion="1", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=9, solucion="2", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=9, solucion="3", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos utiliza CO2?", idImagen = 2130837540, nivel=1, tipoFragment="1"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos utiliza CO2?", idImagen = 2130837538, nivel=1, tipoFragment="1"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=10, solucion="1", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=10, solucion="2", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=10, solucion="3", esSolucion=true});
@@ -122,17 +122,17 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=12, solucion="El cloroplasto", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=12, solucion="La mitocondria", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio indicada con la flecha corresponde a", idImagen = 2130837541, nivel=1, tipoFragment="1-2"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio indicada con la flecha corresponde a", idImagen = 2130837539, nivel=1, tipoFragment="1-2"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=13, solucion="la platina", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=13, solucion="el objetivo", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=13, solucion="el condensador", esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio indicada con la flecha corresponde a", idImagen = 2130837542, nivel=1, tipoFragment="1-2"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio indicada con la flecha corresponde a", idImagen = 2130837540, nivel=1, tipoFragment="1-2"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=14, solucion="la platina", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=14, solucion="el cuerpo", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=14, solucion="la iluminación", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿A qué tejido corresponde la siguiente imagen?", idImagen = 2130837543, nivel=1, tipoFragment="1-2"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿A qué tejido corresponde la siguiente imagen?", idImagen = 2130837541, nivel=1, tipoFragment="1-2"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=15, solucion="Nervioso", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=15, solucion="Epitelial", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=15, solucion="Muscular", esSolucion=true});
@@ -142,22 +142,22 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=16, solucion="Ribosoma", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=16, solucion="Pared celular", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de las siguientes imágenes corresponde al Complejo de Golgi?", idImagen = 2130837544, nivel=1, tipoFragment="1"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de las siguientes imágenes corresponde al Complejo de Golgi?", idImagen = 2130837542, nivel=1, tipoFragment="1"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=17, solucion="1", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=17, solucion="2", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=17, solucion="3", esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio que se indica con la flecha es", idImagen = 2130837545, nivel=1, tipoFragment="1-2"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio que se indica con la flecha es", idImagen = 2130837543, nivel=1, tipoFragment="1-2"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=18, solucion="el cuerpo", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=18, solucion="el condensador", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=18, solucion="el ocular", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado en la figura se encuentra en mayor proporción en", idImagen = 2130837546, nivel=1, tipoFragment="1-3"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado en la figura se encuentra en mayor proporción en", idImagen = 2130837544, nivel=1, tipoFragment="1-3"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=19, solucion="neurona", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=19, solucion="célula muscular esquelética", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=19, solucion="célula pancreática secretora de insulina", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos se encuentra en gran cantidad en las células del músculo esquelético?", idImagen = 2130837548, nivel=1, tipoFragment="1"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos se encuentra en gran cantidad en las células del músculo esquelético?", idImagen = 2130837546, nivel=1, tipoFragment="1"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=20, solucion="1", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=20, solucion="2", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=20, solucion="3", esSolucion=false});
@@ -172,7 +172,7 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=22, solucion="membrana plasmática", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=22, solucion="retículo endoplásmico rugoso", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El órgano indicado con la flecha corresponde a:", idImagen = 2130837549, nivel=1, tipoFragment="1-2"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El órgano indicado con la flecha corresponde a:", idImagen = 2130837547, nivel=1, tipoFragment="1-2"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=23, solucion="pulmón", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=23, solucion="cerebro", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=23, solucion="riñon", esSolucion=false});
@@ -187,7 +187,7 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=25, solucion="nervioso", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=25, solucion="epitelial", esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La siguiente imagen corresponde a", idImagen = 2130837550, nivel=1, tipoFragment="1-2-3"});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La siguiente imagen corresponde a", idImagen = 2130837548, nivel=1, tipoFragment="1-2-3"});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=26, solucion="pulmones", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=26, solucion="estómago", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=26, solucion="vasos sanguíneos", esSolucion=true});
