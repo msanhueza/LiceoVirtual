@@ -5,12 +5,12 @@
     p1:layout_height="match_parent"
     p1:padding="20dp"
     p1:id="@+id/linearLayout1"
-    p1:background="@drawable/lvbackgroundmenu">
+    p1:background="@drawable/lvbackgroundresultado">
     <TextView xmlns:tools="http://schemas.android.com/tools"
         p1:text=""
         p1:textAppearance="?android:attr/textAppearanceLarge"
         p1:textSize="20dp"
-        p1:textColor="#ff519bd8"
+        p1:textColor="#ffffff"
         p1:id="@+id/tvTextoMensajeResultado"
         p1:layout_width="match_parent"
         p1:layout_height="0dp"
@@ -18,16 +18,11 @@
         tools:text="Felicitaciones, has completado la trivia"
         p1:layout_marginLeft="0.0dp"
         p1:layout_weight="2"
-        p1:textStyle="bold" />
-    <View
-        p1:layout_width="wrap_content"
-        p1:id="@+id/space1"
-        p1:layout_height="1dp"
-        p1:background="#ffc1d5e2"
-        p1:paddingLeft="@dimen/pad_15dp"
-        p1:paddingRight="@dimen/pad_15dp"
-        p1:layout_marginLeft="@dimen/pad_15dp"
-        p1:layout_marginRight="@dimen/pad_15dp" />
+        p1:textStyle="bold"
+        p1:shadowColor="#292929"
+        p1:shadowDx="0"
+        p1:shadowDy="0"
+        p1:shadowRadius="1" />
     <TextView
         p1:text="80%"
         p1:textAppearance="?android:attr/textAppearanceLarge"
@@ -37,16 +32,7 @@
         p1:layout_width="match_parent"
         p1:layout_height="0dp"
         p1:layout_weight="2"
-        p1:textColor="@color/main_color_gray_dk" />
-    <View
-        p1:layout_width="wrap_content"
-        p1:id="@+id/space1"
-        p1:layout_height="1dp"
-        p1:background="#ffc1d5e2"
-        p1:paddingLeft="@dimen/pad_15dp"
-        p1:paddingRight="@dimen/pad_15dp"
-        p1:layout_marginLeft="@dimen/pad_15dp"
-        p1:layout_marginRight="@dimen/pad_15dp" />
+        p1:textColor="#ffffffff" />
     <LinearLayout
         p1:orientation="horizontal"
         p1:minWidth="25px"

@@ -189,6 +189,8 @@
     <AndroidResource Include="Resources\drawable-xhdpi\candado.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\candado.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\candado.png" />
+    <AndroidResource Include="Resources\drawable\LVBackgroundResultado.xml" />
+    <AndroidResource Include="Resources\drawable\buttonshape.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

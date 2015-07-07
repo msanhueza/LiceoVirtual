@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    p1:background="@color/white"
+    p1:background="@drawable/lvbackgroundmenu"
     tools:context="LiceoVirtual.LiceoVirtual.Login"
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
