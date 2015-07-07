@@ -63,7 +63,9 @@ namespace LiceoVirtual
 							Finish();
 						}
 						else{
-							Toast.MakeText (this, "Debes desbloquear el NIVEL 1", ToastLength.Short).Show();
+							PuntuacionAccion p = new PuntuacionAccion();
+							int cant = 3 - p.getPuntuacionMore80("1");
+							Toast.MakeText (this, "Debes aprobar "+ cant + " trivia(s) del nivel anterior para desbloquear el nivel 2", ToastLength.Long).Show();
 						}
 					};
 				} else if (item.nivel == 3) {
@@ -81,7 +83,9 @@ namespace LiceoVirtual
 							Finish();
 						}
 						else{
-							Toast.MakeText (this, "Debes desbloquear el NIVEL 2", ToastLength.Short).Show();
+							PuntuacionAccion p = new PuntuacionAccion();
+							int cant = 3 - p.getPuntuacionMore80("2");
+							Toast.MakeText (this, "Debes aprobar "+ cant + " trivia(s) del nivel anterior para desbloquear el nivel 3", ToastLength.Long).Show();
 						}
 					};
 				} else { // nivel == 4
@@ -99,7 +103,9 @@ namespace LiceoVirtual
 							Finish();
 						}
 						else{
-							Toast.MakeText (this, "Debes desbloquear el NIVEL 3", ToastLength.Short).Show();
+							PuntuacionAccion p = new PuntuacionAccion();
+							int cant = 3 - p.getPuntuacionMore80("3");
+							Toast.MakeText (this, "Debes aprobar "+ cant + " trivia(s) del nivel anterior para desbloquear el nivel 4", ToastLength.Long).Show();
 						}
 					};
 				}

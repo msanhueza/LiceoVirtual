@@ -17,7 +17,7 @@
         p1:background="@drawable/pizarron"
         p1:layout_weight="50">
         <TextView
-            p1:text="Selecciona el nivel que deseas jugar.\n Necesitas responder correctamente 10 preguntas para pasar de nivel, para esto solo te puedes equivocar 2 veces.\n ¡Buena suerte! "
+            p1:text="Selecciona el nivel que deseas jugar.\n Necesitas responder correctamente al menos 8 preguntas para pasar de nivel, pero solo te puedes equivocar 2 veces.\n ¡Buena suerte! "
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_width="0dp"
             p1:layout_height="wrap_content"

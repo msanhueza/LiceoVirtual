@@ -40,7 +40,6 @@ namespace LiceoVirtual
 			preguntaA = true;
 			fragmentPreguntaA = new FragmentPreguntaA ();
 			fragmentPreguntaB = new FragmentPreguntaB ();
-			fragmentPreguntaC = new FragmentPreguntaC ();
 			indicePregunta = 0;
 
 			ActionBar.SetHomeButtonEnabled(true);
@@ -79,11 +78,23 @@ namespace LiceoVirtual
 
 			//obtengo la respuesta correcta de la pregunta actual
 			ListadoPreguntaSolucionItem preguntaActual = getPreguntaActual ();	
+			string respuestaActual = obtenerRespuesta (preguntaActual.objListaRespuestas);
 
-			elegirFragment (preguntaActual.objPregunta.tipoFragment);
+
+			//Decido si ocupo fragment A o B para la primera pregunta
+			if (getTipoFragment (respuestaActual) == 1) {
+				mostrarFragmentA ();
+			}
+			else if(getTipoFragment (respuestaActual) == 2){
+				mostrarFragmentB ();
+			}
+			else if(getTipoFragment (respuestaActual) == 3){
+				//	mostrarFragmentC ();
+				mostrarFragmentC ();
+			}
+
 
 			habilitarButtonSiguiente (false);
-
 			btnPreguntaSiguiente.Click += delegate {
 				indicePregunta++;
 				if(malas == 2 && buenas<8){
@@ -96,34 +107,28 @@ namespace LiceoVirtual
 						return;
 					}
 					preguntaActual = getPreguntaActual ();
+					respuestaActual = obtenerRespuesta (preguntaActual.objListaRespuestas);
 					actualizarProgressBar();
 					habilitarButtonSiguiente (false);
 					if(indicePregunta == 9){
 						btnPreguntaSiguiente.Text = "Terminar";
 					}
-					if(indicePregunta < 10){
-						elegirFragment (preguntaActual.objPregunta.tipoFragment);
+					if(indicePregunta < 10){        //Decido si ocupo fragment A o B
+						if (getTipoFragment (respuestaActual) == 1) {
+							mostrarFragmentA ();
+						}
+						else if(getTipoFragment (respuestaActual) == 2){
+							mostrarFragmentB ();
+						}
+						else if(getTipoFragment (respuestaActual) == 3){
+							mostrarFragmentC ();
+						}
+
 					}
 				}
 
 			};
-				
-		}
 
-		public void elegirFragment(string tipoFragment){
-			string[] tipo = tipoFragment.Split ('-');
-			Random r = new Random ();
-			int indice = r.Next (0, tipo.Count ());
-			string fragmentElegido = tipo [indice];
-			if(fragmentElegido.Equals("1")){
-				mostrarFragmentA ();
-			}
-			else if(fragmentElegido.Equals("2")){
-				mostrarFragmentB ();
-			}
-			else{
-				mostrarFragmentC ();
-			}
 		}
 
 		public void cambiarActivity(bool aprobo){
