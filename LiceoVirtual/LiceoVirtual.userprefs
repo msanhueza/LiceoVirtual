@@ -1,9 +1,9 @@
 ﻿<Properties StartupItem="LiceoVirtual/LiceoVirtual.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual/Resources/drawable/buttonshape.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual/Resources/values/Styles.xml">
     <Files>
-      <File FileName="LiceoVirtual/Resources/drawable/LVBackgroundMenu.xml" Line="7" Column="30" />
-      <File FileName="LiceoVirtual/Resources/values/Styles.xml" Line="28" Column="63" />
+      <File FileName="LiceoVirtual/Resources/drawable/LVBackgroundMenu.xml" Line="1" Column="1" />
+      <File FileName="LiceoVirtual/Resources/values/Styles.xml" Line="5" Column="59" />
       <File FileName="LiceoVirtual/Resources/drawable/buttonshape.xml" Line="8" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
