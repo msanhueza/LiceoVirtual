@@ -62,7 +62,7 @@ public class CargarBaseDeDatos
 	private void cargarPreguntaRespuestaBD(){	
 
 		//PREGUNTAS DE PRIMERO MEDIO
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = Resource.Drawable.n1_1});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = Resource.Drawable.n1_1, nivel=1});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="un centríolo", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="una mitocondria", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=1, solucion="un retículo endoplasmico rugoso", esSolucion=true});
@@ -191,9 +191,6 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=26, solucion="pulmones", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=26, solucion="estómago", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=26, solucion="vasos sanguíneos", esSolucion=true});
-
-
-		//PREGUNTAS DE SEGUNDO MEDIO
 
 
 		//PREGUNTAS DE TERCERO MEDIO
@@ -365,6 +362,139 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=59, solucion="Semiconservativa", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=59, solucion="Conservativa", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=59, solucion="Dispersiva", esSolucion=false});
+
+		//PREGUNTAS DE SEGUNDO MEDIO
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = Resource.Drawable.n1_1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=60, solucion="un centríolo", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=60, solucion="una mitocondria", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=60, solucion="un retículo endoplasmico rugoso", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = Resource.Drawable.n1_2, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=61, solucion="mitocondria", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=61, solucion="núcleo", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=61, solucion="cloroplasto",  esSolucion=false});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = Resource.Drawable.n1_3, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=62, solucion="una vacuola", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=62, solucion="un cloroplasto", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=62, solucion="una mitocondria", esSolucion=false});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = Resource.Drawable.n1_4, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=63, solucion="una vacuola", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=63, solucion="un cloroplasto", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=63, solucion="una mitocondria", esSolucion=false});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = Resource.Drawable.n1_5, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=64, solucion="una lisosoma", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=64, solucion="un cloroplasto", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=64, solucion="la membrana nuclear", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha tiene como función", idImagen = Resource.Drawable.n1_6, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=65, solucion="transporte de sustancias", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=65, solucion="síntesis de ATP", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=65, solucion="transcripción génica", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En la parte de la célula indicado con la flecha se realiza la función de", idImagen = Resource.Drawable.n1_7, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=66, solucion="transporte de sustancias", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=66, solucion="síntesis de ATP", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=66, solucion="síntesis de proteínas", esSolucion=false});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos es propio de la célula vegetal?", idImagen = Resource.Drawable.n1_8, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=67, solucion="1", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=67, solucion="2", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=67, solucion="3", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de los siguientes organelos ocurre la replicación del ADN?", idImagen = Resource.Drawable.n1_9, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=68, solucion="1", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=68, solucion="2", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=68, solucion="3", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos utiliza CO2?", idImagen = Resource.Drawable.n1_10, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=69, solucion="1", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=69, solucion="2", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=69, solucion="3", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de los siguientes organelos se sintetizan la mayor cantidad de proteínas?", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=70, solucion="Centríolos", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=70, solucion="Mitocondria", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=70, solucion="Retículo endoplásmico rugoso", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de los siguientes organelos se realiza la respiración celular?", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=71, solucion="El núcleo", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=71, solucion="El cloroplasto", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=71, solucion="La mitocondria", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio indicada con la flecha corresponde a", idImagen = Resource.Drawable.n1_13, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=72, solucion="la platina", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=72, solucion="el objetivo", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=72, solucion="el condensador", esSolucion=false});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio indicada con la flecha corresponde a", idImagen = Resource.Drawable.n1_14, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=73, solucion="la platina", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=73, solucion="el cuerpo", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=73, solucion="la iluminación", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿A qué tejido corresponde la siguiente imagen?", idImagen = Resource.Drawable.n1_15, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=74, solucion="Nervioso", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=74, solucion="Epitelial", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=74, solucion="Muscular", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Una de las diferencias fundamentales entre la célula vegetal y animal es que la primera presenta:", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=75, solucion="Núcleo", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=75, solucion="Ribosoma", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=75, solucion="Pared celular", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de las siguientes imágenes corresponde al Complejo de Golgi?", idImagen = Resource.Drawable.n1_17, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=76, solucion="1", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=76, solucion="2", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=76, solucion="3", esSolucion=false});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio que se indica con la flecha es", idImagen = Resource.Drawable.n1_18, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=77, solucion="el cuerpo", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=77, solucion="el condensador", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=77, solucion="el ocular", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado en la figura se encuentra en mayor proporción en", idImagen = Resource.Drawable.n1_19, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=78, solucion="neurona", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=78, solucion="célula muscular esquelética", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=78, solucion="célula pancreática secretora de insulina", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos se encuentra en gran cantidad en las células del músculo esquelético?", idImagen = Resource.Drawable.n1_20, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=79, solucion="1", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=79, solucion="2", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=79, solucion="3", esSolucion=false});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En una célula del epitelio respiratorio que tiene como función la secreción de mucosidad para mantener húmeda la vía respiratoria debiera observarse una gran cantidad de", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=80, solucion="retículo endoplasmico rugoso", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=80, solucion="ribosomas citoplasmaticos", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=80, solucion="complejo de Golgi", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En una célula de la corteza suprarenal que secreta glucocorticoides (hormona lipofílica) debiera observarse una gran cantidad de", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=81, solucion="mitocondrias", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=81, solucion="membrana plasmática", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=81, solucion="retículo endoplásmico rugoso", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El órgano indicado con la flecha corresponde a:", idImagen = Resource.Drawable.n1_23, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=82, solucion="pulmón", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=82, solucion="cerebro", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=82, solucion="riñon", esSolucion=false});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En el tejido cerebral la célula que se encuentra en mayor proporción es", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=83, solucion="el glóbulo rojo", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=83, solucion="la plaqueta", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=83, solucion="la neurona", esSolucion=true});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Los glóbulos blancos son parte del tejido", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=84, solucion="sanguíneo", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=84, solucion="nervioso", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=84, solucion="epitelial", esSolucion=false});
+
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La siguiente imagen corresponde a", idImagen = Resource.Drawable.n1_26, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=85, solucion="pulmones", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=85, solucion="estómago", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=85, solucion="vasos sanguíneos", esSolucion=true});
+
 
 	}
 

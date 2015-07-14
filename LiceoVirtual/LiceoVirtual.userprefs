@@ -1,14 +1,10 @@
-﻿<Properties StartupItem="LiceoVirtual/LiceoVirtual.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual/MensajeResultado.cs">
+﻿<Properties StartupItem="LiceoVirtual\LiceoVirtual.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.TA071014P8" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LiceoVirtual\Resources\values\Styles.xml">
     <Files>
-      <File FileName="LiceoVirtual/Resources/drawable/LVBackgroundMenu.xml" Line="1" Column="1" />
-      <File FileName="LiceoVirtual/Resources/values/Styles.xml" Line="1" Column="1" />
-      <File FileName="LiceoVirtual/Resources/drawable/buttonshape.xml" Line="1" Column="1" />
-      <File FileName="LiceoVirtual/Menu.cs" Line="29" Column="4" />
-      <File FileName="LiceoVirtual/Pregunta.cs" Line="1" Column="1" />
-      <File FileName="LiceoVirtual/Properties/AndroidManifest.xml" Line="1" Column="1" />
-      <File FileName="LiceoVirtual/MensajeResultado.cs" Line="80" Column="61" />
+      <File FileName="LiceoVirtual\Resources\drawable\LVBackgroundMenu.xml" Line="1" Column="1" />
+      <File FileName="LiceoVirtual\Resources\values\Styles.xml" Line="5" Column="59" />
+      <File FileName="LiceoVirtual\Resources\drawable\buttonshape.xml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
