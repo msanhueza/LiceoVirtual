@@ -125,7 +125,7 @@
             android:layout_weight="1"
             android:gravity="top">
             <TextView
-                android:text="% APROBADAS"
+                android:text="% APROBACIÓN"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/textView4"
                 android:textColor="#ff3b3b3b"
