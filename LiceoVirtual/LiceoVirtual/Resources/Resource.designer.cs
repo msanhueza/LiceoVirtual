@@ -420,9 +420,6 @@ namespace LiceoVirtual
 			// aapt resource value: 0x7f0a001c
 			public const int cbxRecordarContrasena = 2131361820;
 			
-			// aapt resource value: 0x7f0a004e
-			public const int cerrarSesion = 2131361870;
-			
 			// aapt resource value: 0x7f0a0042
 			public const int completadas = 2131361858;
 			
@@ -572,6 +569,9 @@ namespace LiceoVirtual
 			
 			// aapt resource value: 0x7f0a0005
 			public const int respuesta = 2131361797;
+			
+			// aapt resource value: 0x7f0a004e
+			public const int salir = 2131361870;
 			
 			// aapt resource value: 0x7f0a0001
 			public const int scrollView1 = 2131361793;

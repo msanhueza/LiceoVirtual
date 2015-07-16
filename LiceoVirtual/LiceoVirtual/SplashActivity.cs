@@ -25,18 +25,34 @@ namespace LiceoVirtual
 		protected override void OnCreate(Bundle bundle)
 		{
 			base.OnCreate(bundle);
+			cargarBD ();
 			Thread.Sleep(3000); // Simulate a long loading process on app startup.
 
 			ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
 			bool guardarSesion = pref.GetBoolean ("guardar", false);
 
-			if (guardarSesion) {
+			//if (guardarSesion) {
 				StartActivity(typeof(Menu));
-			} else {
-				StartActivity(typeof(Login));
-			}
+			//} 
+			//else {
+			//	StartActivity(typeof(Login));
+			//}
 
 		}
+
+		public void cargarBD(){
+			ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
+			bool estaCargadaBD = pref.GetBoolean ("estaCargadaBD", false);
+
+			if (!estaCargadaBD) {
+				CargarBaseDeDatos c = new CargarBaseDeDatos ();
+
+				ISharedPreferencesEditor editor = pref.Edit ();
+				editor.PutBoolean ("estaCargadaBD", true);
+				editor.Apply ();
+			}
+		}
+
 	}
 }
 

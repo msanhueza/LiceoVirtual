@@ -4,8 +4,10 @@
         android:title="options"
         android:icon="@drawable/ic_action_overflow">
         <menu>
-            <item android:id="@+id/cerrarSesion"
-                  android:title="Cerrar Sesión" />
+            <!---<item android:id="@+id/cerrarSesion"
+                  android:title="Cerrar Sesión" /> -->
+			<item android:id="@+id/salir"
+			                  android:title="Salir" />
         </menu>
   </item>
 </menu>

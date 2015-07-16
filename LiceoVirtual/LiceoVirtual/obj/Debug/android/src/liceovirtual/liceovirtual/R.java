@@ -127,7 +127,6 @@ public final class R {
         public static final int btnPreguntaSiguiente=0x7f0a003a;
         public static final int btnRanking=0x7f0a002c;
         public static final int cbxRecordarContrasena=0x7f0a001c;
-        public static final int cerrarSesion=0x7f0a004e;
         public static final int completadas=0x7f0a0042;
         public static final int content_frame=0x7f0a0047;
         public static final int desaprovadas=0x7f0a0041;
@@ -178,6 +177,7 @@ public final class R {
         public static final int relativeLayout2=0x7f0a0027;
         public static final int requestFocus1=0x7f0a001a;
         public static final int respuesta=0x7f0a0005;
+        public static final int salir=0x7f0a004e;
         public static final int scrollView1=0x7f0a0001;
         public static final int space1=0x7f0a002a;
         public static final int textView1=0x7f0a002d;

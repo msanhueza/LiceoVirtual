@@ -41,23 +41,11 @@ namespace LiceoVirtual
 				intent.PutExtra ("nivel", "1");
 				StartActivity (intent);
 			};				
-
-			cargarBD ();
+				
 
 		}
 
-		public void cargarBD(){
-			ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
-			bool estaCargadaBD = pref.GetBoolean ("estaCargadaBD", false);
 
-			if (!estaCargadaBD) {
-				CargarBaseDeDatos c = new CargarBaseDeDatos ();
-
-				ISharedPreferencesEditor editor = pref.Edit ();
-				editor.PutBoolean ("estaCargadaBD", true);
-				editor.Apply ();
-			}
-		}
 		/* con licencia se puede hacer de esta forma los listener de los botones
 		[Java.Interop.Export("onClickTrivia")] // The value found in android:onClick attribute.
 		public void onClickTrivia(View v)
@@ -77,7 +65,7 @@ namespace LiceoVirtual
 		{
 			switch (item.ItemId)
 			{
-			case Resource.Id.cerrarSesion:
+			/*case Resource.Id.cerrarSesion:
 				ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
 				ISharedPreferencesEditor editor = pref.Edit ();
 				editor.PutString ("idUsuario", String.Empty);
@@ -88,11 +76,11 @@ namespace LiceoVirtual
 
 				StartActivity(typeof(Login));
 				Finish(); 
-				return true;
-
-			/*case Android.Resource.Id.Home:
-				Finish();
 				return true;*/
+
+			case Resource.Id.salir:
+				Finish ();
+				return true;
 				
 			}
 			return base.OnOptionsItemSelected(item);
