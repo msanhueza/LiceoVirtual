@@ -365,135 +365,85 @@ public class CargarBaseDeDatos
 
 		//PREGUNTAS DE SEGUNDO MEDIO
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = Resource.Drawable.n1_1, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=60, solucion="un centríolo", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=60, solucion="una mitocondria", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=60, solucion="un retículo endoplasmico rugoso", esSolucion=true});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Un genetista realizando un experimento concluyó que: \"para identificar el genotipo desconocido de individuos fenotipicamente iguales siempre se suele utilizar al homocigoto recesivo\", esta conclusión corresponde a:", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=60, solucion="dihibridismo", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=60, solucion="codominancia", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=60, solucion="retrocruzamiento", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha es", idImagen = Resource.Drawable.n1_2, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=61, solucion="mitocondria", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=61, solucion="núcleo", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=61, solucion="cloroplasto",  esSolucion=false});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Al realizar un cruce entre individuos heterocigotos pertenecientes a cierta especie de vegetales, se obtuvo 810 descendientes. Según esta información, ¿Cuántos aproximadamente tendrán el fenotipo dominante?", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=61, solucion="600", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=61, solucion="200", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=61, solucion="800", esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = Resource.Drawable.n1_3, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=62, solucion="una vacuola", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=62, solucion="un cloroplasto", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=62, solucion="una mitocondria", esSolucion=false});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La posición de las flores puede ser terminal (a) o axial (A). Qué tipo de descendencia  (fenotipo) existirá si se cruza un individuo de flores axiales homocigoto con otro de flores terminales:", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=62, solucion="75 % axial, 25 % terminal", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=62, solucion="100 % terminal", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=62, solucion="100 % axial", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = Resource.Drawable.n1_4, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=63, solucion="una vacuola", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=63, solucion="un cloroplasto", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=63, solucion="una mitocondria", esSolucion=false});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="A continuación se ilustra un par de cromosomas que poseen información genética para el mismo carácter ¿Cómo se denominan estos cromosomas?", idImagen = Resource.Drawable.n2_63, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=63, solucion="homocigotos", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=63, solucion="heterocigotos", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=63, solucion="homólogos", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha corresponde a", idImagen = Resource.Drawable.n1_5, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=64, solucion="una lisosoma", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=64, solucion="un cloroplasto", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=64, solucion="la membrana nuclear", esSolucion=true});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En cobayos el color negro es dominante sobre albino. Si se cruzan cobayos negros puros y se implanta uno de los embriones en gestación a una hembra albina ¿qué fenotipo tendrá este cobayo al nacer?", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=64, solucion="pelaje con tendencia al negro", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=64, solucion="pelaje gris y algunas zonas blancas con negro", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=64, solucion="pelaje negro en su totalidad", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado con la flecha tiene como función", idImagen = Resource.Drawable.n1_6, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=65, solucion="transporte de sustancias", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=65, solucion="síntesis de ATP", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=65, solucion="transcripción génica", esSolucion=true});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Si una persona es homocigota para un carácter, significa que?:\nI.\tPosee dos juegos de cromosomas idénticos.\nII.\tPosee el mismo alelo en cada cromosoma homólogo.\nIII.\tPosee dos alelos dominantes en cada cromosoma homólogo.", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=65, solucion="I", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=65, solucion="II", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=65, solucion="III", esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En la parte de la célula indicado con la flecha se realiza la función de", idImagen = Resource.Drawable.n1_7, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=66, solucion="transporte de sustancias", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=66, solucion="síntesis de ATP", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=66, solucion="síntesis de proteínas", esSolucion=false});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Cuando el ADN se encuentra en forma laxa, difusa o como hilos se denomina:", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=66, solucion="Cromosoma", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=66, solucion="Cromatina", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=66, solucion="Homocigoto", esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos es propio de la célula vegetal?", idImagen = Resource.Drawable.n1_8, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=67, solucion="1", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=67, solucion="2", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=67, solucion="3", esSolucion=true});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Qué característica (s) es (son) verdadera (s) respecto de los cromosomas?\nI.\tPresentan un centromero\nII.\tRepresentan el máximo grado de condensación del material genético\nIII.\tContiene ADN e histonas\n", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=67, solucion="I", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=67, solucion="II", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=67, solucion="I, II y III", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de los siguientes organelos ocurre la replicación del ADN?", idImagen = Resource.Drawable.n1_9, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=68, solucion="1", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=68, solucion="2", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=68, solucion="3", esSolucion=true});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El fenotipo depende", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=68, solucion="del genotipo solamente", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=68, solucion="del ambiente solamente", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=68, solucion="del genotipo y el ambiente", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos utiliza CO2?", idImagen = Resource.Drawable.n1_10, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=69, solucion="1", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=69, solucion="2", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=69, solucion="3", esSolucion=true});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Si la célula de cebolla tiene 16 cromosomas, un óvulo de cebolla tiene una cantidad de cromosomas igual a:", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=69, solucion="16", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=69, solucion="8", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=69, solucion="32", esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de los siguientes organelos se sintetizan la mayor cantidad de proteínas?", idImagen = -1, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=70, solucion="Centríolos", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=70, solucion="Mitocondria", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=70, solucion="Retículo endoplásmico rugoso", esSolucion=true});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de las siguientes opciones se menciona el termino cuyo significado común para los fenómenos de regeneración de órganos, reproducción de protistas, crecimiento de metazoos y cicatrización de tejidos?", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=70, solucion="Ciclosis", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=70, solucion="Mitosis", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=70, solucion="Meiosis", esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de los siguientes organelos se realiza la respiración celular?", idImagen = -1, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=71, solucion="El núcleo", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=71, solucion="El cloroplasto", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=71, solucion="La mitocondria", esSolucion=true});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En la división celular, la separación de las cromatidas ocurre en:", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=71, solucion="Metafase", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=71, solucion="Anafase", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=71, solucion="Telofase", esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio indicada con la flecha corresponde a", idImagen = Resource.Drawable.n1_13, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=72, solucion="la platina", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=72, solucion="el objetivo", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=72, solucion="el condensador", esSolucion=false});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El esquema representa una célula que se encuentra en:", idImagen = Resource.Drawable.n2_72, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=72, solucion="Interfase", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=72, solucion="Profase", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=72, solucion="Anafase", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio indicada con la flecha corresponde a", idImagen = Resource.Drawable.n1_14, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=73, solucion="la platina", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=73, solucion="el cuerpo", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=73, solucion="la iluminación", esSolucion=true});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Ordene secuencialmente las etapas de la mitosis:\nI. Profase\nII. Anafase\nIII. Telofase\nIV. Metafase\nV. Citocinesis\n", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=73, solucion="I,II,III,IV,V", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=73, solucion="I,III,IV,II,V", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=73, solucion="I,IV,II,III,V", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿A qué tejido corresponde la siguiente imagen?", idImagen = Resource.Drawable.n1_15, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=74, solucion="Nervioso", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=74, solucion="Epitelial", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=74, solucion="Muscular", esSolucion=true});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Con respecto a la importancia de la mitosis, señale la(s) alternativa(s) correcta(s):\nI. Para un organismo pluricelular la mitosis significa reproducción\nII. Los organismos pluricelulares pueden regenerar tejidos a través de mitosis\nIII. Para un protozoo, una división celular de este tipo, significa reproducción\nIV. Los organismos pluricelulares crecen gracias a este proceso\n", idImagen = -1, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=74, solucion="I,II,IV", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=74, solucion="II,III,IV", esSolucion=true});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=74, solucion="I,III,IV", esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Una de las diferencias fundamentales entre la célula vegetal y animal es que la primera presenta:", idImagen = -1, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=75, solucion="Núcleo", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=75, solucion="Ribosoma", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=75, solucion="Pared celular", esSolucion=true});
-
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de las siguientes imágenes corresponde al Complejo de Golgi?", idImagen = Resource.Drawable.n1_17, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=76, solucion="1", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=76, solucion="2", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=76, solucion="3", esSolucion=false});
-
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La parte del microscopio que se indica con la flecha es", idImagen = Resource.Drawable.n1_18, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=77, solucion="el cuerpo", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=77, solucion="el condensador", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=77, solucion="el ocular", esSolucion=true});
-
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El organelo indicado en la figura se encuentra en mayor proporción en", idImagen = Resource.Drawable.n1_19, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=78, solucion="neurona", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=78, solucion="célula muscular esquelética", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=78, solucion="célula pancreática secretora de insulina", esSolucion=true});
-
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Cuál de los siguientes organelos se encuentra en gran cantidad en las células del músculo esquelético?", idImagen = Resource.Drawable.n1_20, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=79, solucion="1", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=79, solucion="2", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=79, solucion="3", esSolucion=false});
-
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En una célula del epitelio respiratorio que tiene como función la secreción de mucosidad para mantener húmeda la vía respiratoria debiera observarse una gran cantidad de", idImagen = -1, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=80, solucion="retículo endoplasmico rugoso", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=80, solucion="ribosomas citoplasmaticos", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=80, solucion="complejo de Golgi", esSolucion=true});
-
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En una célula de la corteza suprarenal que secreta glucocorticoides (hormona lipofílica) debiera observarse una gran cantidad de", idImagen = -1, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=81, solucion="mitocondrias", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=81, solucion="membrana plasmática", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=81, solucion="retículo endoplásmico rugoso", esSolucion=true});
-
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="El órgano indicado con la flecha corresponde a:", idImagen = Resource.Drawable.n1_23, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=82, solucion="pulmón", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=82, solucion="cerebro", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=82, solucion="riñon", esSolucion=false});
-
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="En el tejido cerebral la célula que se encuentra en mayor proporción es", idImagen = -1, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=83, solucion="el glóbulo rojo", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=83, solucion="la plaqueta", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=83, solucion="la neurona", esSolucion=true});
-
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Los glóbulos blancos son parte del tejido", idImagen = -1, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=84, solucion="sanguíneo", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=84, solucion="nervioso", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=84, solucion="epitelial", esSolucion=false});
-
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La siguiente imagen corresponde a", idImagen = Resource.Drawable.n1_26, nivel=2});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=85, solucion="pulmones", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=85, solucion="estómago", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=85, solucion="vasos sanguíneos", esSolucion=true});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="La siguiente representa una etapa de la mitosis ¿Qué ocurrirá en la etapa siguiente?", idImagen = Resource.Drawable.n2_75, nivel=2});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=75, solucion="Separación de cromátidas homólogas", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=75, solucion="Separación de cromosomas homólogos", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=75, solucion="Separación de cromátidas hermanas", esSolucion=true});
 
 
 	}

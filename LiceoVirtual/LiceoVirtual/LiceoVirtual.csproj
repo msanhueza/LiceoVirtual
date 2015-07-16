@@ -189,6 +189,9 @@
     <AndroidResource Include="Resources\drawable\LVBackgroundResultado.xml" />
     <AndroidResource Include="Resources\drawable\buttonshape.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\splash_2.png" />
+    <AndroidResource Include="Resources\drawable\n2_63.png" />
+    <AndroidResource Include="Resources\drawable\n2_72.png" />
+    <AndroidResource Include="Resources\drawable\n2_75.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
