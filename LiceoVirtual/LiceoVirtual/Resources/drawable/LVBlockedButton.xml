@@ -6,9 +6,14 @@
 			<corners
 			android:radius="18dp"
 			/>
-			<solid
-			android:color="#c92a63af"
-			/>
+			<gradient
+android:angle="270"
+android:centerX="5%"
+android:centerColor="#2868A8"
+android:startColor="#2868A8"
+android:endColor="#1982B0"
+android:type="linear"
+/>
 			<stroke
 			android:width="2dp"
 			android:color="#2A596E"
@@ -31,7 +36,7 @@
 			android:radius="18dp"
 			/>
 			<solid
-			android:color="#012a63af"
+			android:color="#000a63af"
 			/>
 			<stroke
 			android:width="2dp"
