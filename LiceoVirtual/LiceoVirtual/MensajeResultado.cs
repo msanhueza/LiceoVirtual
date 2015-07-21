@@ -14,7 +14,7 @@ using Android.Content.PM;
 
 namespace LiceoVirtual
 {
-	[Activity (Label = "Trivia", ScreenOrientation = ScreenOrientation.Portrait)]			
+	[Activity (Label = "Preguntas Biología", ScreenOrientation = ScreenOrientation.Portrait)]			
 	public class MensajeResultado : Activity
 	{
 		public static string nivel;

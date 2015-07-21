@@ -96,18 +96,21 @@ public final class R {
         public static final int n1_7=0x7f020033;
         public static final int n1_8=0x7f020034;
         public static final int n1_9=0x7f020035;
-        public static final int nota=0x7f020036;
-        public static final int pizarron=0x7f020037;
-        public static final int punto=0x7f020038;
-        public static final int puntos=0x7f020039;
-        public static final int respuesta_correcta=0x7f02003a;
-        public static final int respuesta_incorrecta=0x7f02003b;
-        public static final int splash=0x7f02003c;
-        public static final int splash_2=0x7f02003d;
-        public static final int student=0x7f02003e;
-        public static final int student_sad=0x7f02003f;
-        public static final int user_chat1=0x7f020040;
-        public static final int user_chat2=0x7f020041;
+        public static final int n2_63=0x7f020036;
+        public static final int n2_72=0x7f020037;
+        public static final int n2_75=0x7f020038;
+        public static final int nota=0x7f020039;
+        public static final int pizarron=0x7f02003a;
+        public static final int punto=0x7f02003b;
+        public static final int puntos=0x7f02003c;
+        public static final int respuesta_correcta=0x7f02003d;
+        public static final int respuesta_incorrecta=0x7f02003e;
+        public static final int splash=0x7f02003f;
+        public static final int splash_2=0x7f020040;
+        public static final int student=0x7f020041;
+        public static final int student_sad=0x7f020042;
+        public static final int user_chat1=0x7f020043;
+        public static final int user_chat2=0x7f020044;
     }
     public static final class id {
         public static final int aprovadas=0x7f0a003f;
@@ -124,7 +127,6 @@ public final class R {
         public static final int btnPreguntaSiguiente=0x7f0a003a;
         public static final int btnRanking=0x7f0a002c;
         public static final int cbxRecordarContrasena=0x7f0a001c;
-        public static final int cerrarSesion=0x7f0a004e;
         public static final int completadas=0x7f0a0042;
         public static final int content_frame=0x7f0a0047;
         public static final int desaprovadas=0x7f0a0041;
@@ -175,6 +177,7 @@ public final class R {
         public static final int relativeLayout2=0x7f0a0027;
         public static final int requestFocus1=0x7f0a001a;
         public static final int respuesta=0x7f0a0005;
+        public static final int salir=0x7f0a004e;
         public static final int scrollView1=0x7f0a0001;
         public static final int space1=0x7f0a002a;
         public static final int textView1=0x7f0a002d;

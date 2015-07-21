@@ -315,17 +315,6 @@ namespace LiceoVirtual
 		{
 			switch (item.ItemId)
 			{
-			case Resource.Id.cerrarSesion:
-				ISharedPreferences pref = Application.Context.GetSharedPreferences ("UserInfo", FileCreationMode.Private);
-				ISharedPreferencesEditor editor = pref.Edit ();
-				editor.PutString ("idUsuario", String.Empty);
-				editor.PutString ("nombre", String.Empty);
-				editor.PutBoolean ("guardar", false);
-				editor.Apply ();
-
-				StartActivity(typeof(Login));
-				Finish(); 
-				return true;
 
 			case Android.Resource.Id.Home:
 				
