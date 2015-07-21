@@ -352,6 +352,10 @@ namespace LiceoVirtual
 				    palabras [0].Equals ("II") ||
 				    palabras [0].Equals ("III") ||
 				    palabras [0].Equals ("IV") ||
+					palabras [0].Equals ("I,") ||
+					palabras [0].Equals ("II,") ||
+					palabras [0].Equals ("III,") ||
+					palabras [0].Equals ("IV,") ||
 				    palabras [0].Equals ("Ninguna")) {
 					return 1;
 				} else if (Regex.IsMatch (respuesta, @"^[a-zA-ZáéíóúÁÉÍÓÚ]+$")) {
@@ -367,6 +371,10 @@ namespace LiceoVirtual
 					palabras [0].Equals ("II") ||
 					palabras [0].Equals ("III") ||
 					palabras [0].Equals ("IV") ||
+					palabras [0].Equals ("I,") ||
+					palabras [0].Equals ("II,") ||
+					palabras [0].Equals ("III,") ||
+					palabras [0].Equals ("IV,") ||
 					palabras [0].Equals ("Ninguna")) {
 					return 1;
 				} 

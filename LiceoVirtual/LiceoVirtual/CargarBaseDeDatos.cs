@@ -415,7 +415,8 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=69, solucion="8", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=69, solucion="32", esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de las siguientes opciones se menciona el termino cuyo significado común para los fenómenos de regeneración de órganos, reproducción de protistas, crecimiento de metazoos y cicatrización de tejidos?", idImagen = -1, nivel=2});
+		//preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de las siguientes opciones se menciona el termino cuyo significado común para los fenómenos de regeneración de órganos, reproducción de protistas, crecimiento de metazoos y cicatrización de tejidos?", idImagen = -1, nivel=2});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿Donde se menciona el término cuyo significado común para los fenómenos de regeneración de órganos, reproducción de protistas, crecimiento de metazoos y cicatrización de tejidos?", idImagen = -1, nivel=2});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=70, solucion="Ciclosis", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=70, solucion="Mitosis", esSolucion=true});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=70, solucion="Meiosis", esSolucion=false});
