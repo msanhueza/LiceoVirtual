@@ -5,7 +5,7 @@
     p1:layout_height="match_parent"
     p1:id="@+id/linearLayout1"
     p1:padding="15dp"
-    p1:background="@drawable/lvbackgroundmenu">
+    p1:background="@color/white">
     <LinearLayout
         p1:orientation="horizontal"
         p1:minWidth="25px"
