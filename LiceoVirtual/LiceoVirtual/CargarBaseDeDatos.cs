@@ -112,12 +112,12 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=10, solucion="2", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=10, solucion="3", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de los siguientes organelos se sintetizan la mayor cantidad de proteínas?", idImagen = -1, nivel=1});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál organelo se sintetizan la mayor cantidad de proteínas?", idImagen = -1, nivel=1});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=11, solucion="Centríolos", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=11, solucion="Mitocondria", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=11, solucion="Retículo endoplásmico rugoso", esSolucion=true});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál de los siguientes organelos se realiza la respiración celular?", idImagen = -1, nivel=1});
+		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="¿En cuál organelo se realiza la respiración celular?", idImagen = -1, nivel=1});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=12, solucion="El núcleo", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=12, solucion="El cloroplasto", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=12, solucion="La mitocondria", esSolucion=true});
@@ -230,7 +230,7 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=33, solucion="De las proteínas que defosforilan", esSolucion=false});
 
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Si el neurotransmisor producido por una  neuronas se une a un receptor metabotrópico ocurre que:\nI.- Se separa una de las subunidades de la proteína G\nII.- La proteína G puede unirse a un canal iónico\nIII.- La unión de proteína G puede llevar a que se produzca un potencial postsináptico\nSon Correctas:", idImagen = -1, nivel=3});	
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=34, solucion="Sólo I", esSolucion=false});
+		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=34, solucion="I", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=34, solucion="I y II", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=34, solucion="I, II y III", esSolucion=true});
 
@@ -303,10 +303,10 @@ public class CargarBaseDeDatos
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=47, solucion="Ribosa, base nitrogenada y fosfato", esSolucion=false});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=47, solucion="Desoxirribosa, ribosa y bases nitrogenada más fosfato", esSolucion=false});
 
-		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="De acuerdo a lo que usted ha podido investigar sobre la estructura del ADN, ¿Cuál de las siguientes aseveraciones sería incorrecta?", idImagen = -1, nivel=4});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=48, solucion="Los nucleótidos contienen fosfato, compuesto muy energético", esSolucion=false});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=48, solucion="Los nucleótidos poseen grupos fosfatos con tres grupos fosfato de baja energía", esSolucion=true});
-		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=48, solucion="El GTP es una guanina y tres fosfatos", esSolucion=false});
+		//preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="De acuerdo a lo que usted ha podido investigar sobre la estructura del ADN, ¿Cuál de las siguientes aseveraciones sería incorrecta?", idImagen = -1, nivel=4});
+		//preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=48, solucion="Los nucleótidos contienen fosfato, compuesto muy energético", esSolucion=false});
+		//preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=48, solucion="Los nucleótidos poseen grupos fosfatos con tres grupos fosfato de baja energía", esSolucion=true});
+		//preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=48, solucion="El GTP es una guanina y tres fosfatos", esSolucion=false});
 
 		preguntaAccion.insertUpdateData (new PreguntaBD{ pregunta="Una de las siguientes afirmaciones es falsa:", idImagen = -1, nivel=4});
 		preguntaSolucionAccion.insertUpdateData (new PreguntaSolucionBD{idPregunta=49, solucion="El ARN a veces consta de una cadena", esSolucion=false});
